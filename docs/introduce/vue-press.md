@@ -183,3 +183,5 @@ docs/.vuepress/components 目录下编写 vue 模板。
 如有一个 Demo-01.vue 的模板
 那么 在 md 文件中可以直接写 <Demo-01>
 ```
+
+注意：使用了 vue 的话，会在左上角生成一个广告位
