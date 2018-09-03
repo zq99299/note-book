@@ -1,0 +1,16 @@
+{
+  "name": "note-book",
+  "version": "0.0.1",
+  "description": "使用 vuepress 生成的 markdown 文档站点",
+  "author": "mrcode <99299684@qq.com>",
+  "private": false,
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "vuepress": "^0.14.2",
+    "vuepress-theme-vue": "~1.1.0"
+  }
+}
