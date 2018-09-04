@@ -3,6 +3,9 @@
 # 确保脚本抛出遇到的错误
 set -e
 
+# 删除目录防止构建失败
+rm -rf build/.vuepress/dist
+
 # 生成静态文件
 npm run docs:build
 
