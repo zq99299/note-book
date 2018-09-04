@@ -6,6 +6,9 @@ module.exports = {
     description: '放弃 GitBook 而使用 vuepress 构建 Markdown 笔记',
     base: '/note-book/', // gh-page 中是增加了项目名
     dest: 'build/.vuepress/dist',  // 目录配置在外,纯粹是有代码洁癖和强迫症，并不能规避开发模式下同时构建不报错的问题
+    markdown: {
+        lineNumbers: true
+    },
     // theme: 'vue',
     themeConfig: {
         docsDir: 'docs',
