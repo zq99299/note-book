@@ -1,10 +1,11 @@
 const introduceGenSidebarConfig = require('../introduce');
+const imoccDesignPatternGenSidebarConfig = require('../imocc/design_pattern');
 
 module.exports = {
     title: 'Mrcode 笔记本',
     description: '放弃 GitBook 而使用 vuepress 构建 Markdown 笔记',
     base: '/note-book/', // gh-page 中是增加了项目名
-    dest:'build/.vuepress/dist',  // 目录配置在外，可以让构建的时候不影响写作
+    dest: 'build/.vuepress/dist',  // 目录配置在外,纯粹是有代码洁癖和强迫症，并不能规避开发模式下同时构建不报错的问题
     // theme: 'vue',
     themeConfig: {
         docsDir: 'docs',
@@ -36,10 +37,12 @@ module.exports = {
         editLinkText: '帮助我们改善此页面！',
         nav: [
             {text: 'Home', link: '/'},
-            {text: '项目介绍', link: '/introduce/'}
+            {text: '项目介绍', link: '/introduce/'},
+            {text: '设计模式（慕课）', link: '/imocc/design_pattern/'}
         ],
         sidebar: {
-            '/introduce/': introduceGenSidebarConfig()
+            '/introduce/': introduceGenSidebarConfig(),
+            '/imocc/design_pattern/': imoccDesignPatternGenSidebarConfig()
         }
     }
 }
