@@ -1,6 +1,6 @@
 # 抽象工厂
 
-> 关联阅读 [李兴华-简单工厂](/chapter/design_pattern/抽象工厂模式.md)
+> 关联阅读 [李兴华-简单工厂](/design_pattern/08_abstract_factory/abstract_factory.md)
 
 **定义**：抽象工厂模式提供一个创建一系列相关或相互依赖对象的接口。
 
@@ -28,7 +28,7 @@
 
 ## 产品登记结构与产品族
 
-![](assets/markdown-img-paste-20180829221321395.png)
+![](./assets/markdown-img-paste-20180829221321395.png)
 
 产品族：相同颜色的代表一个产品族。
 
@@ -38,7 +38,7 @@
 
 工厂方法是针对 产品等级结构，抽象工厂针对的是产品族
 
-![](assets/markdown-img-paste-2018082922284577.png)
+![](./assets/markdown-img-paste-2018082922284577.png)
 
 ----
 
@@ -103,11 +103,11 @@ public class Test {
 }
 ```
 
-![](assets/markdown-img-paste-20180829230746796.png)
+![](./assets/markdown-img-paste-20180829230746796.png)
 
 依赖关系就是下面这样
 
-![](assets/markdown-img-paste-20180829230222369.png)
+![](./assets/markdown-img-paste-20180829230222369.png)
 
 可以看到，客户端只依赖抽象工厂，然后获取一系列的产品，比如这里的 java 的产品
 

@@ -30,6 +30,16 @@ module.exports = () => {
                 '03_design_principles/liskov_substitution.md',
                 '03_design_principles/composition_aggeregation.md'
             ]
+        },
+        {
+            title: "设计模式",
+            collapsable: true,
+            children: [
+                '04_simple_factory/simple_factory.md',
+                '05_factory_method/factory_method.md',
+                '06_abstract_factory/abstract_factory.md',
+                '07_builder/builder.md'
+            ]
         }
     ]
 }

@@ -1,6 +1,6 @@
 # 工厂方法模式
 
-> 关联阅读 [李兴华-工厂方法](/chapter/design_pattern/工厂方法.md)
+> 关联阅读 [李兴华-工厂方法](/design_pattern/07_factory_method/factory_method.md)
 
 **定义**：定义一个创建对象的接口，但让实现这个接口的类来决定实例化哪个类，
 工厂方法让类的实例化推迟到子类进行
@@ -27,7 +27,7 @@
 
 ## Coding
 
-![](assets/markdown-img-paste-20180828232609685.png)
+![](./assets/markdown-img-paste-20180828232609685.png)
 
 代码很简单，改造之前简单工厂为工厂方法。创建了抽象类 VideoFactory，具体的课程由专门的课程工厂去创建实例
 

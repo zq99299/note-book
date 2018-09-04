@@ -1,6 +1,6 @@
 # 建造者模式
 
-> 关联阅读 [李兴华-生成器模式](/chapter/design_pattern/生成器模式.md)
+> 关联阅读 [李兴华-生成器模式](/design_pattern/09_builder/builder.md)
 
 > 强烈建议阅读，不然这一章直接懵逼,这里直接看出来了这个课程就是把李兴华这个简化了讲解的，李兴华这个讲得很不错，很深入，初学者真的很难看懂
 
@@ -152,7 +152,7 @@ public class Test {
 }
 ```
 
-![](assets/markdown-img-paste-20180830224506584.png)
+![](./assets/markdown-img-paste-20180830224506584.png)
 
 应用层代码是不需要知道创建的逻辑的，这里看起来其实就优点繁琐了，实际的业务可能会更繁琐复杂
 
@@ -250,6 +250,6 @@ public class Test {
 }
 ```
 
-![](assets/markdown-img-paste-20180830225910248.png)
+![](./assets/markdown-img-paste-20180830225910248.png)
 
 可以看到，通过流式构建者进行参数的选择，然后执行构建得到一个计算机

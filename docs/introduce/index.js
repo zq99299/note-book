@@ -2,7 +2,7 @@ module.exports = () => {
     return [
         {
             title: "项目介绍",
-            collapsable: true,
+            collapsable: false,
             children: [
                 '',
                 'vue-press.md'

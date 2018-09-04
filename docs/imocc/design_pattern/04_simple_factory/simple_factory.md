@@ -1,6 +1,6 @@
 # 简单工厂
 
-> 关联阅读 [李兴华-简单工厂](/chapter/design_pattern/简单工厂.md)
+> 关联阅读 [李兴华-简单工厂](/design_pattern/03_simple_factory/simple_factory.md)
 
 **定义**：由一个工厂对象决定创建出哪一种产品类的实例
 
@@ -60,7 +60,7 @@ public class Test {
 }
 ```
 
-![](assets/markdown-img-paste-20180826223802322.png)
+![](./assets/markdown-img-paste-20180826223802322.png)
 
 目前这个客户端（Test）需要依赖具体的实现类，那么能否让应用层不依赖具体的实现类呢？（很多时候基本上不会去用子类的特有方法）
 
@@ -93,7 +93,7 @@ public class Test {
 }
 ```
 
-![](assets/markdown-img-paste-20180826224429493.png)
+![](./assets/markdown-img-paste-20180826224429493.png)
 
 
 新增课程的时候，还是需要修改工厂类的判定。我们追求的是对扩展开放，对修改关闭，那么就可以使用工厂方法来演进一下，到时候再对比下简单工厂
@@ -128,7 +128,7 @@ public class Test {
     }
 }
 ```
-![](assets/markdown-img-paste-20180826225605689.png)
+![](./assets/markdown-img-paste-20180826225605689.png)
 
 这个改进在一定成都上满足了开闭原则，对于新增课程，工厂类不需要修改，但是 客户端又依赖了具体的实现类。
 
@@ -164,11 +164,11 @@ private static Calendar createCalendar(TimeZone zone,
 
 这里记录下，在idea中怎么看uml类图，之前是不会看
 
-![](assets/markdown-img-paste-20180828221511718.png)
+![](./assets/markdown-img-paste-20180828221511718.png)
 
 上图打开之后，默认只会显示 这一个类的父类，子类怎么显示呢?
 
-![](assets/markdown-img-paste-20180828221613610.png)
+![](./assets/markdown-img-paste-20180828221613610.png)
 
 ### 日志框架
 

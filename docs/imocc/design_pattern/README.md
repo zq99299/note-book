@@ -27,43 +27,43 @@
 
   本章节主要讲解UML基础、UML类图、UML类关系、UML时序图、UML类关系记忆技巧等，让大家急速入门UML，从而为后面设计模式的学习做好准备。
 
-  - [本章导航](02_uml/本章导航.md)
-  - [UML 类图讲解](02_uml/UML类图讲解.md)
+  - [本章导航](./02_uml/本章导航.md)
+  - [UML 类图讲解](./02_uml/UML类图讲解.md)
 
 * 第3章 软件设计七大原则
 
   本章节主要讲解软件设计七大原则，同时结合业务场景及演进手把手coding，让大家更好的理解软件设计原则。
-  - [本章导航](03_design_principles/本章导航.md)
-  - [开闭原则](03_design_principles/open_close.md)
-  - [依赖倒置原则](03_design_principles/dependency_inversion.md)
-  - [单一职责原则](03_design_principles/single_responsibility.md)
-  - [接口隔离原则](03_design_principles/interface_segregation.md)
-  - [迪米特原则](03_design_principles/demeter.md)
-  - [里氏替换原则](03_design_principles/liskov_substitution.md)
-  - [合成复用原则](03_design_principles/composition_aggeregation.md)
+  - [本章导航](./03_design_principles/本章导航.md)
+  - [开闭原则](./03_design_principles/open_close.md)
+  - [依赖倒置原则](./03_design_principles/dependency_inversion.md)
+  - [单一职责原则](./03_design_principles/single_responsibility.md)
+  - [接口隔离原则](./03_design_principles/interface_segregation.md)
+  - [迪米特原则](./03_design_principles/demeter.md)
+  - [里氏替换原则](./03_design_principles/liskov_substitution.md)
+  - [合成复用原则](./03_design_principles/composition_aggeregation.md)
 * 第4章 简单工厂讲解+Coding+源码解析
 
   本章节主要讲解简单工厂定义及理解，适用场景，优缺点及扩展。并引入业务场景，一边coding一边讲解，最后对简单工厂在框架(jdk+slf4j等)源码中的应用进行解析，让大家领略简单工厂的妙用技巧。
 
-  - [简单工厂](/chapter/imooc/design_pattern/04_simple_factory/simple_factory.md)
+  - [简单工厂](./04_simple_factory/simple_factory.md)
 
 * 第5章 工厂方法模式讲解+Coding+源码解析
 
   本章节主要讲解工厂方法模式定义及理解，适用场景，优缺点及扩展。并引入业务场景，一边coding一边讲解，最后对工厂方法模式在框架(jdk+slf4j等)源码中的应用进行解析，让大家领略工厂方法模式的妙用技巧。
 
-  - [工厂方法模式](/chapter/imooc/design_pattern/05_factory_method/factory_method.md)
+  - [工厂方法模式](./05_factory_method/factory_method.md)
 
 * 第6章 抽象工厂模式讲解+Coding+源码解析
 
   本章节主要讲解抽象工厂模式定义及理解，适用场景，优缺点及扩展。并引入业务场景，一边coding一边讲解，最后对抽象工厂模式在框架(jdk+mybatis等)源码中的应用进行解析，让大家领略抽象工厂模式的妙用技巧。
 
-  - [抽象工厂模式](/chapter/imooc/design_pattern/06_abstract_factory/abstract_factory.md)
+  - [抽象工厂模式](./06_abstract_factory/abstract_factory.md)
 
 * 第7章 建造者模式讲解+Coding+源码解析
 
   本章节主要讲解建造者模式定义及理解，适用场景，优缺点及扩展。并引入业务场景，手一边coding一边讲解，最后对建造者模式在框架(jdk+guava等)源码中的应用进行解析，让大家领略建造者模式的妙用技巧。
 
-  - [建造者模式](/chapter/imooc/design_pattern/07_builder/builder.md)
+  - [建造者模式](./07_builder/builder.md)
 
 * 第8章 单例模式讲解+Coding+源码解析
 
