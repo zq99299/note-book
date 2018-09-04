@@ -1,4 +1,4 @@
-# vue-press
+# vuepress 构建自己的项目笔记
 
 偶然发现一个 Markdown 文档生成的利器，也是 vue 官网推荐的一个工具 [vue-press](https://vuepress.vuejs.org/zh/guide/)
 
@@ -26,7 +26,7 @@
     }
     ```
    其实这里都不是罪重要的。最重要的是添加 依赖和设置入口
-  
+
 2. 添加依赖和设置入口
 
     ```json
@@ -185,3 +185,58 @@ docs/.vuepress/components 目录下编写 vue 模板。
 ```
 
 注意：使用了 vue 的话，会在左上角生成一个广告位
+
+## 部署到 gh-page
+
+> 官网文档： https://vuepress.vuejs.org/zh/guide/deploy.html#github-pages
+
+这里只说粘贴下我这个项目的 deploy.sh 内容
+```bash
+#!/usr/bin/env sh
+
+# 确保脚本抛出遇到的错误
+set -e
+
+# 生成静态文件
+npm run docs:build
+
+# 进入生成的文件夹
+cd docs/.vuepress/dist
+
+# 如果是发布到自定义域名
+# echo 'www.example.com' > CNAME
+
+git init
+git add -A
+git commit -m 'deploy'
+
+# 如果发布到 https://<USERNAME>.github.io
+# git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
+
+# 如果发布到 https://<USERNAME>.github.io/<REPO>
+git push -f git@github.com:zq99299/note-book.git master:gh-pages
+
+cd -
+```
+(windown 下)在 webstom 或则 gitBase 里面 可以直接运行 deploy.sh 文件。
+最好在 gitBase 里面运行，能显示错误信息。
+
+还有一点需要注意的是，使用脚本必须在 gitHub 中添加你本机的 `id_rsa.pub`（里面的字符串） 公钥。
+
+如下图所示：添加之后执行脚本才能推送到分支上去
+![](./assets/markdown-img-paste-20180904095711718.png)
+
+## 可以作为基础项目的分支
+这个分支可以直接克隆下来 ，稍微修改，就能使用起来了。快速建立新的笔记项目
+
+建议认真看一遍官网文档，vuepress 不仅可以单独用来生成 markdown 的文档站点，还能在已有的 vue 项目中使用，
+
+换句话说，一个后端系统的系统说明和帮助就可以使用 vuepress 来构建，这个主意是很不错的。
+
+* 构建站点好看
+* 默认主题配置方便
+* 使用 atom 来编写，图片插件来弥补 markdown 中插入图片不方便的缺陷
+
+所以这个简直就是完美
+
+> 分支地址如下：
