@@ -73,7 +73,7 @@ public class JavaCourse implements ICourse {
 
 ```
 
-```java
+```java{3}
 public class Test {
     public static void main(String[] args) {
         JavaCourse javaCourse = new JavaCourse(96, "设计模式", 389d);
