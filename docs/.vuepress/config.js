@@ -4,6 +4,7 @@ module.exports = {
     title: 'Mrcode 笔记本',
     description: '放弃 GitBook 而使用 vuepress 构建 Markdown 笔记',
     base: '/note-book/', // gh-page 中是增加了项目名
+    dest:'build/.vuepress/dist',  // 目录配置在外，可以让构建的时候不影响写作
     // theme: 'vue',
     themeConfig: {
         docsDir: 'docs',
