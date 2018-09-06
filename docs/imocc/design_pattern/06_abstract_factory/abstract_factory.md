@@ -1,6 +1,6 @@
 # 抽象工厂
 
-> 关联阅读 [李兴华-简单工厂](/design_pattern/08_abstract_factory/abstract_factory.md)
+> 关联阅读 [李兴华-抽象工厂](/design_pattern/08_abstract_factory/abstract_factory.md)
 
 **定义**：抽象工厂模式提供一个创建一系列相关或相互依赖对象的接口。
 
