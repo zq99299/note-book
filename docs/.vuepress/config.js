@@ -1,6 +1,7 @@
 const introduceGenSidebarConfig = require('../introduce');
 const imoccDesignPatternGenSidebarConfig = require('../imocc/design_pattern');
 const designPatternGenSidebarConfig = require('../design_pattern');
+const mycatGenSidebarConfig = require('../mycat');
 
 module.exports = {
     title: 'Mrcode 笔记本',
@@ -50,12 +51,14 @@ module.exports = {
             {text: 'Home', link: '/'},
             {text: '项目介绍', link: '/introduce/'},
             {text: '设计模式（慕课）', link: '/imocc/design_pattern/'},
-            {text: '研磨设计模式（李兴华）', link: '/design_pattern/'}
+            {text: '研磨设计模式（李兴华）', link: '/design_pattern/'},
+            {text: 'MyCat', link: '/mycat/'}
         ],
         sidebar: {
             '/introduce/': introduceGenSidebarConfig(),
             '/imocc/design_pattern/': imoccDesignPatternGenSidebarConfig(),
             '/design_pattern/': designPatternGenSidebarConfig(),
+            '/mycat/': mycatGenSidebarConfig()
         }
     }
 }
