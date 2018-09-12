@@ -8,6 +8,19 @@ module.exports = {
     description: '放弃 GitBook 而使用 vuepress 构建 Markdown 笔记',
     base: '/note-book/', // gh-page 中是增加了项目名
     dest: 'build/.vuepress/dist',  // 目录配置在外,纯粹是有代码洁癖和强迫症，并不能规避开发模式下同时构建不报错的问题
+    ga: 'UA-125573163-1', // 添加 ga 统计
+    // 添加百度统计
+    head: [
+        ['script', {}, `  
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?998091ef65f67ef0419bdc12d4ff48fe";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+    `]
+    ],
     markdown: {
         lineNumbers: true
     },
