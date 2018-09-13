@@ -5,7 +5,8 @@ module.exports = () => {
             collapsable: false,
             children: [
                 '',
-                'frontend_connection_interaction.md'
+                'frontend_connection_interaction.md',
+                'mysql_select.md'
             ]
         }
     ]

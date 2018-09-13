@@ -643,4 +643,297 @@ public void getRWBanlanceCon(String schema, boolean autocommit,
 }
 ```
 
-下次继续
+```java
+public void getConnection(String schema, boolean autocommit,
+		final ResponseHandler handler, final Object attachment)
+		throws IOException {
+
+	// 从当前连接map中拿取已建立好的后端连接
+	BackendConnection con = this.conMap.tryTakeCon(schema, autocommit);
+	if (con != null) {
+		//如果不为空，则绑定对应前端请求的handler
+		takeCon(con, handler, attachment, schema);
+		return;
+	} else {
+		int activeCons = this.getActiveCount();
+		if (activeCons + 1 > size) {
+			LOGGER.error("the max activeConnnections size can not be max than maxconnections");
+			throw new IOException("the max activeConnnections size can not be max than maxconnections");
+		} else { // create connection
+			LOGGER.info("no ilde connection in pool,create new connection for "	+ this.name + " of schema " + schema);
+			createNewConnection(handler, attachment, schema);
+		}
+	}
+}
+```
+
+```java
+private BackendConnection takeCon(BackendConnection conn,
+			final ResponseHandler handler, final Object attachment,
+			String schema) {
+
+		conn.setBorrowed(true);
+
+		if (!conn.getSchema().equals(schema)) {
+			conn.setSchema(schema);
+		}
+		ConQueue queue = conMap.getSchemaConQueue(schema);
+		// 给该 dataNode 队列增加执行次数
+		queue.incExecuteCount();
+		// 给连接绑定要执行的 io.mycat.route.RouteResultsetNode ，经过路由后的sql语句信息和需要在目标机器上执行的信息
+		conn.setAttachment(attachment);
+		conn.setLastTime(System.currentTimeMillis()); // 每次取连接的时候，更新下lasttime，防止在前端连接检查的时候，关闭连接，导致sql执行失败
+    // 这里又回到了 io.mycat.backend.mysql.nio.handler.MultiNodeQueryHandler 中
+		handler.connectionAcquired(conn);
+		return conn;
+	}
+```
+
+`io.mycat.backend.mysql.nio.handler.MultiNodeQueryHandler#connectionAcquired`
+
+```java
+@Override
+public void connectionAcquired(final BackendConnection conn) {
+	final RouteResultsetNode node = (RouteResultsetNode) conn
+			.getAttachment();
+	// 在session上绑定 路由信息，和获取到的连接信息
+	session.bindConnection(node, conn);
+	_execute(conn, node);
+}
+
+private void _execute(BackendConnection conn, RouteResultsetNode node) {
+	  // 如果 session 关闭则不继续执行
+		if (clearIfSessionClosed(session)) {
+			return;
+		}
+		// 在 连接上绑定一个响应处理器
+		conn.setResponseHandler(this);
+		try {
+			conn.execute(node, session.getSource(), autocommit);
+		} catch (IOException e) {
+			connectionError(e, conn);
+		}
+	}
+```
+
+## 终于到了 mysql 连接执行语句的地方
+
+```java
+io.mycat.backend.mysql.nio.MySQLConnection#execute
+
+
+public void execute(RouteResultsetNode rrn, ServerConnection sc,
+		boolean autocommit) throws UnsupportedEncodingException {
+	if (!modifiedSQLExecuted && rrn.isModifySQL()) {
+		modifiedSQLExecuted = true;
+	}
+	String xaTXID = null;
+	if(sc.getSession2().getXaTXID()!=null){
+		xaTXID = sc.getSession2().getXaTXID()+",'"+getSchema()+"'";
+	}
+	// 同步执行
+	synAndDoExecute(xaTXID, rrn, sc.getCharsetIndex(), sc.getTxIsolation(),
+			autocommit);
+}
+
+private void synAndDoExecute(String xaTxID, RouteResultsetNode rrn,
+			int clientCharSetIndex, int clientTxIsoLation,
+			boolean clientAutoCommit) {
+		String xaCmd = null;
+
+		boolean conAutoComit = this.autocommit;
+		String conSchema = this.schema;
+		boolean strictTxIsolation = MycatServer.getInstance().getConfig().getSystem().isStrictTxIsolation();
+		boolean expectAutocommit = false;
+		if (strictTxIsolation) {
+			expectAutocommit = isFromSlaveDB() || clientAutoCommit;
+		} else {
+			expectAutocommit = (!modifiedSQLExecuted || isFromSlaveDB() || clientAutoCommit);
+		}
+		if (expectAutocommit == false && xaTxID != null && xaStatus == TxState.TX_INITIALIZE_STATE) {
+			xaCmd = "XA START " + xaTxID + ';';
+			this.xaStatus = TxState.TX_STARTED_STATE;
+		}
+		int schemaSyn = conSchema.equals(oldSchema) ? 0 : 1;
+		int charsetSyn = 0;
+		// 判定当前连接中的 字符集是否与前段连接中的字符集一致
+		if (this.charsetIndex != clientCharSetIndex) {
+			setCharset(CharsetUtil.getCharset(clientCharSetIndex));
+			charsetSyn = 1;
+		}
+		int txIsoLationSyn = (txIsolation == clientTxIsoLation) ? 0 : 1;
+		int autoCommitSyn = (conAutoComit == expectAutocommit) ? 0 : 1;
+		int synCount = schemaSyn + charsetSyn + txIsoLationSyn + autoCommitSyn + (xaCmd!=null?1:0);
+		if (synCount == 0 && this.xaStatus != TxState.TX_STARTED_STATE) {
+			//不需要同步连接，难道这个是因为不需要事务吗？需要事务的才需要同步执行？
+			sendQueryCmd(rrn.getStatement());
+			return;
+		}
+		 。。。。。
+
+	}
+
+	protected void sendQueryCmd(String query) {
+		// 创建了一个命令包
+		CommandPacket packet = new CommandPacket();
+		packet.packetId = 0;
+		packet.command = MySQLPacket.COM_QUERY;
+		try {
+			packet.arg = query.getBytes(charset);
+		} catch (UnsupportedEncodingException e) {
+			throw new RuntimeException(e);
+		}
+		lastTime = TimeUtil.currentTimeMillis();
+		packet.write(this);
+	}
+```
+
+## 命令包转成 buffer
+
+```java
+io.mycat.net.mysql.CommandPacket#write(io.mycat.net.BackendAIOConnection)
+public void write(BackendAIOConnection c) {
+        ByteBuffer buffer = c.allocate();
+        try {    
+					// 把命令包转换成 mysql 协议 buffer
+	        BufferUtil.writeUB3(buffer, calcPacketSize());
+	        buffer.put(packetId);
+	        buffer.put(command);
+	        buffer = c.writeToBuffer(arg, buffer);
+					// 连接对象开始写buffer对象
+	        c.write(buffer);	        
+        } catch(java.nio.BufferOverflowException e1) {
+        	//fixed issues #98 #1072
+        	buffer =  c.checkWriteBuffer(buffer, c.getPacketHeaderSize() + calcPacketSize(), false);
+	        BufferUtil.writeUB3(buffer, calcPacketSize());
+	        buffer.put(packetId);
+	        buffer.put(command);
+	        buffer = c.writeToBuffer(arg, buffer);
+	        c.write(buffer);
+        }
+    }
+```
+
+
+```java
+io.mycat.net.AbstractConnection#write(java.nio.ByteBuffer)
+@Override
+ public final void write(ByteBuffer buffer) {
+
+
+	 if (isSupportCompress()) {
+		 // 如果需要压缩支持，则压缩包
+		 ByteBuffer newBuffer = CompressUtil.compressMysqlPacket(buffer, this, compressUnfinishedDataQueue);
+		 writeQueue.offer(newBuffer);
+	 } else {
+		 // 放入队列中
+		 writeQueue.offer(buffer);
+	 }
+
+	 // 一个 MySQLConnection 中也绑定了一个 io.mycat.net.NIOSocketWR
+	 try {
+		 this.socketWR.doNextWriteCheck();
+	 } catch (Exception e) {
+		 LOGGER.warn("write err:", e);
+		 this.close("write err:" + e);
+	 }
+ }
+```
+
+## NIO 写查询命令包
+io.mycat.net.NIOSocketWR#doNextWriteCheck
+
+```java
+public void doNextWriteCheck() {
+
+		if (!writing.compareAndSet(false, true)) {
+			return;
+		}
+
+		try {
+			// 使用 channel 写数据
+			boolean noMoreData = write0();
+			writing.set(false);
+			if (noMoreData && con.writeQueue.isEmpty()) {
+				if ((processKey.isValid() && (processKey.interestOps() & SelectionKey.OP_WRITE) != 0)) {
+					// 当没有可写数据的时候，则关闭 SelectionKey 的写事件
+					disableWrite();
+				}
+
+			} else {
+
+				if ((processKey.isValid() && (processKey.interestOps() & SelectionKey.OP_WRITE) == 0)) {
+					enableWrite(false);
+				}
+			}
+
+		} catch (IOException e) {
+			if (AbstractConnection.LOGGER.isDebugEnabled()) {
+				AbstractConnection.LOGGER.debug("caught err:", e);
+			}
+			con.close("err:" + e);
+		}
+
+	}
+
+// 这里终于看到了 nio 的底层代码
+private void disableWrite() {
+	try {
+		SelectionKey key = this.processKey;
+		key.interestOps(key.interestOps() & OP_NOT_WRITE);
+	} catch (Exception e) {
+		AbstractConnection.LOGGER.warn("can't disable write " + e + " con "
+				+ con);
+	}
+
+}
+```
+
+## 终于到了底层 NIO 代码的写出
+
+前面经历了很多代码，终于看到了底层使用了 nio 的写法写出，
+这里可以看到，NIO 相关的代码其实比较少，Reactor 模型进化成性能更改的模式。其他的代码都是业务功能代码
+
+先进行总结，一条数据，达到底层 nio 经历了哪些流程？
+
+## 小结
+
+1. mysql 协议解包
+2. 只支持单条语句执行，去掉 ";"
+3. 防火墙策略检查
+4. DML 权限检测
+5. 用户权限检测
+6. 找到要执行的命令处理器 SelectHandler
+7. 路由计算，找到具体要在哪些节点上执行该sql
+	1. 单节点构造 singleNodeHandler 执行
+	2. 多节点构造 multiNodeHandler  执行
+8. 开始循环获取连接（这里很奇葩，在获取连接方法里面执行了后续流程）
+9. 在连接获取中回调回到了 MultiNodeQueryHandler 中
+10. session 绑定路由和连接信息，并把 MultiNodeQueryHandler 处理器设置为数据响应处理器
+11. 到达mysql连接对象中真正底层开始执行的地方。
+12. 构造命令包 CommandPacket
+13. 把命令包转成 channel 需要的 buffer 对象
+14. nio channel 写出该数据。发送到后端真实的 mysql 服务器中
+
+把上面的业务流程压缩之后：
+
+1. 接收用户发送的 mysql 包
+2. 路由解析到真实后端 mysql 服务器
+3. 发送数据
+
+![](./assets/markdown-img-paste-20180913231446385.png)
+
+* FrontendCommandHandler：解析一条 sql 语句是什么命令类型
+* MySQLMessage： 把语句解析成 mysql 包
+* ServerQueryHandler：再次解析语句类型，并委托具体的命令对象处理
+* SelectHandler：查询处理器
+* RouteService： 路由服务，开始解析 sql 语句
+* RouteResultset：解析成功的路由结果
+* RouteResultsetNode：每条语句对应的真实要执行的节点信息
+* MultiNodeQueryHandler：多节点查询处理器
+* PhysicalDBNode：后端数据库节点管理，包含了该节点的所有连接池
+* BackendConnection：后端连接抽象
+* MySQLConnection：mysql 连接实现
+* NIOSocketWR：nio socket 写处理，每个连接都包含一个处理器
+
+下一章节继续，当数据回来的时候，怎么返回到前段 socket 的
