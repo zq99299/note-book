@@ -924,7 +924,7 @@ private void disableWrite() {
 ![](./assets/markdown-img-paste-20180913231446385.png)
 
 * FrontendCommandHandler：解析一条 sql 语句是什么命令类型
-* MySQLMessage： 把语句解析成 mysql 包
+* MySQLMessage： 把 mysql 协议数据，解析成对象，拿到原始发送的字符串查询语句
 * ServerQueryHandler：再次解析语句类型，并委托具体的命令对象处理
 * SelectHandler：查询处理器
 * RouteService： 路由服务，开始解析 sql 语句
