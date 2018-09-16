@@ -38,7 +38,7 @@ module.exports = {
         sidebar: 'auto',
         lastUpdated: '上次更新: ', // string | boolean
         serviceWorker: {
-            updatePopup: true // Boolean | Object, 默认值是 undefined.
+            //updatePopup: true // Boolean | Object, 默认值是 undefined.
             // 如果设置为 true, 默认的文本配置将是:
             updatePopup: {
                message: "有新内容更新啦~",
