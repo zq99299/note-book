@@ -2,6 +2,7 @@ const introduceGenSidebarConfig = require('../introduce');
 const imoccDesignPatternGenSidebarConfig = require('../imocc/design_pattern');
 const designPatternGenSidebarConfig = require('../design_pattern');
 const mycatGenSidebarConfig = require('../mycat');
+const vueGenSidebarConfig = require('../vue');
 
 module.exports = {
     title: 'Mrcode 笔记本',
@@ -11,12 +12,12 @@ module.exports = {
     ga: 'UA-125573163-1', // 添加 ga 统计
     // 添加百度统计
     head: [
-        ['script', {}, `  
+        ['script', {}, `
         var _hmt = _hmt || [];
         (function() {
           var hm = document.createElement("script");
           hm.src = "https://hm.baidu.com/hm.js?998091ef65f67ef0419bdc12d4ff48fe";
-          var s = document.getElementsByTagName("script")[0]; 
+          var s = document.getElementsByTagName("script")[0];
           s.parentNode.insertBefore(hm, s);
         })();
     `]
@@ -39,10 +40,10 @@ module.exports = {
         serviceWorker: {
             updatePopup: true // Boolean | Object, 默认值是 undefined.
             // 如果设置为 true, 默认的文本配置将是:
-            // updatePopup: {
-            //    message: "New content is available.",
-            //    buttonText: "Refresh"
-            // }
+            updatePopup: {
+               message: "有新内容更新啦~",
+               buttonText: "立即获取新内容"
+            }
         },
         // 假定是 GitHub. 同时也可以是一个完整的 GitLab URL
         repo: 'https://github.com/zq99299/note-book',
@@ -65,13 +66,15 @@ module.exports = {
             {text: '项目介绍', link: '/introduce/'},
             {text: '设计模式（慕课）', link: '/imocc/design_pattern/'},
             {text: '研磨设计模式（李兴华）', link: '/design_pattern/'},
-            {text: 'MyCat', link: '/mycat/'}
+            {text: 'MyCat', link: '/mycat/'},
+            {text: 'Vue', link: '/vue/'},
         ],
         sidebar: {
             '/introduce/': introduceGenSidebarConfig(),
             '/imocc/design_pattern/': imoccDesignPatternGenSidebarConfig(),
             '/design_pattern/': designPatternGenSidebarConfig(),
-            '/mycat/': mycatGenSidebarConfig()
+            '/mycat/': mycatGenSidebarConfig(),
+            '/vue/': vueGenSidebarConfig()
         }
     }
 }
