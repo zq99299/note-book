@@ -1,4 +1,4 @@
-# mysql select 流程
+# mysql select 流程 - 请求
 
 前面探索了《前端连接交互探索》，这次应该可以探索下 mysql 中 select 命令流程了。
 

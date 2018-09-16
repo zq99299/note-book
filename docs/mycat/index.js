@@ -6,7 +6,8 @@ module.exports = () => {
             children: [
                 '',
                 'frontend_connection_interaction.md',
-                'mysql_select.md'
+                'mysql_select_request.md',
+                'mysql_select_response.md'
             ]
         }
     ]
