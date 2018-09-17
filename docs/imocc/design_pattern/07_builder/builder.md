@@ -253,3 +253,82 @@ public class Test {
 ![](./assets/markdown-img-paste-20180830225910248.png)
 
 可以看到，通过流式构建者进行参数的选择，然后执行构建得到一个计算机
+
+## 相关框架中的建造者模式
+
+`java.lang.StringBuilder` 是 JDK 中标准的建造者模式
+
+### guava
+
+`com.google.common.collect.ImmutableSet` 不可变集合
+```java
+com.google.common.collect.ImmutableSet#builder
+
+ImmutableSet<String> build = ImmutableSet.<String>builder().add("a").add("b").build();
+// [a, b]
+System.out.println(build);
+```
+
+`com.google.common.cache.Cache` 缓存
+```java
+
+Cache<Object, Object> cache = CacheBuilder.newBuilder()
+        .initialCapacity(1000) // 初始容量
+        .maximumSize(10000) // 最大容量，最近最少使用算法
+        .expireAfterAccess(12, TimeUnit.HOURS) // 过期时间
+        .concurrencyLevel(5) // 最大并发数，同一时间最多运行5个线程执行写入操作
+        .build();
+```
+
+### spring
+
+`org.springframework.beans.factory.support.BeanDefinitionBuilder` 该类中的静态方法或则实例方法基本上都是符合 建造者模式的
+
+### mybatis
+
+`org.apache.ibatis.session.SqlSessionFactoryBuilder` 该类的方法都是 build。
+`org.apache.ibatis.builder.xml.XMLConfigBuilder` 解析 mybatis 配置文件的类
+上面两个类是，建造者模式中使用建造者
+
+```java
+org.apache.ibatis.session.SqlSessionFactoryBuilder
+public SqlSessionFactory build(Reader reader, String environment, Properties properties) {
+   try {
+     XMLConfigBuilder parser = new XMLConfigBuilder(reader, environment, properties);
+     return build(parser.parse());
+  }
+
+
+org.apache.ibatis.builder.xml.XMLConfigBuilder
+public Configuration parse() {
+  if (parsed) {
+    throw new BuilderException("Each XMLConfigBuilder can only be used once.");
+  }
+  parsed = true;
+  parseConfiguration(parser.evalNode("/configuration"));
+  return configuration;
+}
+
+// 可以看到，这里按照一定的顺序进行解析，也就是建造构建
+private void parseConfiguration(XNode root) {
+   try {
+     //issue #117 read properties first
+     propertiesElement(root.evalNode("properties"));
+     typeAliasesElement(root.evalNode("typeAliases"));
+     pluginElement(root.evalNode("plugins"));
+     objectFactoryElement(root.evalNode("objectFactory"));
+     objectWrapperFactoryElement(root.evalNode("objectWrapperFactory"));
+     reflectionFactoryElement(root.evalNode("reflectionFactory"));
+     settingsElement(root.evalNode("settings"));
+     // read it after objectFactory and objectWrapperFactory issue #631
+     environmentsElement(root.evalNode("environments"));
+     databaseIdProviderElement(root.evalNode("databaseIdProvider"));
+     typeHandlerElement(root.evalNode("typeHandlers"));
+     mapperElement(root.evalNode("mappers"));
+   } catch (Exception e) {
+     throw new BuilderException("Error parsing SQL Mapper Configuration. Cause: " + e, e);
+   }
+ }
+```
+
+建造者模式比较常用
