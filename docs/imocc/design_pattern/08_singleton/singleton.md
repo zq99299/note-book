@@ -93,7 +93,7 @@ public class TestDemo {
 ![](./assets/markdown-img-paste-20180927222157927.png)
 
 
-## 懒汉式单例模式 - synchronized
+## 懒汉式 - synchronized
 
 保证线程安全最简单的就是加 synchronized 关键字；
 
@@ -165,7 +165,7 @@ public class LazyDoubleCheckSingleton {
 
 volatile ：会让其他 cpu 中缓存的数据失效，读取主存中的数据。即可保证内存对其他线程课件
 
-## 懒汉式单例模式 - 内部类
+## 懒汉式 - 内部类
 
 ```java
 public class StaticInnerClassSingleton {
@@ -234,3 +234,148 @@ StaticInnerClassSingleton.print();
 在类初始化的时候 jvm 会获取一个初始化锁，保证多个线程对同一个对象的初始化安全问题
 
 这里有一个遗留问题：上面的代码中。没有对单例类私有构造。一定要加深认识
+
+
+## 饿汉式
+
+```java
+public class HungrySingleton {
+    private final static HungrySingleton hungrySingleton = new HungrySingleton();
+
+    private HungrySingleton() {
+    }
+
+    public static HungrySingleton getInstance() {
+        return hungrySingleton;
+    }
+}
+```
+
+在类加载的时候完成赋值；
+
+在之前差不多把单例模式修补得比较完善了，现在来破坏单例模式。
+
+## 破坏单例模式
+
+使用序列化，再反序列化，那么这个对象还是之前的那个对象吗？
+
+```java
+@Test
+public void test() throws IOException, ClassNotFoundException {
+    HungrySingleton instance = HungrySingleton.getInstance();
+
+
+    // 序列化到文件
+    ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("HungrySingleton"));
+    oos.writeObject(instance);
+
+    // 从文件读取出来
+
+    ObjectInputStream ois = new ObjectInputStream(new FileInputStream("HungrySingleton"));
+    HungrySingleton instanceFromFile = (HungrySingleton) ois.readObject();
+
+    System.out.println(instance);
+    System.out.println(instanceFromFile);
+    System.out.println(instance == instanceFromFile);
+}
+```
+
+输出
+
+```java
+cn.mrcode.newstudy.design.pattern.creational.singleton.HungrySingleton@7494e528
+cn.mrcode.newstudy.design.pattern.creational.singleton.HungrySingleton@7d0587f1
+false
+```
+
+那么怎么破解这个问题呢？很简单在单例类中增加一个方法
+
+```java
+private Object readResolve() {
+    return hungrySingleton;
+}
+```
+
+原理是什么呢？这个要看源码
+
+```java
+java.io.ObjectInputStream#readObject
+java.io.ObjectInputStream#readObject0
+
+case TC_OBJECT:
+    return checkResolve(readOrdinaryObject(unshared));
+
+找到这一行。继续跟踪
+
+private Object readOrdinaryObject(boolean unshared)
+      throws IOException
+  {
+      if (bin.readByte() != TC_OBJECT) {
+          throw new InternalError();
+      }
+
+      ObjectStreamClass desc = readClassDesc(false);
+      desc.checkDeserialize();
+
+      Class<?> cl = desc.forClass();
+      if (cl == String.class || cl == Class.class
+              || cl == ObjectStreamClass.class) {
+          throw new InvalidClassException("invalid class descriptor");
+      }
+
+      Object obj;
+      try {
+          // 首先先通过反射创建实例
+          // 当实现了 serializable/externalizable 接口的时候，则返回 true
+          obj = desc.isInstantiable() ? desc.newInstance() : null;
+      } catch (Exception ex) {
+          throw (IOException) new InvalidClassException(
+              desc.forClass().getName(),
+              "unable to create instance").initCause(ex);
+      }
+
+      passHandle = handles.assign(unshared ? unsharedMarker : obj);
+      ClassNotFoundException resolveEx = desc.getResolveException();
+      if (resolveEx != null) {
+          handles.markException(passHandle, resolveEx);
+      }
+
+      if (desc.isExternalizable()) {
+          readExternalData((Externalizable) obj, desc);
+      } else {
+          readSerialData(obj, desc);
+      }
+
+      handles.finish(passHandle);
+
+      // 这里再判定 是否有读解析方法
+      if (obj != null &&
+          handles.lookupException(passHandle) == null &&
+          desc.hasReadResolveMethod())
+      {
+          Object rep = desc.invokeReadResolve(obj);
+          if (unshared && rep.getClass().isArray()) {
+              rep = cloneArray(rep);
+          }
+          if (rep != obj) {
+              handles.setObject(passHandle, obj = rep);
+          }
+      }
+
+      return obj;
+  }
+
+  // 这里判定这个方法是否存在
+  // 也就是说，如果你中的类中定义了 readResolve 方法，那么将会调用该方法
+  // 也就是不允许外部实例化
+  // 这里一定要看注释，英文的也要认证翻译看。不然光看这个代码，是看不出来什么的
+  boolean hasReadResolveMethod() {
+      return (readResolveMethod != null);
+  }
+  /** class-defined readResolve method, or null if none */
+  private Method readResolveMethod;
+
+  // 可以搜索下这个变量在哪里赋值的,这里就可以看到了，定义了这么一个字符串，去查找这个方法
+  readResolveMethod = getInheritableMethod(
+                        cl, "readResolve", null, Object.class);
+```
