@@ -38,7 +38,8 @@ module.exports = () => {
                 '04_simple_factory/simple_factory.md',
                 '05_factory_method/factory_method.md',
                 '06_abstract_factory/abstract_factory.md',
-                '07_builder/builder.md'
+                '07_builder/builder.md',
+                '08_singleton/singleton.md'
             ]
         }
     ]
