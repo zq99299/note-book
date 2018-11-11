@@ -24,7 +24,7 @@ module.exports = {
     `]
     ],
     markdown: {
-        lineNumbers: true
+        lineNumbers: false
     },
     locales: {
         // 键名是该语言所属的子路径

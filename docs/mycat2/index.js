@@ -2,12 +2,16 @@ module.exports = () => {
     return [
         {
             title: "MyCat2 学习",
-            collapsable: false,
+            collapsable: true,
             children: [
-                '',
-                'frontend_connection_interaction.md',
-                'mysql_select_request.md',
-                'mysql_select_response.md'
+                ''
+            ]
+        },{
+            title: "源码学习",
+            collapsable: true,
+            children: [
+                'source-code/',
+                'source-code/proxy-reactor.md'
             ]
         }
     ]
