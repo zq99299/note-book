@@ -11,7 +11,8 @@ module.exports = () => {
             collapsable: true,
             children: [
                 'source-code/',
-                'source-code/proxy-reactor.md'
+                'source-code/proxy-reactor.md',
+                'source-code/direct-passthrough.md'
             ]
         }
     ]
