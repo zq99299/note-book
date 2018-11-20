@@ -449,3 +449,58 @@ private String getbackendName() {
 ### 已找到连接
 
 ### 未找到连接
+没有在当前的 session 中找到连接，说明很有可能是第一次执行。在当前的 reactor 中尝试获取连接
+```java
+reactorThread.tryGetMySQLAndExecute(this, runOnSlave, targetMetaBean,callback);
+```
+
+```java
+public void tryGetMySQLAndExecute(MycatSession currMycatSession, boolean runOnSlave, MySQLMetaBean targetMetaBean,
+			AsynTaskCallBack<MySQLSession> callback) throws IOException {
+		// 从ds中获取已经建立的连接
+
+		ArrayList<MySQLSession> mySQLSessionList = mySQLSessionMap.get(targetMetaBean);
+		if (mySQLSessionList != null && !mySQLSessionList.isEmpty()) {
+			for (MySQLSession mysqlSession : mySQLSessionList) {
+				if (mysqlSession.isIdle()) {
+					logger.debug("Using the existing session in the datasource  for {}. {}:{}",
+							(runOnSlave ? "read" : "write"), mysqlSession.getMySQLMetaBean().getDsMetaBean().getIp(),
+							mysqlSession.getMySQLMetaBean().getDsMetaBean().getPort());
+					mysqlSession.getMycatSession().unbindBackend(mysqlSession);
+					currMycatSession.bindBackend(mysqlSession);
+					syncAndExecute(mysqlSession, callback);
+					return;
+				}
+			}
+		}
+
+		// 新建连接
+		if (logger.isDebugEnabled()) {
+			logger.debug("create new connection for " + (runOnSlave ? "read" : "write"));
+		}
+
+		createSession(targetMetaBean, currMycatSession.mycatSchema, (optSession, Sender, exeSucces, retVal) -> {
+			// 恢复默认的Handler
+			currMycatSession.setCurNIOHandler(MainMycatNIOHandler.INSTANCE);
+			if (exeSucces) {
+				// 设置当前连接 读写分离属性
+				optSession.setDefaultChannelRead(targetMetaBean.isSlaveNode());
+				optSession.setCurNIOHandler(MainMySQLNIOHandler.INSTANCE);
+				currMycatSession.bindBackend(optSession);
+				syncAndExecute(optSession, callback);
+				// addMySQLSession(targetMetaBean, optSession);
+			} else {
+				if (retVal instanceof ErrorPacket) {
+					currMycatSession.responseOKOrError((ErrorPacket) retVal);
+				} else {
+					System.err.println(" retVal is not ErrorPacket, please check it !!!");
+					ErrorPacket error = new ErrorPacket();
+					error.errno = ErrorCode.ER_UNKNOWN_ERROR;
+					error.packetId = 1;
+					error.message = retVal.toString();
+					currMycatSession.responseOKOrError(error);
+				}
+			}
+		});
+	}
+```
