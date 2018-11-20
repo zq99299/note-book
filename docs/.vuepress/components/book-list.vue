@@ -30,6 +30,12 @@
                 <p>《vue 学习笔记》</p>
             </a>
         </div>
+        <div class="book-item">
+            <a href="gradle/">
+                <img class="book-img" src="hero.png">
+                <p>《Gradle 笔记》</p>
+            </a>
+        </div>
     </div>
 </template>
 

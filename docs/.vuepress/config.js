@@ -4,6 +4,7 @@ const designPatternGenSidebarConfig = require('../design_pattern');
 const mycatGenSidebarConfig = require('../mycat');
 const vueGenSidebarConfig = require('../vue');
 const mycat2GenSidebarConfig = require('../mycat2');
+const gradleGenSidebarConfig = require('../gradle');
 
 module.exports = {
     title: 'Mrcode 笔记本',
@@ -76,7 +77,8 @@ module.exports = {
             '/design_pattern/': designPatternGenSidebarConfig(),
             '/mycat/': mycatGenSidebarConfig(),
             '/vue/': vueGenSidebarConfig(),
-            '/mycat2/': mycat2GenSidebarConfig()
+            '/mycat2/': mycat2GenSidebarConfig(),
+            '/gradle/': gradleGenSidebarConfig()
         }
     }
 }
