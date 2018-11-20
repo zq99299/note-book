@@ -2,7 +2,7 @@ module.exports = () => {
     return [
         {
             title: "Gradle",
-            collapsable: true,
+            collapsable: false,
             children: [
                 '',
                 'push-to-maven.md'
