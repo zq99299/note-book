@@ -422,7 +422,13 @@ signing.secretKeyRingFile= C:/Users/xxx.gpg // 你的 gpg 文件路径
 ![](./assets/markdown-img-paste-20181127104531200.png)
 ![](./assets/markdown-img-paste-20181127104600253.png)
 
-再去之前 issues 项目页面  https://issues.sonatype.org/browse/OSSRH-43803 回复下
+再去之前 issues 项目页面  https://issues.sonatype.org/browse/OSSRH-43803 回复下;
+
+还要 release 一下，才会被同步到 中央仓库中；
+
+![](./assets/markdown-img-paste-20181127225421969.png)
+
+哈哈哈，为了发布一个包，前前后后折腾了好几天。
 
 ## 优化 gradle 配置
 现在的配置遇到一个问题。有敏感信息，如何才能让敏感信息不上传到 git 上呢？又能不影响项目的构建？
