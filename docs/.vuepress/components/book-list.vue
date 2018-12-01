@@ -36,6 +36,18 @@
                 <p>《Gradle 笔记》</p>
             </a>
         </div>
+        <div class="book-item">
+            <a href="git/">
+                <img class="book-img" src="hero.png">
+                <p>《Git 笔记》</p>
+            </a>
+        </div>
+        <div class="book-item">
+            <a href="java/">
+                <img class="book-img" src="hero.png">
+                <p>《JAVA 笔记》</p>
+            </a>
+        </div>
     </div>
 </template>
 
