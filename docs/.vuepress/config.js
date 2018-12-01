@@ -6,6 +6,8 @@ const vueGenSidebarConfig = require('../vue');
 const mycat2GenSidebarConfig = require('../mycat2');
 const gradleGenSidebarConfig = require('../gradle');
 const gitGenSidebarConfig = require('../git');
+const javaGenSidebarConfig = require('../java');
+
 module.exports = {
     title: 'Mrcode 笔记本',
     description: '放弃 GitBook 而使用 vuepress 构建 Markdown 笔记',
@@ -79,7 +81,8 @@ module.exports = {
             '/vue/': vueGenSidebarConfig(),
             '/mycat2/': mycat2GenSidebarConfig(),
             '/gradle/': gradleGenSidebarConfig(),
-            '/git/': gitGenSidebarConfig()
+            '/git/': gitGenSidebarConfig(),
+            '/java/': javaGenSidebarConfig(),
         }
     }
 }

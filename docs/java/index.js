@@ -1,7 +1,7 @@
 module.exports = () => {
     return [
         {
-            title: "Vue",
+            title: "JAVA",
             collapsable: false,
             children: [
                 ''
