@@ -7,7 +7,11 @@
 - [列定义（响应包）](https://dev.mysql.com/doc/internals/en/com-query-response.html#packet-Protocol::ColumnDefinition)
 - [结果集](https://dev.mysql.com/doc/internals/en/com-query-response.html#packet-ProtocolText::Resultset)
 
-> tips: 数值类型中的强制表现的写法是 [1,2] 后面的都强制表现为前面的。
+::: tip
+数值类型中的强制表现的写法是 [1,2] 后面的都强制表现为前面的。
+如：[INT,INTEGER] 虽然在一些工具中可以指定这 2 个类型，但是提交之后都会强制转成 INT 类型
+:::
+
 ## 数字类型
 - 整数类型（精确值） - [INT,INTEGER]，SMALLINT，TINYINT，MEDIUMINT，BIGINT
 - 定点类型（精确值） - [DECIMAL，NUMERIC]
