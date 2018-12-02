@@ -14,6 +14,13 @@ module.exports = () => {
                 'source-code/proxy-reactor.md',
                 'source-code/direct-passthrough.md'
             ]
+        },{
+            title: "笔记",
+            collapsable: true,
+            children: [
+                'note/',
+                'note/custom-result-set.md'
+            ]
         }
     ]
 }
