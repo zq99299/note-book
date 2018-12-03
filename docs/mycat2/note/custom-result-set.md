@@ -45,7 +45,7 @@ UNSIGNED 所有数据类型都可以选用（非标准）的属性，无符号�
 ## 字符串类型
 - CHAR、VARCHAR
 - BINARY、VARBINARY
-- BLOB
+- BLOB、TEXT
 - ENUM
 - SET
 
@@ -73,6 +73,33 @@ BIT       | 1      |
 DECIMAL   | 10,0   |
 CHAR      | 255    |
 VARCHAR   | 255    |
+BINARY    | 255    |
+VARBINARY | 255    |
 YEAR      | 4      | 4
 
 ## 数据类型 与 协议类型的映射关系
+
+| 数据类型  | 协议类型                      | 字符集(默认)               | Decimals(默认) | flags（server status）                    |
+|-----------|-------------------------------|----------------------------|----------------|-------------------------------------------|
+| INT       | FIELD_TYPE_LONG (3)           | binary COLLATE binary (63) |                |                                           |
+| SMALLINT  | FIELD_TYPE_SHORT (2)          | binary COLLATE binary (63) |                |                                           |
+| TINYINT   | FIELD_TYPE_TINY (1)           | binary COLLATE binary (63) |                |                                           |
+| MEDIUMINT | FIELD_TYPE_INT24 (9)          | binary COLLATE binary (63) |                |                                           |
+| BIGINT    | FIELD_TYPE_LONGLONG (8)       | binary COLLATE binary (63) |                |                                           |
+| DECIMAL   | FIELD_TYPE_NEWDECIMAL (246)   | binary COLLATE binary (63) |                |                                           |
+| FLOAT     | FIELD_TYPE_FLOAT (4)          | binary COLLATE binary (63) | 31             |                                           |
+| DOUBLE    | FIELD_TYPE_DOUBLE (5)         | binary COLLATE binary (63) | 31             |                                           |
+| BIT       | FIELD_TYPE_BIT (16)           | binary COLLATE binary (63) |                | 0x0020       （Unsigned: Set）            |
+| DATE      | FIELD_TYPE_DATE (10)          | binary COLLATE binary (63) |                | 0x0080       （Binary: Set）              |
+| DATETIME  | FIELD_TYPE_DATETIME (12)      | binary COLLATE binary (63) |                | 0x0080       （Binary: Set）              |
+| TIMESTAMP | FIELD_TYPE_TIMESTAMP (7)      | binary COLLATE binary (63) |                | 0x0080       （Binary: Set）              |
+| TIME      | FIELD_TYPE_TIME (11)          | binary COLLATE binary (63) |                | 0x0080       （Binary: Set）              |
+| YEAR      | FIELD_TYPE_YEAR (13)          | binary COLLATE binary (63) |                | 0x0060 （Zero fill: Set / Unsigned: Set） |
+| CHAR      | Type: FIELD_TYPE_STRING (254) |                            |                |                                           |
+| VARCHAR   | FIELD_TYPE_VAR_STRING (253)   |                            |                |                                           |
+| BINARY    | FIELD_TYPE_STRING (254)       | binary COLLATE binary (63) |                | 0x0080       （Binary: Set）              |
+| VARBINARY | FIELD_TYPE_VAR_STRING (253)   | binary COLLATE binary (63) |                | 0x0080       （Binary: Set）              |
+| BLOB      | FIELD_TYPE_BLOB (252)         | binary COLLATE binary (63) |                | 0x0090       （Binary: Set / Blob: Set）  |
+| TEXT      | FIELD_TYPE_BLOB (252)         |                            |                | 0x0010       （Blob: Set）                |
+| ENUM      | FIELD_TYPE_STRING (254)       |                            |                | 0x0100       （Enum: Set）                |
+| SET       | FIELD_TYPE_STRING (254)       |                            |                | 0x0800       （Set: Set）                 |
