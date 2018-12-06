@@ -71,7 +71,7 @@ INT       | 11     |
 BIGINT    | 20     |
 BIT       | 1      |
 DECIMAL   | 10,0   |
-CHAR      | 255    |
+CHAR_string      | 255    |
 VARCHAR   | 255    |
 BINARY    | 255    |
 VARBINARY | 255    |
