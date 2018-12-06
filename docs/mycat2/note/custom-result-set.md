@@ -76,6 +76,8 @@ VARCHAR   | 255    |
 BINARY    | 255    |
 VARBINARY | 255    |
 YEAR      | 4      | 4
+BLOB      | 65535  |
+TEXT      | 196605 |
 
 ## 数据类型 与 协议类型的映射关系
 
