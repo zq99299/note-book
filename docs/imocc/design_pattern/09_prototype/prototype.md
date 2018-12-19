@@ -170,3 +170,175 @@ public class A extends AbstractClone {
 这也导致了不能使用 接口的 default 语法来定义（因为在接口中的所有方法都是 public 的）
 
 ## 深克隆和浅克隆
+
+```java
+public class Pig implements Cloneable {
+    private String name;
+    private Date birthday;
+
+    public Pig(String name, Date birthday) {
+        this.name = name;
+        this.birthday = birthday;
+    }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
+
+    @Override
+    public String toString() {
+        return "Pig{" +
+                "name='" + name + '\'' +
+                ", birthday=" + birthday +
+                '}' + super.toString();
+    }
+    ...
+}
+```
+测试
+
+```java
+@Test
+public void fun1() throws CloneNotSupportedException, InterruptedException {
+    Pig p1 = new Pig("小猪1", new Date());
+    Pig p2 = (Pig) p1.clone();
+    System.out.println(p1);
+    System.out.println(p2);
+    // 修改其中一个时间
+    p2.getBirthday().setTime(6666666L);
+    System.out.println(p1);
+    System.out.println(p2);
+}
+
+============= 打印结果
+
+Pig{name='小猪1', birthday=Wed Dec 19 21:53:04 CST 2018}cn.mrcode.newstudy.design.pattern.creational.prototype.Pig@7b49cea0
+Pig{name='小猪1', birthday=Wed Dec 19 21:53:04 CST 2018}cn.mrcode.newstudy.design.pattern.creational.prototype.Pig@887af79
+Pig{name='小猪1', birthday=Thu Jan 01 09:51:06 CST 1970}cn.mrcode.newstudy.design.pattern.creational.prototype.Pig@7b49cea0
+Pig{name='小猪1', birthday=Thu Jan 01 09:51:06 CST 1970}cn.mrcode.newstudy.design.pattern.creational.prototype.Pig@887af79
+```
+可以看到修改 p2 的时间，p1 的也跟着一起变化了。这就是浅克隆，因为 birthday 是引用类型；如下修改即可
+
+引用类型也需要再次克隆
+```java
+@Override
+protected Object clone() throws CloneNotSupportedException {
+    Pig pig = (Pig) super.clone();
+    pig.birthday = (Date) pig.birthday.clone();
+    return pig;
+}
+```
+
+## 克隆破坏单例
+
+克隆也可以破坏单例模式的单例特性
+
+```java
+/**
+ * 恶汉式单例模式
+ *
+ * @author : zhuqiang
+ * @version : V1.0
+ * @date : 2018/9/28 22:08
+ */
+public class HungrySingleton implements Serializable, Cloneable {
+    private final static HungrySingleton hungrySingleton = new HungrySingleton();
+
+    private HungrySingleton() {
+        if (hungrySingleton != null) {
+            throw new IllegalStateException("单例模式不允许使用反射创建");
+        }
+    }
+
+    public static HungrySingleton getInstance() {
+        return hungrySingleton;
+    }
+
+    private Object readResolve() {
+        return hungrySingleton;
+    }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
+}
+```
+
+使用之前的单例模式进行实习克隆方法，然后测试
+
+```java
+@Test
+    public void fun1() throws CloneNotSupportedException {
+        HungrySingleton i1 = HungrySingleton.getInstance();
+        HungrySingleton i2 = (HungrySingleton) i1.clone();
+        System.out.println(i1);
+        System.out.println(i2);
+    }
+
+    @Test
+    public void fun2() throws CloneNotSupportedException, NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+        HungrySingleton i1 = HungrySingleton.getInstance();
+        // 实现克隆方法后，权限修饰符最小为 protected，所以不能防止被调用
+        // 假设是 private 了，那么也可以使用反射进行调用 clone 方法
+        Method clone = i1.getClass().getDeclaredMethod("clone");
+        clone.setAccessible(true);
+        HungrySingleton i2 = (HungrySingleton) clone.invoke(i1);
+        System.out.println(i1);
+        System.out.println(i2);
+    }
+```
+上面的代码就破坏了单例模式的“单”特性；现在有两种方法解决这个问题：
+
+1. 不实现 clone 方法
+2. 在 clone 方法中返回同一个实例
+
+```java
+@Override
+    protected Object clone() throws CloneNotSupportedException {
+        return HungrySingleton.getInstance();
+    }
+```
+
+
+## 源码解析
+
+### ArrayList
+
+要学会 clone 是怎么使用的，最简单的方法就是查看源码，如下面的源码
+
+```java
+public Object clone() {
+       try {
+           ArrayList<?> v = (ArrayList<?>) super.clone();
+           v.elementData = Arrays.copyOf(elementData, size);
+           v.modCount = 0;
+           return v;
+       } catch (CloneNotSupportedException e) {
+           // this shouldn't happen, since we are Cloneable
+           throw new InternalError(e);
+       }
+   }
+```
+
+### HashMap
+
+```java
+@Override
+   public Object clone() {
+       HashMap<K,V> result;
+       try {
+           result = (HashMap<K,V>)super.clone();
+       } catch (CloneNotSupportedException e) {
+           // this shouldn't happen, since we are Cloneable
+           throw new InternalError(e);
+       }
+       result.reinitialize();
+       // 这里才是重新把值取出来再 put 进去
+       // hashMap 的克隆也是浅克隆，只是把 Node 对象克隆了，但是实际的值没有深克隆
+       result.putMapEntries(this, false);
+       return result;
+   }
+```
+通过对 value 是引用类型的 HashMap 进行克隆调用测试，发现是浅克隆
