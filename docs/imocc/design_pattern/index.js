@@ -40,7 +40,9 @@ module.exports = () => {
                 '06_abstract_factory/abstract_factory.md',
                 '07_builder/builder.md',
                 '08_singleton/singleton.md',
-                '08_singleton/singleton2.md'
+                '08_singleton/singleton2.md',
+                '09_prototype/prototype.md',
+                '10_facade/facade.md'
             ]
         }
     ]
