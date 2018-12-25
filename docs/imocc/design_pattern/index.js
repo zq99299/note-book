@@ -43,7 +43,8 @@ module.exports = () => {
                 '08_singleton/singleton2.md',
                 '09_prototype/prototype.md',
                 '10_facade/facade.md',
-                '11_decorator/decorator.md'
+                '11_decorator/decorator.md',
+                '12_adapter/adapter.md'
             ]
         }
     ]
