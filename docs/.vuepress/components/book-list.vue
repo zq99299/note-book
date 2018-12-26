@@ -48,6 +48,12 @@
                 <p>《JAVA 笔记》</p>
             </a>
         </div>
+        <div class="book-item">
+            <a href="xiemengyuan/">
+                <img class="book-img" src="hero.png">
+                <p>《谢孟媛 笔记》</p>
+            </a>
+        </div>
     </div>
 </template>
 
