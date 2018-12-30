@@ -8,7 +8,7 @@ const gradleGenSidebarConfig = require('../gradle');
 const gitGenSidebarConfig = require('../git');
 const javaGenSidebarConfig = require('../java');
 const xiemengyuanGenSidebarConfig = require('../xiemengyuan');
-
+const elasticsearchGenSidebarConfig = require('../elasticsearch');
 
 module.exports = {
     title: 'Mrcode 笔记本',
@@ -85,7 +85,8 @@ module.exports = {
             '/gradle/': gradleGenSidebarConfig(),
             '/git/': gitGenSidebarConfig(),
             '/java/': javaGenSidebarConfig(),
-            '/xiemengyuan/': xiemengyuanGenSidebarConfig()
+            '/xiemengyuan/': xiemengyuanGenSidebarConfig(),
+            '/elasticsearch/': elasticsearchGenSidebarConfig()
         }
     }
 }

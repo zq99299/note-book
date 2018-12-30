@@ -54,6 +54,12 @@
                 <p>《谢孟媛 笔记》</p>
             </a>
         </div>
+        <div class="book-item">
+            <a href="elasticsearch/">
+                <img class="book-img" src="hero.png">
+                <p>《中华石杉-elasticsearch》</p>
+            </a>
+        </div>
     </div>
 </template>
 
