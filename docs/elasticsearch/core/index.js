@@ -3,6 +3,7 @@ module.exports = {
   collapsable: true,
   children: [
       'core/',
-      'core/02-whatis/'
+      'core/02-whatis/',
+      'core/03-introduce/'
   ]
 }
