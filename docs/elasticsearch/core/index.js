@@ -9,6 +9,7 @@ module.exports = {
       'core/05-windows-install.md',
       'core/quick-start-texample/06-crud.md',
       'core/quick-start-texample/07-search.md',
-      'core/quick-start-texample/08-aggregation-analysis.md'
+      'core/quick-start-texample/08-aggregation-analysis.md',
+      'core/09-basic-distributed-architecture.md'
   ]
 }
