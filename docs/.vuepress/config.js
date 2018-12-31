@@ -42,6 +42,7 @@ module.exports = {
     themeConfig: {
         docsDir: 'docs',
         sidebar: 'auto',
+        sidebarDepth: 2, // 嵌套标题侧边栏提取深度，最大为 2，会提取到 h3
         lastUpdated: '上次更新: ', // string | boolean
         serviceWorker: {
             //updatePopup: true // Boolean | Object, 默认值是 undefined.
