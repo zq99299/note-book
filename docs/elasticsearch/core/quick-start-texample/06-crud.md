@@ -187,6 +187,8 @@ yellow open   .kibana    id1SV_oGSjyGosKxeJApww   1   1          1            0 
 ## 商品的 CRUD 操作
 ### 新增
 
+这里没有使用中文，由于中文分词需要安装插件，对于数据查询才会准确，所以这里使用拼音
+
 ```json
 PUT /ecommerce/product/1
 {
