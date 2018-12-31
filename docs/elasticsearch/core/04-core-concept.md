@@ -1,8 +1,9 @@
 # Elasticsearch 核心概念
+[[toc]]
 
-1. lucene和elasticsearch的前世今生
-2. elasticsearch的核心概念
-3. elasticsearch核心概念 vs. 数据库核心概念
+1. lucene 和 elasticsearch 的前世今生
+2. elasticsearch 的核心概念
+3. elasticsearch 核心概念 vs 数据库核心概念
 
 ## lucene 和 elasticsearch 的前世今生
 
