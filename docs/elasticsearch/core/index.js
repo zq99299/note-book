@@ -5,6 +5,7 @@ module.exports = {
       'core/',
       'core/02-whatis/',
       'core/03-introduce/',
-      'core/04-核心概念.md'
+      'core/04-core-concept.md',
+      'core/05-windows-install.md'
   ]
 }
