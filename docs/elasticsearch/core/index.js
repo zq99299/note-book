@@ -14,6 +14,7 @@ module.exports = {
       'core/10-one-node-shard-and-replica.md',
       'core/11-two-node-shard-and-replica.md',
       'core/12-lateral-capacity.md',
-      'core/13-fault-tolerant.md'
+      'core/13-fault-tolerant.md',
+      'core/14-document-basic-metadata.md'
   ]
 }
