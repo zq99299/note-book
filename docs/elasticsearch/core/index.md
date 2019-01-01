@@ -14,3 +14,4 @@
 10. [shard & replica 机制再次梳理以及单 node 环境中创建 index 图解](/elasticsearch/core/10-one-node-shard-and-replica.md)
 11. [图解 2个 node 环境下 replica shard 是如何分配的](/elasticsearch/core/11-two-node-shard-and-replica.md)
 12. [图解横向扩容过程，如何超出扩容极限，以及如何提升容错性](/elasticsearch/core/12-lateral-capacity.md)
+13. [图解 Elasticsearch 容错机制：master 选举，replica 容错，数据恢复](/elasticsearch/core/13-fault-tolerant.md)

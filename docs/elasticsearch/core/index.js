@@ -11,6 +11,9 @@ module.exports = {
       'core/quick-start-texample/07-search.md',
       'core/quick-start-texample/08-aggregation-analysis.md',
       'core/09-basic-distributed-architecture.md',
-      'core/10-one-node-shard-and-replica.md'
+      'core/10-one-node-shard-and-replica.md',
+      'core/11-two-node-shard-and-replica.md',
+      'core/12-lateral-capacity.md',
+      'core/13-fault-tolerant.md'
   ]
 }
