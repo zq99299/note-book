@@ -27,3 +27,5 @@
 23. [图解 partial update 实现原理以及动手实战演练](./distributed-document/23-partial-update.md#图解实现原理与实战演练)
 24. [上机动手实战演练基于 groovy 脚本进行 partial update](./distributed-document/23-partial-update.md#groovy-语法实现)
 25. [图解 partial update 乐观锁并发控制原理以及相关操作讲解](./distributed-document/23-partial-update.md#图解乐观锁并发控制原理与操作)
+26. [上机动手实战演练 mget 批量查询 api](./distributed-document/26-mget.md)
+27. [上机动手实战演练 bulk 批量增删改](./distributed-document/27-bulk.md)

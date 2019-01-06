@@ -20,6 +20,8 @@ module.exports = {
       'core/distributed-document/16-_source.md',
       'core/distributed-document/17-crud.md',
       'core/distributed-document/18-concurrent-update.md',
-      'core/distributed-document/23-partial-update.md'
+      'core/distributed-document/23-partial-update.md',
+      'core/distributed-document/26-mget.md',
+      'core/distributed-document/27-bulk.md'
   ]
 }
