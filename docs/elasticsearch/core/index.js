@@ -24,6 +24,10 @@ module.exports = {
       'core/distributed-document/26-mget.md',
       'core/distributed-document/27-bulk.md',
       'core/distributed-document/28-stage-summary.md',
-      'core/distributed-document/29-route.md'
+      'core/distributed-document/29-route.md',
+      'core/distributed-document/30-crud-theory.md',
+      'core/distributed-document/31-consistency-quorum.md',
+      'core/distributed-document/32-query-theory.md',
+      'core/distributed-document/33-bulk-json.md'
   ]
 }

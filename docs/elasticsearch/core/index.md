@@ -31,3 +31,8 @@
 27. [分布式文档系统_上机动手实战演练 bulk 批量增删改](./distributed-document/27-bulk.md)
 28. [分布式文档系统_阶段性总结以及什么是 distributed document store](./distributed-document/28-stage-summary.md)
 29. [分布式文档系统_深度图解剖析 document 数据路由原理](./distributed-document/29-route.md)
+30. [分布式文档系统_ document增删改内部原理图解揭秘](./distributed-document/30-crud-theory.md)
+31. [分布式文档系统_图解写一致性原理以及 quorum 机制深入剖析](./distributed-document/31-consistency-quorum.md)
+32. [分布式文档系统_ document 查询内部原理图解揭秘](./distributed-document/32-query-theory.md)
+33. [分布式文档系统_ bulk api 的奇特 json 格式与底层性能优化关系大揭秘](./distributed-document/33-bulk-json.md)
+34. [初识搜索引擎_ search 结果深入解析（search timeout 机制揭秘）](./search-engine/)
