@@ -28,6 +28,7 @@ module.exports = {
       'core/distributed-document/30-crud-theory.md',
       'core/distributed-document/31-consistency-quorum.md',
       'core/distributed-document/32-query-theory.md',
-      'core/distributed-document/33-bulk-json.md'
+      'core/distributed-document/33-bulk-json.md',
+      'core/search-engine/search-result-timeout.md'
   ]
 }

@@ -35,4 +35,4 @@
 31. [分布式文档系统_图解写一致性原理以及 quorum 机制深入剖析](./distributed-document/31-consistency-quorum.md)
 32. [分布式文档系统_ document 查询内部原理图解揭秘](./distributed-document/32-query-theory.md)
 33. [分布式文档系统_ bulk api 的奇特 json 格式与底层性能优化关系大揭秘](./distributed-document/33-bulk-json.md)
-34. [初识搜索引擎_ search 结果深入解析（search timeout 机制揭秘）](./search-engine/)
+34. [初识搜索引擎_ search 结果深入解析（search timeout 机制揭秘）](./search-engine/search-result-timeout.md)
