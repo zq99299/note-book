@@ -15,13 +15,15 @@ module.exports = {
       'core/11-two-node-shard-and-replica.md',
       'core/12-lateral-capacity.md',
       'core/13-fault-tolerant.md',
-      'core/14-document-basic-metadata.md',
+      'core/distributed-document/14-document-basic-metadata.md',
       'core/distributed-document/15-documentid.md',
       'core/distributed-document/16-_source.md',
       'core/distributed-document/17-crud.md',
       'core/distributed-document/18-concurrent-update.md',
       'core/distributed-document/23-partial-update.md',
       'core/distributed-document/26-mget.md',
-      'core/distributed-document/27-bulk.md'
+      'core/distributed-document/27-bulk.md',
+      'core/distributed-document/28-stage-summary.md',
+      'core/distributed-document/29-route.md'
   ]
 }
