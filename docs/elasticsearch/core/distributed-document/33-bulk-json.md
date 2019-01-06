@@ -1,4 +1,5 @@
 # bulk 奇特 json 与性能揭秘
+[[toc]]
 
 bulk api 奇特的 json 格式复习，详细请查阅 [bulk 批量增删改](../distributed-document/27-bulk.md)
 
