@@ -18,6 +18,8 @@ module.exports = {
       'core/14-document-basic-metadata.md',
       'core/distributed-document/15-documentid.md',
       'core/distributed-document/16-_source.md',
-      'core/distributed-document/17-crud.md'
+      'core/distributed-document/17-crud.md',
+      'core/distributed-document/18-concurrent-update.md',
+      'core/distributed-document/23-partial-update.md'
   ]
 }
