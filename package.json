@@ -10,7 +10,9 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "vuepress": "^0.14.2",
-    "vuepress-theme-vue": "~1.1.0"
+    "@vuepress/plugin-back-to-top": "^1.0.0-alpha.0",
+    "@vuepress/plugin-medium-zoom": "^1.0.0-alpha.0",
+    "@vuepress/plugin-pwa": "^1.0.0-alpha.0",
+    "vuepress": "^1.0.0-alpha.30"
   }
 }

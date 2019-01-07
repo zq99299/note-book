@@ -7,7 +7,7 @@ set -e
 rm -rf build/.vuepress/dist
 
 # 生成静态文件
-npm run docs:build
+yarn run docs:build
 
 # 进入生成的文件夹
 cd build/.vuepress/dist

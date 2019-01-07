@@ -16,21 +16,6 @@ module.exports = {
     base: '/note-book/', // gh-page 中是增加了项目名
     dest: 'build/.vuepress/dist',  // 目录配置在外,纯粹是有代码洁癖和强迫症，并不能规避开发模式下同时构建不报错的问题
     ga: 'UA-125573163-1', // 添加 ga 统计
-    // 添加百度统计
-    head: [
-        ['script', {}, `
-        var _hmt = _hmt || [];
-        (function() {
-          var hm = document.createElement("script");
-          hm.src = "https://hm.baidu.com/hm.js?998091ef65f67ef0419bdc12d4ff48fe";
-          var s = document.getElementsByTagName("script")[0];
-          s.parentNode.insertBefore(hm, s);
-        })();
-    `]
-    ],
-    markdown: {
-        lineNumbers: false
-    },
     locales: {
         // 键名是该语言所属的子路径
         // 作为特例，默认语言可以使用 '/' 作为其路径。
@@ -44,14 +29,6 @@ module.exports = {
         sidebar: 'auto',
         sidebarDepth: 2, // 嵌套标题侧边栏提取深度，最大为 2，会提取到 h3
         lastUpdated: '上次更新: ', // string | boolean
-        serviceWorker: {
-            //updatePopup: true // Boolean | Object, 默认值是 undefined.
-            // 如果设置为 true, 默认的文本配置将是:
-            updatePopup: {
-               message: "有新内容更新啦~",
-               buttonText: "立即获取新内容"
-            }
-        },
         // 假定是 GitHub. 同时也可以是一个完整的 GitLab URL
         repo: 'https://github.com/zq99299/note-book',
         // 自定义仓库链接文字。默认从 `themeConfig.repo` 中自动推断为
@@ -89,5 +66,16 @@ module.exports = {
             '/xiemengyuan/': xiemengyuanGenSidebarConfig(),
             '/elasticsearch/': elasticsearchGenSidebarConfig()
         }
-    }
+    },
+    plugins: [
+        ['@vuepress/back-to-top', true],
+        ['@vuepress/pwa', {
+            serviceWorker: true,
+            updatePopup: {
+                message: "有新内容更新啦~",
+                buttonText: "立即获取新内容"
+            }
+        }],
+        ['@vuepress/medium-zoom', true],
+    ]
 }

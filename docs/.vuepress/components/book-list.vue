@@ -2,61 +2,61 @@
     <div class="book-list">
         <div class="book-item">
             <a href="mycat2/">
-                <img class="book-img" src="hero.png">
+                <img class="book-img" src="./hero.png">
                 <p>《Mycat2 学习笔记》</p>
             </a>
         </div>
         <div class="book-item">
             <a href="imocc/design_pattern/">
-                <img class="book-img" src="hero.png">
+                <img class="book-img" src="./hero.png">
                 <p>《设计模式（慕课）》</p>
             </a>
         </div>
         <div class="book-item">
             <a href="design_pattern/">
-                <img class="book-img" src="hero.png">
+                <img class="book-img" src="./hero.png">
                 <p>《研磨设计模式（李兴华）》</p>
             </a>
         </div>
         <div class="book-item">
             <a href="mycat/">
-                <img class="book-img" src="hero.png">
+                <img class="book-img" src="./hero.png">
                 <p>《mycat1 学习笔记》</p>
             </a>
         </div>
         <div class="book-item">
             <a href="vue/">
-                <img class="book-img" src="hero.png">
+                <img class="book-img" src="./hero.png">
                 <p>《vue 学习笔记》</p>
             </a>
         </div>
         <div class="book-item">
             <a href="gradle/">
-                <img class="book-img" src="hero.png">
+                <img class="book-img" src="./hero.png">
                 <p>《Gradle 笔记》</p>
             </a>
         </div>
         <div class="book-item">
             <a href="git/">
-                <img class="book-img" src="hero.png">
+                <img class="book-img" src="./hero.png">
                 <p>《Git 笔记》</p>
             </a>
         </div>
         <div class="book-item">
             <a href="java/">
-                <img class="book-img" src="hero.png">
+                <img class="book-img" src="./hero.png">
                 <p>《JAVA 笔记》</p>
             </a>
         </div>
         <div class="book-item">
             <a href="xiemengyuan/">
-                <img class="book-img" src="hero.png">
+                <img class="book-img" src="./hero.png">
                 <p>《谢孟媛 笔记》</p>
             </a>
         </div>
         <div class="book-item">
             <a href="elasticsearch/">
-                <img class="book-img" src="hero.png">
+                <img class="book-img" src="./hero.png">
                 <p>《中华石杉-elasticsearch》</p>
             </a>
         </div>
