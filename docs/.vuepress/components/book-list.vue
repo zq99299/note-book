@@ -175,7 +175,7 @@
     /*= common css to all effects =*/
     .single-member {
         width: 265px;
-        margin: 30px 2.5%;
+        margin: 30px 1.5%;
         background-color: #fff;
         text-align: center;
         position: relative;
