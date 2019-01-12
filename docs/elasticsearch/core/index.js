@@ -34,6 +34,11 @@ module.exports = {
       'core/search-engine/36-paging-deep-paging.md',
       'core/search-engine/37-query-string-search-and-mall-metadata.md',
       'core/search-engine/38-mapping.md',
-      'core/search-engine/39-full-text-precise.md'
+      'core/search-engine/39-full-text-precise.md',
+      'core/search-engine/40-inverted-index.md',
+      'core/search-engine/41-tokenizer.md',
+      'core/search-engine/42-query-string-participle-mapping.md',
+      'core/search-engine/43-mapping-thorough.md',
+      'core/search-engine/44-mapping-detailed'
   ]
 }
