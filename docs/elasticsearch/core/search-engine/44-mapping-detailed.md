@@ -1,4 +1,4 @@
-# mapping 的创建以及原理详解
+# mapping 的创建以及复杂 mapping 详解
 本章会记录 3个 章节的笔记
 
 - 44. 初识搜索引擎_ mapping 的核心数据类型以及 dynamic mapping
@@ -290,5 +290,50 @@ address 下面还有一个 properties ，那么 address 就是一个 object fiel
       }
     }
   }
+}
+```
+
+比如这一条数据，它在 es 里面被分词之后，可能是这样的
+
+```json
+{
+  "address": {
+    "country": "china",
+    "province": "guangdong",
+    "city": "guangzhou"
+  },
+  "name": "jack",
+  "age": 27,
+  "join_date": "2017-01-01"
+}
+
+-----------------------------------
+
+{
+    "name":            [jack],
+    "age":          [27],
+    "join_date":      [2017-01-01],
+    "address.country":         [china],
+    "address.province":   [guangdong],
+    "address.city":  [guangzhou]
+}
+```
+
+上面的都是比较简单的内容，如果是稍微复杂一点的，就可能是下面这样了
+
+```json
+{
+    "authors": [
+        { "age": 26, "name": "Jack White"},
+        { "age": 55, "name": "Tom Jones"},
+        { "age": 39, "name": "Kitty Smith"}
+    ]
+}
+
+-------------------------------
+
+{
+    "authors.age":    [26, 55, 39],
+    "authors.name":   [jack, white, tom, jones, kitty, smith]
 }
 ```
