@@ -29,6 +29,11 @@ module.exports = {
       'core/distributed-document/31-consistency-quorum.md',
       'core/distributed-document/32-query-theory.md',
       'core/distributed-document/33-bulk-json.md',
-      'core/search-engine/search-result-timeout.md'
+      'core/search-engine/34-search-result-timeout.md',
+      'core/search-engine/35-multi-index.md',
+      'core/search-engine/36-paging-deep-paging.md',
+      'core/search-engine/37-query-string-search-and-mall-metadata.md',
+      'core/search-engine/38-mapping.md',
+      'core/search-engine/39-full-text-precise.md'
   ]
 }
