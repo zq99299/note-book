@@ -42,6 +42,13 @@ module.exports = {
       'core/search-engine/44-mapping-detailed.md',
       'core/search-engine/47-search-api-base.md',
       'core/search-engine/48-quick-start-query-dsl.md',
-      'core/search-engine/49-filter-query.md'
+      'core/search-engine/49-filter-query.md',
+      'core/search-engine/50-query-example.md',
+      'core/search-engine/54-string-tow-index-sort.md',
+      'core/search-engine/55-tf-idf.md',
+      'core/search-engine/56-doc-value.md',
+      'core/search-engine/57-query-phase.md',
+      'core/search-engine/58-fetch-phase.md',
+      'core/search-engine/59-bouncing-results.md'
   ]
 }
