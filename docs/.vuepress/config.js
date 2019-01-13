@@ -23,6 +23,9 @@ module.exports = {
             lang: 'zh-CN', // 将会被设置为 <html> 的 lang 属性
         }
     },
+    markdown: {
+      lineNumbers: true
+    },
     // theme: 'vue',
     themeConfig: {
         docsDir: 'docs',
