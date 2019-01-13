@@ -39,6 +39,9 @@ module.exports = {
       'core/search-engine/41-tokenizer.md',
       'core/search-engine/42-query-string-participle-mapping.md',
       'core/search-engine/43-mapping-thorough.md',
-      'core/search-engine/44-mapping-detailed.md'
+      'core/search-engine/44-mapping-detailed.md',
+      'core/search-engine/47-search-api-base.md',
+      'core/search-engine/48-quick-start-query-dsl.md',
+      'core/search-engine/49-filter-query.md'
   ]
 }
