@@ -49,6 +49,7 @@ module.exports = {
       'core/search-engine/56-doc-value.md',
       'core/search-engine/57-query-phase.md',
       'core/search-engine/58-fetch-phase.md',
-      'core/search-engine/59-bouncing-results.md'
+      'core/search-engine/59-bouncing-results.md',
+      'core/search-engine/60-scoll.md'
   ]
 }

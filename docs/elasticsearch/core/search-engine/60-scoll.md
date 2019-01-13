@@ -23,7 +23,7 @@ GET /test_index/test_type/_search?scroll=1m
 
 注意看第一次搜索返回的数据，一共有 8 条数据，第一次返回了 3 条
 
-```json{1}
+```json{2}
 {
   "_scroll_id": "DnF1ZXJ5VGhlbkZldGNoAwAAAAAAACqyFnNFdkFsWXhGUkplNTk4bXJTRHdValEAAAAAAAAqsxZzRXZBbFl4RlJKZTU5OG1yU0R3VWpRAAAAAAAAKrQWc0V2QWxZeEZSSmU1OThtclNEd1VqUQ==",
   "took": 11,
