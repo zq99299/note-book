@@ -50,6 +50,11 @@ module.exports = {
       'core/search-engine/57-query-phase.md',
       'core/search-engine/58-fetch-phase.md',
       'core/search-engine/59-bouncing-results.md',
-      'core/search-engine/60-scoll.md'
+      'core/search-engine/60-scoll.md',
+      'core/index/61-quick-start-crud.md',
+      'core/index/62-tokenizer.md',
+      'core/index/63-type-data-structure.md',
+      'core/index/64-mapping-root-object.md',
+      'core/index/65-dynamic-mapping.md'
   ]
 }

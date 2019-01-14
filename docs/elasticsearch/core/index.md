@@ -62,3 +62,8 @@
 58. [初识搜索引擎_分布式搜索引擎内核解密之 fetch phase](./search-engine/58-fetch-phase.md)
 59. [初识搜索引擎_搜索相关参数梳理以及 bouncing results 问题解决方案](./search-engine/59-bouncing-results.md)
 60. [初识搜索引擎_上机动手实战基于 scoll 技术滚动搜索大量数据](./search-engine/60-scoll.md)
+61. [索引管理_快速上机动手实战创建、修改以及删除索引](./index/61-quick-start-crud.md)
+62. [索引管理_快速上机动手实战修改分词器以及定制自己的分词器](./index/62-tokenizer.md)
+63. [索引管理_内核级知识点：深入探秘 type 底层数据结构](./index/63-type-data-structure.md)
+64. [索引管理_ mapping root object 深入剖析](./index/64-mapping-root-object.md)
+65. [索引管理_定制化自己的 dynamic mapping 策略](./index/65-dynamic-mapping.md)
