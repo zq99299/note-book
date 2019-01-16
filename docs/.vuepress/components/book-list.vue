@@ -23,7 +23,7 @@
                 <h3>设计模式</h3>
                 <h5>学习笔记-慕课课程</h5>
                 <p>JAVA设计模式精讲 Debug 方式+内存分析，
-                    这门课程将从设计模式定义、应用到源码解析，带你系统学习设计模式，并结合大量场景 Coding，让学习不枯燥，不空洞。</p>
+                    从设计模式定义、应用到源码解析，带你系统学习设计模式。</p>
                 <div class="social-touch">
                     <a href="imocc/design_pattern/">
                         阅读更多
@@ -54,9 +54,8 @@
             <div class="member-info">
                 <h3>mycat1</h3>
                 <h5>学习笔记</h5>
-                <p>源码学习、mycat 与 mysql 是怎么交互的？前端应用是怎么和 mycat 交互的？
-                    前端应用的请求到落地在 mysql 库中，然后结果是怎么返回到应用的？
-                mysql 客户端协议</p>
+                <p>源码学习、mycat 与 mysql 与 前端 是怎么交互的？结果是怎么返回到前端应用的？
+                mysql 客户端协议学习</p>
                 <div class="social-touch">
                     <a href="mycat/">
                         阅读更多
