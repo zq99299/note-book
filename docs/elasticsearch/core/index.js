@@ -55,6 +55,7 @@ module.exports = {
       'core/index/62-tokenizer.md',
       'core/index/63-type-data-structure.md',
       'core/index/64-mapping-root-object.md',
-      'core/index/65-dynamic-mapping.md'
+      'core/index/65-dynamic-mapping.md',
+      'core/index/66-zero-downtime-replace-index.md'
   ]
 }

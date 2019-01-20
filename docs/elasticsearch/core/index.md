@@ -67,3 +67,4 @@
 63. [索引管理_内核级知识点：深入探秘 type 底层数据结构](./index/63-type-data-structure.md)
 64. [索引管理_ mapping root object 深入剖析](./index/64-mapping-root-object.md)
 65. [索引管理_定制化自己的 dynamic mapping 策略](./index/65-dynamic-mapping.md)
+66. [索引管理_复杂上机实验：基于 scoll+bulk+ 索引别名实现零停机重建索引](./index/66-zero-downtime-replace-index.md)
