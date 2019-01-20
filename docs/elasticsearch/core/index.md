@@ -68,3 +68,8 @@
 64. [索引管理_ mapping root object 深入剖析](./index/64-mapping-root-object.md)
 65. [索引管理_定制化自己的 dynamic mapping 策略](./index/65-dynamic-mapping.md)
 66. [索引管理_复杂上机实验：基于 scoll+bulk+ 索引别名实现零停机重建索引](./index/66-zero-downtime-replace-index.md)
+67. [内核原理探秘_倒排索引组成结构以及其索引可变原因揭秘](./67-kernel-principle-decryption.md)
+68. [内核原理探秘_深度图解剖析 document 写入原理（buffer，segment，commit](./67-kernel-principle-decryption.md)
+69. [内核原理探秘_优化写入流程实现 NRT 近实时（filesystem cache，refresh](./67-kernel-principle-decryption.md)
+70. [内核原理探秘_继续优化写入流程实现 durability 可靠存储（translog，flush）](./67-kernel-principle-decryption.md)
+71. [内核原理探秘_最后优化写入流程实现海量磁盘文件合并（segment merge，optimize）](./67-kernel-principle-decryption.md)
