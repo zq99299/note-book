@@ -57,6 +57,7 @@ module.exports = {
       'core/index/64-mapping-root-object.md',
       'core/index/65-dynamic-mapping.md',
       'core/index/66-zero-downtime-replace-index.md',
-      'core/67-kernel-principle-decryption.md'
+      'core/67-kernel-principle-decryption.md',
+      'core/72-employee-example.md'
   ]
 }

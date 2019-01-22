@@ -73,3 +73,6 @@
 69. [内核原理探秘_优化写入流程实现 NRT 近实时（filesystem cache，refresh](./67-kernel-principle-decryption.md)
 70. [内核原理探秘_继续优化写入流程实现 durability 可靠存储（translog，flush）](./67-kernel-principle-decryption.md)
 71. [内核原理探秘_最后优化写入流程实现海量磁盘文件合并（segment merge，optimize）](./67-kernel-principle-decryption.md)
+72. [Java API初步使用_员工管理案例：基于 Java 实现员工信息的增删改查](./72-employee-example.md)
+73. [Java API初步使用_员工管理案例：基于 Java 对员工信息进行复杂的搜索操作](./72-employee-example.md)
+74. [Java API初步使用_员工管理案例：基于 Java 对员工信息进行聚合分析](./72-employee-example.md)
