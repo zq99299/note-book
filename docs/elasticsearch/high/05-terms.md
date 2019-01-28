@@ -179,6 +179,75 @@ GET /forum/article/_search
 }
 ```
 
+> 查找 tag 中只包含 java 和 hadoop 的数据
+
+```json
+GET /forum/article/_search
+{
+  "query": {
+    "constant_score": {
+      "filter": {
+        "bool": {
+          "must":[
+            {"term":{
+              "tag":"java"
+            }},
+            {"term":{
+              "tag":"hadoop"
+            }},
+            {
+              "match": {
+                "tag_cnt": 2
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}
+```
+
+- 使用 must + 2个 term 限制至少该数据包含 java 和 hadoop
+- 并且他们的数量只能为 2
+
+响应
+
+```json
+{
+  "took": 1,
+  "timed_out": false,
+  "_shards": {
+    "total": 5,
+    "successful": 5,
+    "failed": 0
+  },
+  "hits": {
+    "total": 1,
+    "max_score": 1,
+    "hits": [
+      {
+        "_index": "forum",
+        "_type": "article",
+        "_id": "1",
+        "_score": 1,
+        "_source": {
+          "articleID": "XHDK-A-1293-#fJ3",
+          "userID": 1,
+          "hidden": false,
+          "postDate": "2017-01-01",
+          "tag": [
+            "java",
+            "hadoop"
+          ],
+          "tag_cnt": 2
+        }
+      }
+    ]
+  }
+}
+```
+
 ## 总结
 
 - terms 多值搜索
