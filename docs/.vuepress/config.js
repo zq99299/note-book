@@ -8,7 +8,8 @@ const gradleGenSidebarConfig = require('../gradle');
 const gitGenSidebarConfig = require('../git');
 const javaGenSidebarConfig = require('../java');
 const xiemengyuanGenSidebarConfig = require('../xiemengyuan');
-const elasticsearchGenSidebarConfig = require('../elasticsearch');
+const elasticsearchCoreSC = require('../elasticsearch-core');
+const elasticsearchHighSC = require('../elasticsearch-high');
 
 module.exports = {
     title: 'Mrcode 笔记本',
@@ -76,7 +77,8 @@ module.exports = {
             '/git/': gitGenSidebarConfig(),
             '/java/': javaGenSidebarConfig(),
             '/xiemengyuan/': xiemengyuanGenSidebarConfig(),
-            '/elasticsearch/': elasticsearchGenSidebarConfig()
+            '/elasticsearch-high/': elasticsearchHighSC(),
+            '/elasticsearch-core/': elasticsearchCoreSC()
         }
     },
     plugins: [

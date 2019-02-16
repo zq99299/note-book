@@ -143,11 +143,26 @@
                 <img src="./hero.png" alt="Member">
             </div>
             <div class="member-info">
-                <h3>elasticsearch</h3>
+                <h3>elasticsearch 核心篇</h3>
                 <h5>学习笔记-中华石杉讲解</h5>
-                <p>核心知识和高级知识篇；elasticsearch 是什么？快速上手、document crud 等一套完整知识；基于 V5.2+ 版本讲解</p>
+                <p>核心知识篇；基于 V5.2+ 版本讲解</p>
                 <div class="social-touch">
-                    <a href="elasticsearch/">
+                    <a href="elasticsearch-core/">
+                        阅读更多
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="single-member effect-2">
+            <div class="member-image">
+                <img src="./hero.png" alt="Member">
+            </div>
+            <div class="member-info">
+                <h3>elasticsearch 高级篇</h3>
+                <h5>学习笔记-中华石杉讲解</h5>
+                <p>高级知识篇；基于 V5.2+ 版本讲解</p>
+                <div class="social-touch">
+                    <a href="elasticsearch-high/">
                         阅读更多
                     </a>
                 </div>
