@@ -14,3 +14,6 @@ IT技术论坛：发各种IT技术的帖子，一种是自己研究了一个技�
 4. [结构化搜索_在案例中实战基于 bool 组合多个 filter 条件来搜索数据](./04-bool-filter.md)
 5. [结构化搜索_在案例中实战使用 terms 搜索多个值以及多值搜索结果优化](./05-terms.md)
 6. [结构化搜索_在案例中实战基于 range filter 来进行范围过滤](./06-range-filter.md)
+7. [深度探秘搜索技术_在案例中体验如何手动控制全文检索结果的精准度](./depth-search/07-precision.md)
+8. [深度探秘搜索技术_基于 term+bool 实现的 multiword 搜索底层原理剖析](./depth-search/08-multiword.md)
+9. [深度探秘搜索技术_基于 boost 的细粒度搜索条件权重控制](./depth-search/09-boost.md)
