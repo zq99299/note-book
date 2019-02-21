@@ -17,3 +17,8 @@ IT技术论坛：发各种IT技术的帖子，一种是自己研究了一个技�
 7. [深度探秘搜索技术_在案例中体验如何手动控制全文检索结果的精准度](./depth-search/07-precision.md)
 8. [深度探秘搜索技术_基于 term+bool 实现的 multiword 搜索底层原理剖析](./depth-search/08-multiword.md)
 9. [深度探秘搜索技术_基于 boost 的细粒度搜索条件权重控制](./depth-search/09-boost.md)
+10. [深度探秘搜索技术_多shard 场景下 relevance score 不准确问题大揭秘](./depth-search/10-shard-relevance-score.md)
+11. [深度探秘搜索技术_案例实战基于 dis_max 实现 best fields 策略进行多字段搜索](./depth-search/11-dis-max-best-fields.md)
+12. [深度探秘搜索技术_案例实战基于 tie_breaker 参数优化 dis_max 搜索效果](./depth-search/12-dis-max-tie-breaker.md)
+13. [深度探秘搜索技术_案例实战基于 multi_match 语法实现 dis_max + tie_breaker](./depth-search/13-multi-match.md)
+14. [深度探秘搜索技术_基于 multi_match + most fiels 策略进行 multi-field 搜索](./depth-search/14-multi-match-most-fiels.md)
