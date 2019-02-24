@@ -23,7 +23,16 @@ module.exports = () => {
           'depth-search/11-dis-max-best-fields.md',
           'depth-search/12-dis-max-tie-breaker.md',
           'depth-search/13-multi-match.md',
-          'depth-search/14-multi-match-most-fiels.md'
+          'depth-search/14-multi-match-most-fiels.md',
+          'depth-search/15-cross-fields-most-fiels.md',
+          'depth-search/16-cross-fields-copy-to.md',
+          'depth-search/17-cross-fields.md',
+          'depth-search/18-phrase-matching.md',
+          'depth-search/19-phrase-matching-slop.md',
+          'depth-search/20-match-recall-precision.md',
+          'depth-search/21-rescore.md',
+          'depth-search/22.md',
+          'depth-search/23-search-time.md'
         ]
       }
   ]
