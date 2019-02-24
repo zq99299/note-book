@@ -31,3 +31,7 @@ IT技术论坛：发各种IT技术的帖子，一种是自己研究了一个技�
 21. [深度探秘搜索技术_使用 rescoring 机制优化近似匹配搜索的性能](./depth-search/21-rescore.md)
 22. [深度探秘搜索技术_实战前缀搜索、通配符搜索、正则搜索等技术](./depth-search/22.md)
 23. [深度探秘搜索技术_实战 match_phrase_prefix 实现 search-time 搜索推荐](./depth-search/23-search-time.md)
+24. [深度探秘搜索技术_实战通过 ngram 分词机制实现 index-time 搜索推荐](./depth-search/24-ngram.md)
+25. [深度探秘搜索技术_深入揭秘 TF&IDF 算法以及向量空间模型算法](./depth-search/25-vector-space-model.md)
+26. [深度探秘搜索技术_深入揭秘 lucene 的相关度分数算法](./depth-search/26-lucene-score.md)
+27. [深度探秘搜索技术_实战掌握四种常见的相关度分数优化方法](./depth-search/27.md)

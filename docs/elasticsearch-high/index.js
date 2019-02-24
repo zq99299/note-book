@@ -32,7 +32,11 @@ module.exports = () => {
           'depth-search/20-match-recall-precision.md',
           'depth-search/21-rescore.md',
           'depth-search/22.md',
-          'depth-search/23-search-time.md'
+          'depth-search/23-search-time.md',
+          'depth-search/24-ngram.md',
+          'depth-search/25-vector-space-model.md',
+          'depth-search/26-lucene-score.md',
+          'depth-search/27.md'
         ]
       }
   ]
