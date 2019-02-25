@@ -40,6 +40,13 @@ module.exports = () => {
           'depth-search/28-function-score.md',
           'depth-search/29-fuzzy.md'
         ]
+      },
+      {
+        title: "彻底掌握 IK 分词器",
+        collapsable: true,
+        children: [
+          'ik/30-ik-introduce.md'
+        ]
       }
   ]
 }

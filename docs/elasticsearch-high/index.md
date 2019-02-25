@@ -37,3 +37,4 @@ IT技术论坛：发各种IT技术的帖子，一种是自己研究了一个技�
 27. [深度探秘搜索技术_实战掌握四种常见的相关度分数优化方法](./depth-search/27.md)
 28. [深度探秘搜索技术_实战用 function_score 自定义相关度分数算法](./depth-search/28-function-score.md)
 29. [深度探秘搜索技术_实战掌握误拼写时的 fuzzy 模糊搜索技术](./depth-search/29-fuzzy.md)
+30. [彻底掌握 IK 中文分词_上机动手实战 IK 中文分词器的安装和使用](./ik/30-ik-introduce.md)
