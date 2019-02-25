@@ -36,7 +36,9 @@ module.exports = () => {
           'depth-search/24-ngram.md',
           'depth-search/25-vector-space-model.md',
           'depth-search/26-lucene-score.md',
-          'depth-search/27.md'
+          'depth-search/27.md',
+          'depth-search/28-function-score.md',
+          'depth-search/29-fuzzy.md'
         ]
       }
   ]

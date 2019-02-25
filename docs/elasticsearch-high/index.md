@@ -35,3 +35,5 @@ IT技术论坛：发各种IT技术的帖子，一种是自己研究了一个技�
 25. [深度探秘搜索技术_深入揭秘 TF&IDF 算法以及向量空间模型算法](./depth-search/25-vector-space-model.md)
 26. [深度探秘搜索技术_深入揭秘 lucene 的相关度分数算法](./depth-search/26-lucene-score.md)
 27. [深度探秘搜索技术_实战掌握四种常见的相关度分数优化方法](./depth-search/27.md)
+28. [深度探秘搜索技术_实战用 function_score 自定义相关度分数算法](./depth-search/28-function-score.md)
+29. [深度探秘搜索技术_实战掌握误拼写时的 fuzzy 模糊搜索技术](./depth-search/29-fuzzy.md)
