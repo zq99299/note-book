@@ -45,7 +45,9 @@ module.exports = () => {
         title: "彻底掌握 IK 分词器",
         collapsable: true,
         children: [
-          'ik/30-ik-introduce.md'
+          'ik/30-ik-introduce.md',
+          'ik/31-config.md',
+          'ik/32-mysql-hot-update.md'
         ]
       }
   ]

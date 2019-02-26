@@ -38,6 +38,10 @@ mvn package
     比如 `elasticsearch-5.2.0\plugins\ik` 该文件夹下就是所有的解压缩内容
 3. 重启 es
 
+::: tip
+在 windows 下安装中间件等开发软件，路径中最好不要有空格，否则会莫名其妙的错误
+:::
+
 ## ik 分词器基础知识
 
 两种 analyzer，你根据自己的需要自己选吧，但是一般是选用 ik_max_word
