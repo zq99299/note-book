@@ -71,7 +71,15 @@ module.exports = () => {
           'aggs/47-aggs-algorithm.md',
           'aggs/48-cardinality.md',
           'aggs/49-hll.md',
-          'aggs/50-percentiles.md'
+          'aggs/50-percentiles.md',
+          'aggs/51-percentiles-sla.md',
+          'aggs/52-doc-value.md',
+          'aggs/53-doc-value.md',
+          'aggs/54.md',
+          'aggs/55-fielddata.md',
+          'aggs/56-fielddata-filter.md',
+          'aggs/57-fielddata.md',
+          'aggs/58-bucket.md'
         ]
       }
   ]
