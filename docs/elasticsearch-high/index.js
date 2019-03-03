@@ -49,6 +49,30 @@ module.exports = () => {
           'ik/31-config.md',
           'ik/32-mysql-hot-update.md'
         ]
+      },
+      {
+        title: "深入聚合数据分析",
+        collapsable: true,
+        children: [
+          'aggs/33-bucket-metric.md',
+          'aggs/34-sales-sort.md',
+          'aggs/35-bucket-metric.md',
+          'aggs/36-bucket.md',
+          'aggs/37-metric.md',
+          'aggs/38-hitogram.md',
+          'aggs/39-hitogram-date.md',
+          'aggs/40.md',
+          'aggs/41-query-aggs.md',
+          'aggs/42-global-bucket.md',
+          'aggs/43-filter-aggs.md',
+          'aggs/44-bucket-filter.md',
+          'aggs/45-sort.md',
+          'aggs/46-sort-bosom.md',
+          'aggs/47-aggs-algorithm.md',
+          'aggs/48-cardinality.md',
+          'aggs/49-hll.md',
+          'aggs/50-percentiles.md'
+        ]
       }
   ]
 }

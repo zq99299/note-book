@@ -40,3 +40,21 @@ IT技术论坛：发各种IT技术的帖子，一种是自己研究了一个技�
 30. [彻底掌握 IK 中文分词_上机动手实战 IK 中文分词器的安装和使用](./ik/30-ik-introduce.md)
 31. [彻底掌握 IK 中文分词_ IK 分词器配置文件讲解以及自定义词库实战](./ik/31-config.md)
 32. [彻底掌握 IK 中文分词_修改 IK 分词器源码来基于 mysql 热更新词库](./ik/32-mysql-hot-update.md)
+33. [深入聚合数据分析_ bucket 与 metric 两个核心概念的讲解](./aggs/33-bucket-metric.md)
+34. [深入聚合数据分析_家电卖场案例以及统计哪种颜色电视销量最高](./aggs/34-sales-sort.md)
+35. [深入聚合数据分析_实战 bucket+metric：统计每种颜色电视平均价格](./aggs/35-bucket-metric.md)
+36. [深入聚合数据分析_ bucket 嵌套实现颜色 + 品牌的多层下钻分析](./aggs/36-bucket.md)
+37. [深入聚合数据分析_掌握更多 metrics：统计每种颜色电视最大最小价格](./aggs/37-metric.md)
+38. [深入聚合数据分析_实战 hitogram 按价格区间统计电视销量和销售额](./aggs/38-hitogram.md)
+39. [深入聚合数据分析_实战 date hitogram 之统计每月电视销量](./aggs/39-hitogram-date.md)
+40. [深入聚合数据分析_下钻分析之统计每季度每个品牌的销售额](./aggs/40.md),
+41. [深入聚合数据分析_ 搜索+聚合：统计指定品牌下每个颜色的销量](./aggs/41-query-aggs.md),
+42. [深入聚合数据分析_ global bucket：单个品牌与所有品牌销量对比](./aggs/42-global-bucket.md),
+43. [深入聚合数据分析_过滤+聚合：统计价格大于 1200 的电视平均价格](./aggs/43-filter-aggs.md),
+44. [深入聚合数据分析_ bucket filter：统计牌品最近一个月的平均价格](./aggs/44-bucket-filter.md)
+45. [深入聚合数据分析_排序：按每种颜色的平均销售额降序排序](./aggs/45-sort.md),
+46. [深入聚合数据分析_颜色+品牌下钻分析时按最深层 metric 进行排序](./aggs/46-sort-bosom.md),
+47. [深入聚合数据分析_易并行聚合算法：三角选择原则、近似聚合算法](./aggs/47-aggs-algorithm.md),
+48. [深入聚合数据分析_ cardinality 去重算法以及每月销售品牌数量统计](./aggs/48-cardinality.md),
+49. [深入聚合数据分析_ cardinality 算法之优化内存开销以及 HLL 算法](./aggs/49-hll.md),
+50. [深入聚合数据分析_ percentiles 百分比算法以及网站访问时延统计](./aggs/50-percentiles.md)
