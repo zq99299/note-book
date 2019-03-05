@@ -81,6 +81,26 @@ module.exports = () => {
           'aggs/57-fielddata.md',
           'aggs/58-bucket.md'
         ]
+      },
+      {
+        title: "数据建模实战",
+        collapsable: true,
+        children: [
+          'modeling/59-compare.md',
+          'modeling/60-join.md',
+          'modeling/61-redundancy.md',
+          'modeling/62-group.md',
+          'modeling/63-file.md',
+          'modeling/64-lock.md',
+          'modeling/65-plock.md',
+          'modeling/66-plock.md',
+          'modeling/67-nested-object.md',
+          'modeling/68-aggs.md',
+          'modeling/69-father-son.md',
+          'modeling/70-father-son-search.md',
+          'modeling/71-aggs.md',
+          'modeling/72-deep.md'
+        ]
       }
   ]
 }
