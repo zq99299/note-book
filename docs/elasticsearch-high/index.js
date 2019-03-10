@@ -101,6 +101,21 @@ module.exports = () => {
           'modeling/71-aggs.md',
           'modeling/72-deep.md'
         ]
+      },
+      {
+        title: "ES 高手进阶",
+        collapsable: true,
+        children: [
+          'es-high/73-ter-vector.md',
+          'es-high/74-highlight.md',
+          'es-high/75-search-template.md',
+          'es-high/76-completion-suggest.md',
+          'es-high/77.md',
+          'es-high/78-geo-point.md',
+          'es-high/79-o2o.md',
+          'es-high/80.md',
+          'es-high/81.md'
+        ]
       }
   ]
 }
