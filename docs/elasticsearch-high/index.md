@@ -84,7 +84,7 @@ IT技术论坛：发各种IT技术的帖子，一种是自己研究了一个技�
 74. [elasticsearch 高手进阶_深入剖析搜索结果的 highlight 高亮显示](./es-high/74-highlight.md)
 75. [elasticsearch 高手进阶_使用 search template 将搜索模板化](./es-high/75-search-template.md)
 76. [elasticsearch 高手进阶_基于 completion suggest 实现搜索提示](./es-high/76-completion-suggest.md)
-77. [elasticsearch 高手进阶_使用动态映射模板定制自己的映射策略](./es-high/77.md)
+77. [elasticsearch 高手进阶_使用动态映射模板定制自己的映射策略](./es-high/77-dyanmic-mapping-template.md)
 78. [elasticsearch 高手进阶_学习使用 geo point 地理位置数据类型](./es-high/78-geo-point.md)
 79. [elasticsearch 高手进阶_酒店 o2o 搜索案例以及搜索指定区域内的酒店](./es-high/79-o2o.md)
 80. [elasticsearch 高手进阶_实战搜索距离当前位置一定范围内的酒店](./es-high/80.md)
