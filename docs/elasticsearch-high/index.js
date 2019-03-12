@@ -116,6 +116,23 @@ module.exports = () => {
           'es-high/80-geo-distance.md',
           'es-high/81-geo-point-aggs.md'
         ]
-      }
+      },
+      {
+        title: "熟练掌握 ES Java API",
+        collapsable: true,
+        children: [
+          'java-api/82-client-cluster.md',
+          'java-api/83-upsert.md',
+          'java-api/84-mget.md',
+          'java-api/85-bulk.md',
+          'java-api/86-scroll.md',
+          'java-api/87-search-template.md',
+          'java-api/88-.md',
+          'java-api/89-.md',
+          'java-api/90-gen-point.md',
+          'java-api/91-.md'
+        ]
+      },
+      '92-.md'
   ]
 }
