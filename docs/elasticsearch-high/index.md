@@ -87,5 +87,5 @@ IT技术论坛：发各种IT技术的帖子，一种是自己研究了一个技�
 77. [elasticsearch 高手进阶_使用动态映射模板定制自己的映射策略](./es-high/77-dyanmic-mapping-template.md)
 78. [elasticsearch 高手进阶_学习使用 geo point 地理位置数据类型](./es-high/78-geo-point.md)
 79. [elasticsearch 高手进阶_酒店 o2o 搜索案例以及搜索指定区域内的酒店](./es-high/79-o2o.md)
-80. [elasticsearch 高手进阶_实战搜索距离当前位置一定范围内的酒店](./es-high/80.md)
-81. [elasticsearch 高手进阶_统计当前位置每个距离范围内有多少家酒店](./es-high/81.md)
+80. [elasticsearch 高手进阶_实战搜索距离当前位置一定范围内的酒店](./es-high/80-geo-distance.md)
+81. [elasticsearch 高手进阶_统计当前位置每个距离范围内有多少家酒店](./es-high/81-geo-point-aggs.md)

@@ -113,8 +113,8 @@ module.exports = () => {
           'es-high/77-dyanmic-mapping-template.md',
           'es-high/78-geo-point.md',
           'es-high/79-o2o.md',
-          'es-high/80.md',
-          'es-high/81.md'
+          'es-high/80-geo-distance.md',
+          'es-high/81-geo-point-aggs.md'
         ]
       }
   ]
