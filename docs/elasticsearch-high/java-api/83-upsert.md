@@ -1,9 +1,9 @@
 # 基于 upsert 实现汽车最新价格的调整
 
 ::: tip
-[es api 的联系代码仓库地址](https://github.com/zq99299/newstudy/tree/master/elasticsearch/src/test/java/cn/mrcode/newstudy/elasticsearch)
+[es api 的练习代码仓库地址](https://github.com/zq99299/newstudy/tree/master/elasticsearch/src/test/java/cn/mrcode/newstudy/elasticsearch)
 
-后面的联系代码都放在这个地址
+后面的练习代码都放在这个地址
 :::
 
 首先需要手动 mapping，既然是模拟就稍微模拟真实一点。
