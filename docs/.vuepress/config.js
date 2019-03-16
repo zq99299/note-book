@@ -9,7 +9,7 @@ const gitGenSidebarConfig = require('../git');
 const javaGenSidebarConfig = require('../java');
 const xiemengyuanGenSidebarConfig = require('../xiemengyuan');
 const elasticsearchCoreSC = require('../elasticsearch-core');
-const elasticsearchHighSC = require('../elasticsearch-high');
+const elasticsearchSeniorSC = require('../elasticsearch-senior');
 
 module.exports = {
     title: 'Mrcode 笔记本',
@@ -77,7 +77,7 @@ module.exports = {
             '/git/': gitGenSidebarConfig(),
             '/java/': javaGenSidebarConfig(),
             '/xiemengyuan/': xiemengyuanGenSidebarConfig(),
-            '/elasticsearch-high/': elasticsearchHighSC(),
+            '/elasticsearch-senior/': elasticsearchSeniorSC(),
             '/elasticsearch-core/': elasticsearchCoreSC()
         }
     },

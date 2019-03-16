@@ -127,8 +127,8 @@ module.exports = () => {
           'java-api/85-bulk.md',
           'java-api/86-scroll.md',
           'java-api/87-search-template.md',
-          'java-api/88-.md',
-          'java-api/89-.md',
+          'java-api/88-full-text.md',
+          'java-api/89-bool-query.md',
           'java-api/90-gen-point.md',
           'java-api/91-.md'
         ]

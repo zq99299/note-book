@@ -162,7 +162,7 @@
                 <h5>学习笔记-中华石杉讲解</h5>
                 <p>高级知识篇；基于 V5.2+ 版本讲解</p>
                 <div class="social-touch">
-                    <a href="elasticsearch-high/">
+                    <a href="elasticsearch-senior/">
                         阅读更多
                     </a>
                 </div>
