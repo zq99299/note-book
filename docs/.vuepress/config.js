@@ -10,13 +10,14 @@ const javaGenSidebarConfig = require('../java');
 const xiemengyuanGenSidebarConfig = require('../xiemengyuan');
 const elasticsearchCoreSC = require('../elasticsearch-core');
 const elasticsearchSeniorSC = require('../elasticsearch-senior');
+const cachePdpSc = require('../cache-pdp');
 
 module.exports = {
     title: 'Mrcode 笔记本',
     description: '用来记录工作和学习过程中的笔记，汇总成册方便查阅，类容涵盖各类技术，如：java、git、elasticsearch、mycat、设计模式、gradle、vue - mrcode.cn',
     base: '/note-book/', // gh-page 中是增加了项目名
     dest: 'build/.vuepress/dist',  // 目录配置在外,纯粹是有代码洁癖和强迫症，并不能规避开发模式下同时构建不报错的问题
-    ga: 'UA-125573163-1', // 添加 ga 统计
+    // ga: 'UA-125573163-1', // 添加 ga 统计
     locales: {
         // 键名是该语言所属的子路径
         // 作为特例，默认语言可以使用 '/' 作为其路径。
@@ -75,6 +76,9 @@ module.exports = {
             {text: '了解更多', items: [
               {text: '本笔记介绍', link: '/introduce/'}
             ]},
+            {text: '系列学习中', items: [
+              {text: '亿级流量电商详情页系统实战（缓存架构）', link: '/cache-pdp/'}
+            ]},
             /*
             {text: 'MyCat', link: '/mycat/'},
             {text: 'Vue', link: '/vue/'},*/
@@ -91,18 +95,19 @@ module.exports = {
             '/java/': javaGenSidebarConfig(),
             '/xiemengyuan/': xiemengyuanGenSidebarConfig(),
             '/elasticsearch-senior/': elasticsearchSeniorSC(),
-            '/elasticsearch-core/': elasticsearchCoreSC()
+            '/elasticsearch-core/': elasticsearchCoreSC(),
+            '/cache-pdp/': cachePdpSc()
         }
     },
     plugins: [
         ['@vuepress/back-to-top', true],
-        ['@vuepress/pwa', {
-            serviceWorker: true,
-            updatePopup: {
-                message: "有新内容更新啦~",
-                buttonText: "立即获取新内容"
-            }
-        }],
+        // ['@vuepress/pwa', {
+        //     serviceWorker: true,
+        //     updatePopup: {
+        //         message: "有新内容更新啦~",
+        //         buttonText: "立即获取新内容"
+        //     }
+        // }],
         ['@vuepress/medium-zoom', true]
     ]
 }
