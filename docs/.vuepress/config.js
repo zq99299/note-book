@@ -60,9 +60,22 @@ module.exports = {
         },
         nav: [
             {text: 'Home', link: '/'},
-            {text: '项目介绍', link: '/introduce/'}/*,
-            {text: '设计模式（慕课）', link: '/imocc/design_pattern/'},
-            {text: '研磨设计模式（李兴华）', link: '/design_pattern/'},
+            {text: '设计模式', items: [
+              {text: '设计模式（慕课）', link: '/imocc/design_pattern/'},
+              {text: '研磨设计模式（李兴华）', link: '/design_pattern/'}
+            ]},
+            {text: 'Mycat', items: [
+              {text: 'mycat 1', link: '/mycat/'},
+              {text: 'mycat 2', link: '/mycat2/'}
+            ]},
+            {text: 'elasticsearch', items: [
+              {text: '核心知识篇', link: '/elasticsearch-core/'},
+              {text: '高级知识篇', link: '/elasticsearch-senior/'}
+            ]},
+            {text: '了解更多', items: [
+              {text: '本笔记介绍', link: '/introduce/'}
+            ]},
+            /*
             {text: 'MyCat', link: '/mycat/'},
             {text: 'Vue', link: '/vue/'},*/
         ],
