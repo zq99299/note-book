@@ -123,7 +123,13 @@ GET /blog_website/blogs/_search/template
 }
 ```
 
-如上指定了两个参数，并使用 `{{^end}}20` 指定了 end 的默认值为 20，
+如上指定了两个参数，并使用
+
+```
+ {{^end}}20
+```
+
+指定了 end 的默认值为 20，
 当 params.end 没有指定的之后，就会使用默认值 20
 
 ## conditional
