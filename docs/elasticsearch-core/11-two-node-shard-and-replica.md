@@ -1,5 +1,4 @@
 # 2 节点 shard & replica 机制
-[[toc]]
 
 图解 2个 node 环境下 replica shard 是如何分配的
 
