@@ -6,7 +6,7 @@
 
 先来建立 mapping，将 title 索引两次，注意语法
 
-```json{6,7,8,9,10,11,12,13，14}
+```json{6-14}
 PUT /website
 {
   "mappings": {
