@@ -5,7 +5,7 @@ module.exports = () => {
       title: 'linux',
       collapsable: false,
       children: [
-        '',
+        'linux/',
         'linux/git.md',
         'linux/yum.md'
       ]
