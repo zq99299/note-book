@@ -11,6 +11,7 @@ const xiemengyuanGenSidebarConfig = require('../xiemengyuan');
 const elasticsearchCoreSC = require('../elasticsearch-core');
 const elasticsearchSeniorSC = require('../elasticsearch-senior');
 const cachePdpSc = require('../cache-pdp');
+const postsSc = require('../_posts');
 
 module.exports = {
     title: 'Mrcode 笔记本',
@@ -73,12 +74,13 @@ module.exports = {
               {text: '核心知识篇', link: '/elasticsearch-core/'},
               {text: '高级知识篇', link: '/elasticsearch-senior/'}
             ]},
-            {text: '了解更多', items: [
-              {text: '本笔记介绍', link: '/introduce/'}
-            ]},
+            {text: '博客（零散文章）', link: '/_posts/'},
             {text: '系列学习中', items: [
               {text: '亿级流量电商详情页系统实战（缓存架构）', link: '/cache-pdp/'}
             ]},
+            {text: '了解更多', items: [
+              {text: '本笔记介绍', link: '/introduce/'}
+            ]}
             /*
             {text: 'MyCat', link: '/mycat/'},
             {text: 'Vue', link: '/vue/'},*/
@@ -96,7 +98,8 @@ module.exports = {
             '/xiemengyuan/': xiemengyuanGenSidebarConfig(),
             '/elasticsearch-senior/': elasticsearchSeniorSC(),
             '/elasticsearch-core/': elasticsearchCoreSC(),
-            '/cache-pdp/': cachePdpSc()
+            '/cache-pdp/': cachePdpSc(),
+            '/_posts/': postsSc()
         }
     },
     plugins: [
