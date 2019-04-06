@@ -13,7 +13,8 @@ module.exports = () => {
             children: buildSc(7, 34, 'redis/')
         }
     ]
-    mds = mds.concat(buildSc(35, 62, ''))
+    mds = mds.concat(buildSc(35, 40, ''))
+    mds = mds.concat(buildSc(44, 62, ''))
     return mds
 }
 
