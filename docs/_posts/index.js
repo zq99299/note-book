@@ -9,6 +9,7 @@ module.exports = () => {
         'linux/git.md',
         'linux/yum.md'
       ]
-    }
+    },
+    'virtualbox/index.md'
   ]
 }
