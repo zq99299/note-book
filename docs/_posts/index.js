@@ -7,7 +7,8 @@ module.exports = () => {
       children: [
         'linux/',
         'linux/git.md',
-        'linux/yum.md'
+        'linux/yum.md',
+        'linux/dist-manage.md'
       ]
     },
     'virtualbox/index.md'
