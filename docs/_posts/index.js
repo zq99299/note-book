@@ -11,6 +11,6 @@ module.exports = () => {
         'linux/dist-manage.md'
       ]
     },
-    'virtualbox/index.md'
+    'virtualbox/'
   ]
 }
