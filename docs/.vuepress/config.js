@@ -111,6 +111,9 @@ module.exports = {
                 buttonText: "立即获取新内容"
             }
         }],
-        ['@vuepress/medium-zoom', true]
+        ['@vuepress/medium-zoom', true],
+        ['@vuepress/search', {
+          searchMaxSuggestions: 10
+        }]
     ]
 }
