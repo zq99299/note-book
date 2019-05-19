@@ -17,6 +17,10 @@ vi /etc/profile
 
 # 刷新配置文件
 source /etc/profile
+
+# 专门的环境变量
+vi ~/.bashrc
+source ~/.bashrc
 ```
 
 ## nodejs 安装
