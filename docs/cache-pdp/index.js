@@ -20,7 +20,12 @@ module.exports = () => {
         collapsable: true,
         children: buildSc(62, 67, 'storm/')
     })
-    mds = mds.concat(buildSc(68, 100, ''))
+    mds = mds.concat(buildSc(68, 83, ''))
+    mds.push({
+        title: "hystrix",
+        collapsable: true,
+        children: buildSc(84, 100, 'hystrix/')
+    })
     return mds
 }
 
