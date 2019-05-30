@@ -2,6 +2,8 @@
 
 cache-pdp：Cache architecture product details page
 
+[笔记配套项目](https://github.com/zq99299/cache-pdp.git)
+
 > 原版整体目录
 
 - [001. 课程介绍以及高并发高可用复杂系统中的缓存架构有哪些东西](./001-introduce.md)
