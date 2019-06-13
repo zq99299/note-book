@@ -24,7 +24,7 @@ module.exports = () => {
     mds.push({
         title: "hystrix",
         collapsable: true,
-        children: buildSc(84, 100, 'hystrix/')
+        children: buildSc(84, 109, 'hystrix/')
     })
     return mds
 }
