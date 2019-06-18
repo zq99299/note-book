@@ -12,6 +12,7 @@ const elasticsearchCoreSC = require('../elasticsearch-core');
 const elasticsearchSeniorSC = require('../elasticsearch-senior');
 const cachePdpSc = require('../cache-pdp');
 const postsSc = require('../_posts');
+const springCloudSc = require('../spring-cloud');
 
 module.exports = {
     title: 'Mrcode 笔记本',
@@ -99,6 +100,7 @@ module.exports = {
             '/elasticsearch-senior/': elasticsearchSeniorSC(),
             '/elasticsearch-core/': elasticsearchCoreSC(),
             '/cache-pdp/': cachePdpSc(),
+            '/spring-cloud/': springCloudSc(),
             '/_posts/': postsSc()
         }
     },
