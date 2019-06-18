@@ -112,3 +112,4 @@ cache-pdp：Cache architecture product details page
 - [107. hystrix 的 metric 统计相关的各种高阶配置讲解](./hystrix/107.md)
 - [108. hystrix dashboard 可视化分布式系统监控环境部署](./hystrix/108.md)
 - [109. 生产环境中的hystrix分布式系统的工程运维经验总结](./hystrix/109.md)
+- [110. 高并发场景下恐怖的缓存雪崩现象以及导致系统全盘崩溃的后果](./110.md)
