@@ -129,7 +129,7 @@ hystrix:
             timeoutInMilliseconds: 800000    # 6.6 * 2 分钟
   threadpool:
     default:
-      withAllowMaximumSizeToDivergeFromCoreSize: true
+      allowMaximumSizeToDivergeFromCoreSize: true
       coreSize: 200
       maximumSize: 1000
       maxQueueSize: 20
@@ -152,3 +152,30 @@ hystrix:
     一个服务共享一个线程池， 500 个感觉都有点少
 
     在亿级流量架构里面讲解得时按细粒度控制，每个服务接口来划分的。这里直接按一个微服务划分了
+
+直接使用测试过的代码来说明是什么意思
+
+```java
+.andThreadPoolPropertiesDefaults(HystrixThreadPoolProperties.Setter()
+        // 配置线程池大小，同时并发能力个数
+        .withCoreSize(10)
+        // 设置线程池的最大大小，只有在设置 allowMaximumSizeToDivergeFromCoreSize 的时候才能生效
+        .withMaximumSize(100)
+        .withAllowMaximumSizeToDivergeFromCoreSize(true)
+        // 设置保持存活的时间，单位是分钟，默认是 1
+        // 当线程池中线程空闲超过该时间之后，就会被销毁
+        // 如果 100 个线程都不活跃了，那么久会销毁 withMaximumSize - withCoreSize
+        // 因为不设置 withCoreSize 也会有默认值 10 个
+        // ui 页面上的 pool size 需要手动刷新页面才会看到变化，上去了貌似就不会掉下来
+        .withKeepAliveTimeMinutes(1)
+        // 配置等待线程个数；如果不配置该项，则没有等待，超过则拒绝
+        .withMaxQueueSize(5)
+        // 由于 maxQueueSize 是初始化固定的，该配置项是动态调整最大等待数量的
+        // 可以热更新；规则：只能比 MaxQueueSize 小，
+        .withQueueSizeRejectionThreshold(2)
+)
+```
+
+最后需要注意的一个坑：ui 上的 Pool Size 需要手动刷新才能看到变化，比如不活跃被销毁了
+
+这里配置含义请参考 [](/cache-pdp/hystrix/108.md#hystrix-dashboard-含义)
