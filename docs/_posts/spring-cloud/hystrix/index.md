@@ -178,4 +178,4 @@ hystrix:
 
 最后需要注意的一个坑：ui 上的 Pool Size 需要手动刷新才能看到变化，比如不活跃被销毁了
 
-这里配置含义请参考 [](/cache-pdp/hystrix/108.md#hystrix-dashboard-含义)
+这里配置含义请参考 [hystrix-dashboard 含义](/cache-pdp/hystrix/108.md#hystrix-dashboard-含义)

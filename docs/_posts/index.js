@@ -11,6 +11,13 @@ module.exports = () => {
         'linux/dist-manage.md'
       ]
     },
-    'virtualbox/'
+    'virtualbox/',
+    {
+      title: 'Spring Cloud',
+      collapsable: false,
+      children: [
+        'spring-cloud/hystrix/'
+      ]
+    }
   ]
 }
