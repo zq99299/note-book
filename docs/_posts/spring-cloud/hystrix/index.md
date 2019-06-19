@@ -130,9 +130,9 @@ hystrix:
   threadpool:
     default:
       allowMaximumSizeToDivergeFromCoreSize: true
-      coreSize: 200
+      coreSize: 20
       maximumSize: 1000
-      maxQueueSize: 20
+      maxQueueSize: -1
       keepAliveTimeMinutes: 1
 ```
 
@@ -153,29 +153,57 @@ hystrix:
 
     在亿级流量架构里面讲解得时按细粒度控制，每个服务接口来划分的。这里直接按一个微服务划分了
 
-直接使用测试过的代码来说明是什么意思
-
-```java
-.andThreadPoolPropertiesDefaults(HystrixThreadPoolProperties.Setter()
-        // 配置线程池大小，同时并发能力个数
-        .withCoreSize(10)
-        // 设置线程池的最大大小，只有在设置 allowMaximumSizeToDivergeFromCoreSize 的时候才能生效
-        .withMaximumSize(100)
-        .withAllowMaximumSizeToDivergeFromCoreSize(true)
-        // 设置保持存活的时间，单位是分钟，默认是 1
-        // 当线程池中线程空闲超过该时间之后，就会被销毁
-        // 如果 100 个线程都不活跃了，那么久会销毁 withMaximumSize - withCoreSize
-        // 因为不设置 withCoreSize 也会有默认值 10 个
-        // ui 页面上的 pool size 需要手动刷新页面才会看到变化，上去了貌似就不会掉下来
-        .withKeepAliveTimeMinutes(1)
-        // 配置等待线程个数；如果不配置该项，则没有等待，超过则拒绝
-        .withMaxQueueSize(5)
-        // 由于 maxQueueSize 是初始化固定的，该配置项是动态调整最大等待数量的
-        // 可以热更新；规则：只能比 MaxQueueSize 小，
-        .withQueueSizeRejectionThreshold(2)
-)
-```
-
 最后需要注意的一个坑：ui 上的 Pool Size 需要手动刷新才能看到变化，比如不活跃被销毁了
 
-这里配置含义请参考 [hystrix-dashboard 含义](/cache-pdp/hystrix/108.md#hystrix-dashboard-含义)
+这里配置含义请参考 [hystrix-dashboard 含义和这里其他的配置注意事项](/cache-pdp/hystrix/108.md#hystrix-dashboard-含义)
+
+## turbine 配置
+
+turbine 是聚合多个 hystrix.stream 的封装，在多个实例的微服务中，使用 turbin 才是有用的；
+
+spring-cloud-starter-netflix-turbin 中的前提：
+
+- 需要依赖 eurake
+- 部署的服务需要能获取到 eurake 的信息，因为默认会通过配置的服务名来从 eurake 中获取具体服务实例的 hystrix.stream 地址
+- turbine 需要和要监控的服务在同一个 eurake 中
+- turbine 不能部署在 服务注册中心，服务注册中心一般不会注册在注册中心上（单服务注册中心是这样）
+
+添加依赖
+
+```groovy
+compile 'org.springframework.cloud:spring-cloud-starter-netflix-turbine'
+```
+
+通过注解开启支持
+
+```java
+@EnableTurbine
+```
+
+项目启动之后，会在控制台中找到 mapping 信息 `/turbine.stream` (高版本的 boot 需要配置打印出 controller 的映射路径信息)
+
+访问地址：`http://localhost:80/clusters`，如果能看见以下信息，说明配置没有问题了；
+
+```json
+[
+  {
+  "name": "MRCODE",
+  "link": "http://localhost:80/turbine.stream?cluster=MRCODE"
+  }
+]
+```
+
+但是跟着本笔记走的话，肯定是不行的，还需要在 yml 中对 turbine 进行配置
+
+配置需要聚合的微服务
+
+```yml
+turbine:
+  aggregator:
+     # 从服务注册中心返回的服务名是大写的，如有多个使用数组方式给出；
+     # 它绑定的配置路径是 org.springframework.cloud.netflix.turbine.TurbineAggregatorProperties#setClusterConfig
+    clusterConfig: MRCODE
+  appConfig: mrcode
+```
+
+这个时候随意打开一个仪表盘，如 `http://localhost:80/hystrix/` ，填入通过 /clusters 获取到的 link 地址，即可观察该集群信息
