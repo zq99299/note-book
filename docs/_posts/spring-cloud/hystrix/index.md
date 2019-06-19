@@ -155,7 +155,8 @@ hystrix:
 
 最后需要注意的一个坑：ui 上的 Pool Size 需要手动刷新才能看到变化，比如不活跃被销毁了
 
-这里配置含义请参考 [hystrix-dashboard 含义和这里其他的配置注意事项](/cache-pdp/hystrix/108.md#hystrix-dashboard-含义)
+其他请参考 [hystrix-dashboard 含义和这里其他的配置注意事项](/cache-pdp/hystrix/108.md#hystrix-dashboard-含义)
+[配置 withMaximumSize 无效解决](/cache-pdp/hystrix/106.md#配置-withMaximumSize-无效解决)
 
 ## turbine 配置
 
