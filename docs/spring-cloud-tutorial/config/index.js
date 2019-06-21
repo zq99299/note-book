@@ -1,16 +1,29 @@
 module.exports = (path) => {
+  let mds = [
+    path + ''
+  ]
+
+  mds = mds.concat(buildSc(1, 7, path))
+
   return [
     {
       title: 'Spring Cloud Config',
       collapsable: false,
-      children: [
-        path + '',
-        path + '001.md',
-        path + '002.md',
-        path + '003.md',
-        path + '004.md',
-        path + '005.md'
-      ]
+      children: mds
     }
-  ]
+  ];
+}
+
+function buildSc(start, end, parentDir) {
+    let mds = []
+    for (let i = start; i <= end; i++) {
+        if (i < 10) {
+            mds.push(`${parentDir}00${i}.md`)
+        } else if (i < 100) {
+            mds.push(`${parentDir}0${i}.md`)
+        } else {
+            mds.push(`${parentDir}${i}.md`)
+        }
+    }
+    return mds
 }
