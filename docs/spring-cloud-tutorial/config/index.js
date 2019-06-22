@@ -3,7 +3,7 @@ module.exports = (path) => {
     path + ''
   ]
 
-  mds = mds.concat(buildSc(1, 7, path))
+  mds = mds.concat(buildSc(1, 9, path))
 
   return [
     {
