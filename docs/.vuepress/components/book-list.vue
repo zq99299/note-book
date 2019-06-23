@@ -168,6 +168,21 @@
                 </div>
             </div>
         </div>
+        <div class="single-member effect-2">
+            <div class="member-image">
+                <img src="./hero.png" alt="Member">
+            </div>
+            <div class="member-info">
+                <h3>spring-cloud</h3>
+                <h5>官网教程学习/实践笔记</h5>
+                <p>官网教程翻译实践笔记，用到那一块感觉不太明白的就去官网阅读实践以便并记录</p>
+                <div class="social-touch">
+                    <a href="spring-cloud-tutorial/">
+                        阅读更多
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 

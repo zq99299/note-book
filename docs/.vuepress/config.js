@@ -75,6 +75,9 @@ module.exports = {
               {text: '核心知识篇', link: '/elasticsearch-core/'},
               {text: '高级知识篇', link: '/elasticsearch-senior/'}
             ]},
+            {text: 'spring', items: [
+              {text: 'Spring Cloud', link: '/spring-cloud-tutorial/'}
+            ]},
             {text: '博客（零散文章）', link: '/_posts/'},
             {text: '系列学习中', items: [
               {text: '亿级流量电商详情页系统实战（缓存架构）', link: '/cache-pdp/'},
