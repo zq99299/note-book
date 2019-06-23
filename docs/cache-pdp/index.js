@@ -31,7 +31,12 @@ module.exports = () => {
         collapsable: true,
         children: buildSc(110, 120, '')
     })
-    mds = mds.concat(buildSc(121, 126, ''))
+    mds.push({
+        title: "缓存穿透",
+        collapsable: true,
+        children: buildSc(121, 126, '')
+    })
+    // mds = mds.concat(buildSc(121, 126, ''))
     return mds
 }
 
