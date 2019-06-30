@@ -36,7 +36,10 @@ module.exports = () => {
         collapsable: true,
         children: buildSc(117, 120, '')
     })
-    mds = mds.concat(buildSc(121, 126, ''))
+    mds = mds.concat(buildSc(121, 123, ''))
+
+    // 第二版
+    mds = mds.concat(buildSc(124, 126, ''))
     return mds
 }
 

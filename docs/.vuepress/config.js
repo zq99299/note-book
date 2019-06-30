@@ -78,6 +78,11 @@ module.exports = {
             {text: 'spring', items: [
               {text: 'Spring Cloud', link: '/spring-cloud-tutorial/'}
             ]},
+            {text: '亿级流量电商详情页系统实战(缓存架构)', items: [
+              {text: '全目录导航', link: '/cache-pdp/'},
+              {text: '第一版（001 ~ 123 章）', link: '/cache-pdp/001-introduce.md'},
+              {text: '第二版（124 ~ 学习中）', link: '/cache-pdp/124.md'}
+            ]},
             {text: '博客（零散文章）', link: '/_posts/'},
             {text: '系列学习中', items: [
               {text: '亿级流量电商详情页系统实战（缓存架构）', link: '/cache-pdp/'},
