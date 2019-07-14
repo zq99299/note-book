@@ -40,6 +40,11 @@ module.exports = () => {
 
     // 第二版
     mds = mds.concat(buildSc(124, 126, ''))
+    mds.push({
+        title: "动态渲染系统",
+        collapsable: true,
+        children: buildSc(127, 140, 'dr/')
+    })
     return mds
 }
 
