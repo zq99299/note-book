@@ -43,8 +43,14 @@ module.exports = () => {
     mds.push({
         title: "动态渲染系统",
         collapsable: true,
-        children: buildSc(127, 140, 'dr/')
+        children: buildSc(127, 185, 'dr/')
     })
+	mds.push({
+        title: "OneService 系统",
+        collapsable: true,
+        children: buildSc(186, 194, 'onservice/')
+    })
+	mds.push('195.md')
     return mds
 }
 
