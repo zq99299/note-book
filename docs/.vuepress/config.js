@@ -13,6 +13,7 @@ const elasticsearchSeniorSC = require('../elasticsearch-senior');
 const cachePdpSc = require('../cache-pdp');
 const postsSc = require('../_posts');
 const springCloudTutorialSc = require('../spring-cloud-tutorial');
+const linuxSc = require('../linux');
 
 module.exports = {
     title: 'Mrcode 笔记本',
@@ -86,7 +87,8 @@ module.exports = {
             {text: '博客（零散文章）', link: '/_posts/'},
             {text: '系列学习中', items: [
               {text: '亿级流量电商详情页系统实战（缓存架构）', link: '/cache-pdp/'},
-              {text: 'Spring Cloud 官网教程实践笔记', link: '/spring-cloud-tutorial/'}
+              {text: 'Spring Cloud 官网教程实践笔记', link: '/spring-cloud-tutorial/'},
+              {text: 'linux 基础篇（linuxSc）', link: '/linux'}
             ]},
             {text: '了解更多', items: [
               {text: '本笔记介绍', link: '/introduce/'}
@@ -111,6 +113,7 @@ module.exports = {
             '/cache-pdp/': cachePdpSc(),
             '/_posts/': postsSc(),
             '/spring-cloud-tutorial/': springCloudTutorialSc(),
+            '/linux/': linuxSc()
         }
     },
     plugins: [
