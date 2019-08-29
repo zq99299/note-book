@@ -5,8 +5,8 @@
   "author": "mrcode <99299684@qq.com>",
   "private": false,
   "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:dev": "npx --max_old_space_size=6096 vuepress dev docs",
+    "docs:build": "npx --max_old_space_size=6096 vuepress build docs"
   },
   "dependencies": {
   },

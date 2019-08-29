@@ -5,7 +5,7 @@ module.exports = () => {
             collapsable: false,
             children: [
                 '',
-                '/00/'
+                '00/'
             ]
         }
     ]
