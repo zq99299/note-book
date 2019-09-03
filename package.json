@@ -5,15 +5,17 @@
   "author": "mrcode <99299684@qq.com>",
   "private": false,
   "scripts": {
-    "docs:dev": "npx --max_old_space_size=8192 vuepress dev docs",
-    "docs:build": "npx --max_old_space_size=8192 vuepress build docs"
+    "docs:devx": "vuepress dev docs --open",
+    "docs:dev": "node --max_old_space_size=4096 ./node_modules/vuepress/cli.js dev docs --open",
+    "docs:buildx": "vuepress build docs --debug",
+    "docs:build": "node --max_old_space_size=4096 ./node_modules/vuepress/cli.js build docs"
   },
   "dependencies": {
   },
   "devDependencies": {
-    "@vuepress/plugin-back-to-top": "^1.0.1",
-    "@vuepress/plugin-medium-zoom": "^1.0.1",
-    "@vuepress/plugin-pwa": "^1.0.1",
-	  "vuepress": "^1.0.1"
+    "@vuepress/plugin-back-to-top": "^1.0.3",
+    "@vuepress/plugin-medium-zoom": "^1.0.3",
+    "@vuepress/plugin-pwa": "^1.0.3",
+	  "vuepress": "^1.0.3"
   }
 }

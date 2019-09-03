@@ -20,14 +20,16 @@ module.exports = {
     description: '用来记录工作和学习过程中的笔记，汇总成册方便查阅，类容涵盖各类技术，如：java、git、elasticsearch、mycat、设计模式、gradle、vue - mrcode.cn',
     base: '/note-book/', // gh-page 中是增加了项目名
     dest: 'build/.vuepress/dist',  // 目录配置在外,纯粹是有代码洁癖和强迫症，并不能规避开发模式下同时构建不报错的问题
+    host: 'localhost', // dev 的域名
+    port: 8080,
     ga: 'UA-125573163-1', // 添加 ga 统计
-    locales: {
-        // 键名是该语言所属的子路径
-        // 作为特例，默认语言可以使用 '/' 作为其路径。
-        '/': {
-            lang: 'zh-CN', // 将会被设置为 <html> 的 lang 属性
-        }
-    },
+    // locales: {
+    //     // 键名是该语言所属的子路径
+    //     // 作为特例，默认语言可以使用 '/' 作为其路径。
+    //     // '/': {
+    //     //     lang: 'zh-CN', // 将会被设置为 <html> 的 lang 属性
+    //     // }
+    // },
     markdown: {
       lineNumbers: true
     },
@@ -88,7 +90,7 @@ module.exports = {
             {text: '系列学习中', items: [
               {text: '亿级流量电商详情页系统实战（缓存架构）', link: '/cache-pdp/'},
               {text: 'Spring Cloud 官网教程实践笔记', link: '/spring-cloud-tutorial/'},
-              {text: 'linux 基础篇（linuxSc）', link: '/linux'}
+              {text: 'linux 基础篇', link: '/linux/'}
             ]},
             {text: '了解更多', items: [
               {text: '本笔记介绍', link: '/introduce/'}

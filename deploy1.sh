@@ -4,13 +4,13 @@
 set -e
 
 # 删除目录防止构建失败
-rm -rf build/.vuepress/dist
+rm -rf .vuepress/dist
 
 # 生成静态文件
-yarn docs:build
+yarn run docs:build
 
 # 进入生成的文件夹
-cd build/.vuepress/dist
+cd .vuepress/dist
 
 # 如果是发布到自定义域名
 # echo 'www.example.com' > CNAME
