@@ -112,8 +112,7 @@ module.exports = {
             '/elasticsearch-core/': elasticsearchCoreSC(),
             '/cache-pdp/': cachePdpSc(),
             '/_posts/': postsSc(),
-            '/spring-cloud-tutorial/': springCloudTutorialSc(),
-            '/linux/': linuxSc()
+            '/spring-cloud-tutorial/': springCloudTutorialSc()
         }
     },
     plugins: [
