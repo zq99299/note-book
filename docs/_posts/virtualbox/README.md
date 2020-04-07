@@ -1,5 +1,15 @@
 # virtualbox
 
+## win10 Hyper-V 冲突
+当 win10 开启了 Hyper-V 那么虚拟机无法运行
+
+```bash
+# 关闭
+bcdedit /set hypervisorlaunchtype off
+# 开启: off -> auto 需要重启计算机
+bcdedit /set hypervisorlaunchtype Auto
+```
+
 ## 网络篇- Host Only（win10）
 默认是不可上网的。需要配置宿主机上可上网的网卡共享才可以；
 
@@ -40,3 +50,9 @@
 
 在某些情况下，这种配置会失效，比如：选择虚拟机休眠，win10 也选择休眠，再启动的时候，就会失效，
 这个时候，只能重复上面的步骤，重新共享下就能解决了
+
+## 最终说明
+
+![image-20200402172023403](./assets/image-20200402172023403.png)
+
+看上图，说 bridged 都可以，但是貌似又时候又不行。而虚拟机是可以配置多个网卡的。可以一个网卡用 Host Only 方式，去上外网和宿主机 ping 虚拟机，然后使用桥接模式让虚拟机可以 ping 宿主机

@@ -3,7 +3,7 @@ module.exports = () => {
     '',
     {
       title: 'linux',
-      collapsable: false,
+      collapsable: true,
       children: [
         'linux/',
         'linux/git.md',
@@ -12,6 +12,7 @@ module.exports = () => {
       ]
     },
     'virtualbox/',
-    'win10/'
+    'win10/',
+    'docker/'
   ]
 }
