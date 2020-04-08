@@ -120,8 +120,8 @@ module.exports = {
         ['@vuepress/pwa', {
             serviceWorker: true,
             updatePopup: {
-                message: "pwa:有新内容更新啦~",
-                buttonText: "立即获取新内容"
+                message: "有新内容更新啦~",
+                buttonText: "立即获取新内容，确定后稍后自动刷新"
             }
         }],
         ['@vuepress/medium-zoom', {
@@ -129,6 +129,15 @@ module.exports = {
         }],
         ['@vuepress/search', {
           searchMaxSuggestions: 10
-        }]
+        }],
+        ['vuepress-plugin-code-copy', true],
+        ['@vuepress/last-updated',{
+          transformer: (timestamp, lang) => {
+            // 不要忘了安装 moment
+            const moment = require('moment')
+            moment.locale(lang)
+            return moment(timestamp).fromNow()
+          }
+        }
     ]
 }

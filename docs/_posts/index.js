@@ -13,6 +13,7 @@ module.exports = () => {
     },
     'virtualbox/',
     'win10/',
-    'docker/'
+    'docker/',
+    'k8s/'
   ]
 }
