@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /hero.png
+<!-- heroImage: /hero.png -->
 actionText: 项目介绍 →
 actionLink: /introduce/
 features:
@@ -10,7 +10,7 @@ features:
   details: 学习过程中记录笔记，防止忘记。
 - title: 知识库
   details: 积少成多，串联知识，方便翻阅
-footer: MIT Licensed | Copyright © 2018-2019 mrcode
+footer: MIT Licensed | Copyright © 2020 mrcode
 ---
 
-<book-list></book-list>
+<book-list-book-list></book-list-book-list>

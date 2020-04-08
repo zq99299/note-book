@@ -16,7 +16,7 @@ const springCloudTutorialSc = require('../spring-cloud-tutorial');
 
 module.exports = {
     title: 'Mrcode 笔记本',
-    description: '用来记录工作和学习过程中的笔记，汇总成册方便查阅，类容涵盖各类技术，如：java、git、elasticsearch、mycat、设计模式、gradle、vue - mrcode.cn',
+    description: '用来记录工作和学习过程中的笔记，汇总成册方便查阅，类容涵盖各类技术，如：Java、Git、ElasticSearch、MyCat、设计模式、Gradle、Vue - mrcode.cn',
     base: '/note-book/', // gh-page 中是增加了项目名
     dest: 'build/.vuepress/dist',  // 目录配置在外,纯粹是有代码洁癖和强迫症，并不能规避开发模式下同时构建不报错的问题
     host: 'localhost', // dev 的域名
@@ -70,28 +70,26 @@ module.exports = {
               {text: '研磨设计模式（李兴华）', link: '/design_pattern/'}
             ]},
             {text: 'Mycat', items: [
-              {text: 'mycat 1', link: '/mycat/'},
-              {text: 'mycat 2', link: '/mycat2/'}
+              {text: 'Mycat 1', link: '/mycat/'},
+              {text: 'Mycat 2', link: '/mycat2/'}
             ]},
-            {text: 'elasticsearch', items: [
+            {text: 'Elasticsearch', items: [
               {text: '核心知识篇', link: '/elasticsearch-core/'},
               {text: '高级知识篇', link: '/elasticsearch-senior/'}
             ]},
-            {text: 'spring', items: [
-              {text: 'Spring Cloud', link: '/spring-cloud-tutorial/'}
-            ]},
-            {text: '亿级流量电商详情页系统实战(缓存架构)', items: [
+            {text: '缓存架构-亿级流量电商详情页系统实战', items: [
               {text: '全目录导航', link: '/cache-pdp/'},
               {text: '第一版（001 ~ 123 章）', link: '/cache-pdp/001-introduce.md'},
               {text: '第二版（124 ~ 195 章）', link: '/cache-pdp/124.md'}
             ]},
             {text: '博客（零散文章）', link: '/_posts/'},
-            {text: '系列学习中', items: [
-              {text: 'Spring Cloud 官网教程实践笔记', link: '/spring-cloud-tutorial/'}
-            ]},
-            {text: '更多笔记', items: [
+            // {text: '系列学习中', items: [
+            //   {text: 'Spring Cloud 官网教程实践笔记', link: '/spring-cloud-tutorial/'}
+            // ]},
+            {text: '更多', items: [
               {text: '本笔记介绍', link: '/introduce/'},
-              {text: 'linux 基础篇', link: 'https://zq99299.github.io/linux-tutorial/'}
+              {text: 'Linux 基础篇', link: 'https://zq99299.github.io/linux-tutorial/'},
+              {text: 'Spring Cloud', link: '/spring-cloud-tutorial/'}
             ]}
             /*
             {text: 'MyCat', link: '/mycat/'},
@@ -138,6 +136,6 @@ module.exports = {
             moment.locale(lang)
             return moment(timestamp).fromNow()
           }
-        }
+        }]
     ]
 }
