@@ -14,6 +14,14 @@ module.exports = () => {
     'virtualbox/',
     'win10/',
     'docker/',
-    'k8s/'
+    {
+      title: 'k8s',
+      collapsable: true,
+      children: [
+        'k8s/',
+        'k8s/kubernetes-basics.md',
+        'k8s/configure-redis-using-configmap.md'
+      ]
+    }
   ]
 }
