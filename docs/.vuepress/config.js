@@ -77,11 +77,40 @@ module.exports = {
               {text: '核心知识篇', link: '/elasticsearch-core/'},
               {text: '高级知识篇', link: '/elasticsearch-senior/'}
             ]},
-            {text: '缓存架构-亿级流量电商详情页系统实战', items: [
-              {text: '全目录导航', link: '/cache-pdp/'},
-              {text: '第一版（001 ~ 123 章）', link: '/cache-pdp/001-introduce.md'},
-              {text: '第二版（124 ~ 195 章）', link: '/cache-pdp/124.md'}
-            ]},
+            {
+              text: '缓存架构-亿级流量电商详情页系统实战',
+              ariaLabel: '缓存架构-亿级流量电商详情页系统实战',
+              items: [
+                {
+                  text: '综合性导航',
+                  items: [
+                    {text: '全目录导航', link: '/cache-pdp/'},
+                    {text: '第一版（001 ~ 123 章）', link: '/cache-pdp/001-introduce.md'},
+                    {text: '第二版（124 ~ 195 章）', link: '/cache-pdp/124.md'},
+                    {text: '课程总结（难题与解决方案）', link: '/cache-pdp/121.md'}
+                  ]
+                },
+                {
+                  text: '精彩知识精选',
+                  items: [
+                    {text: 'Redis 篇（redis 企业级集群架构）', link: '/cache-pdp/redis/007.md'},
+                    {text: '多级缓存架构设计', link: '/cache-pdp/035.md'},
+                    {text: '数据库 + 缓存双写一致性解决方案', link: '/cache-pdp/040.md'},
+                    {text: '缓存维度化拆分解决方案', link: '/cache-pdp/045.md'},
+                    {text: '缓存命中率提升解决方案', link: '/cache-pdp/051.md'},
+                    {text: '缓存并发重建冲突解决方案', link: '/cache-pdp/057.md'},
+                    {text: '缓存预热解决方案', link: '/cache-pdp/062.md'},
+                    {text: '热点缓存自动降级方案', link: '/cache-pdp/069.md'},
+                    {text: '缓存雪崩解决方案', link: '/cache-pdp/110.md'},
+                    {text: '缓存穿透解决方案', link: '/cache-pdp/117.md'},
+                    {text: '缓存失效解决方案', link: '/cache-pdp/120.md'},
+                    {text: '高可用分布式系统架构设计（hystrix 篇）', link: '/cache-pdp/084.md'},
+                    {text: 'spring boot 整合 ehcache', link: '/cache-pdp/047.md'},
+                    {text: '史上最通俗易懂 Storm 教程', link: '/cache-pdp/062.md'}
+                  ]
+                }
+              ]
+            },
             {text: '博客（零散文章）', link: '/_posts/'},
             // {text: '系列学习中', items: [
             //   {text: 'Spring Cloud 官网教程实践笔记', link: '/spring-cloud-tutorial/'}
