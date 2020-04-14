@@ -118,7 +118,8 @@ module.exports = {
             {text: '更多', items: [
               {text: '本笔记介绍', link: '/introduce/'},
               {text: 'Linux 基础篇', link: 'https://zq99299.github.io/linux-tutorial/'},
-              {text: 'Spring Cloud', link: '/spring-cloud-tutorial/'}
+              {text: 'Spring Cloud', link: '/spring-cloud-tutorial/'},
+			  {text: '笔记精选汇总', link: 'https://github.com/zq99299/repository-summary'}
             ]}
             /*
             {text: 'MyCat', link: '/mycat/'},
