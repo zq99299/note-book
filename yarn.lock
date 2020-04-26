@@ -6490,6 +6490,10 @@ vuepress-html-webpack-plugin@^3.2.0:
     toposort "^1.0.0"
     util.promisify "1.0.0"
 
+vuepress-plugin-baidu-tongji-analytics@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/vuepress-plugin-baidu-tongji-analytics/-/vuepress-plugin-baidu-tongji-analytics-1.0.1.tgz#4e0278d660401f3da677e39f2bc82798665cb022"
+
 vuepress-plugin-code-copy@^1.0.4:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/vuepress-plugin-code-copy/-/vuepress-plugin-code-copy-1.0.6.tgz#6431dab764b48b5b203e4936d98b1943651ce4ad"
