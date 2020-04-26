@@ -22,6 +22,7 @@ module.exports = () => {
         'k8s/kubernetes-basics.md',
         'k8s/configure-redis-using-configmap.md'
       ]
-    }
+    },
+    'npm/'
   ]
 }
