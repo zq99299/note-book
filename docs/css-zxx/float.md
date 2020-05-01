@@ -1,6 +1,5 @@
 # CSS 深入理解之 float 浮动
 
-# float
 本节能学到的知识:
 
 通过追溯CSS/HTML发展历史，知道Float出现的原本作用是什么，从而可以帮助我们解答很多疑惑。
@@ -32,6 +31,10 @@
   absolute 近亲，这个在 absolute 章节讲解
 
 - `overflow:hidden/scrool`
+
+  给父元素增加 overflow: hidden;（宽度要是固定或则100%（块级元素宽度默认就是100%））
+
+    > 原理：使用了overflow:hidden 的父元素要计算超出的部分然后进行隐藏，那么他就会撑开自身把所有的子元素包裹进来。 --  来自百度不权威的解说
 
   
 
@@ -98,9 +101,11 @@
 
 
 - clear：就如同在峡谷两侧搭建了索道，可以正常通行，但是可以和外界有 **接触**，并且发生，环境重叠效果
+
 - BFC：产生了一个封闭的结构，不会产生重叠，例如浮动，让文字环绕它，而不是重叠它
 
-### clear 通常应用形式
+
+## clear 通常应用形式
 
 - HTML block 水平元素底部
 
@@ -240,25 +245,27 @@ float 的看家本领就是文字环绕，float 后跟随着许多跟随元素
 
 上图中，上面的实现标识了两种：
 
-- 传统的实现，左侧固定宽度 + 右侧浮动（右侧固定宽度）
-- 文字环绕流布局实现：左侧固定宽度 + 浮动，右侧利用跟随自适应+占位（不会跑到头像下面去）
+- 传统的实现：
+  - 左侧固定宽度 + 左浮动
+  - 右侧固定宽度 + 右浮动
+- 文字环绕流布局实现：
+  - 左侧固定宽度 + 左浮动
+  - 右侧利用跟随自适应+ 占位（不会跑到头像下面去）
 
 ### DOM 与显示位置匹配的单侧固定布局
 
 ![image-20200501015735029](./assets/image-20200501015735029.png)
 
-上面的布局，如果把头像放到右侧，那么他的实现就是
-
-```
-头像 + 内容 的 HTML 顺序
-然后头像右浮动，内容使用 padding-right 的方式
-```
-
-这种方式，从页面上展示来看，他们就是相反的。所以使用下面的方式来达到顺序一致
+- 页面视觉与 DOM 元素相反的实现
+  - 头像区域：右浮动 + 宽度固定
+  - 内容区域：由于位置本身就在后面，环绕文字； + margin-rigft ；
+- 页面视觉与 DOM 元素一致的实现
+  - 内容区域：一个额外的容器进行宽度 100% 自适应 + 左浮动
+  - 头像区域：
+    - 左浮动，跟随内容区域，由于内容区域 100% 宽度，导致头像往下掉
+    - 利用 margin-left 负值达到显示在同一行中
 
 [浮动与单侧尺寸固定的流体布局 demo 演示 ](https://github.com/zq99299/css-zxx/tree/float/6/浮动与右侧尺寸固定的流体布局.html)
-
-正确的方式是使用：左侧内容宽度 100% 且左浮动，右侧头像固定宽度也左浮动（达到跟随）+ margin left 负值（由于左侧宽度 100%，那么右侧只有负值才能显示出来）
 
 ### 高级进化-智能自适应尺寸
 
@@ -266,158 +273,56 @@ float 的看家本领就是文字环绕，float 后跟随着许多跟随元素
 
 ![image-20200501014118024](./assets/image-20200501014118024.png)
 
+[浮动与两侧皆自适应的流体布局 demo 演示 ](https://github.com/zq99299/css-zxx/tree/float/6/浮动与两侧皆自适应的流体布局.html)，实现方式：
 
+- 头像：左浮动
+- 内容：使用 `display: table-cell` 
+
+达成头像宽度更改，内容自适应；
+
+有一个不是问题的问题：当整个面变宽度特别小的时候，内容会掉在头像下面，因为正常来说都不会达到这么窄的情况
 
 等等还有很多其他的布局应用，这里不再继续
 
-## 如何降低父元素高度塌陷的影响
+## float 与兼容性
 
-清除浮动，让父元素高度不塌陷(测试不是非常的完美，还是有一点点的高度变化)
-1. clear
-2. bfc
+IE 6 太古老不兼容太多，不要管了。
 
-### clear
-```css
+### 让 IE7 飙泪的浮动问题
 
-```
+- 含 clear 的浮动元素包裹不正确的问题
 
-```css
-<div class="test-float">
-  <img src="~@/assets/logo.png"/>
-</div>
+- 浮动元素倒数 2 个莫名其妙垂直间距的问题
 
-  .test-float
-    border 1px solid
-    &:after{content:'';display:block;height:0;overflow:hidden;clear:both}
-    img
-      float left   
+- 浮动元素最后一个字符重复的问题
 
-比如上面的示例，给div加了边框，不加任何其他css的时候，能看到图片在边框里面，这个时候div的高度被图片撑高的。
-如果给图片加了浮动，那么父元素div的高度就塌陷了。使用清除浮动的方式，让高度回来。                  
-```
-**清除浮动只应该应用在：**包含浮动元素的父级元素上
+- 浮动元素楼梯排列问题
 
-### bfc
-给父元素增加 overflow: hidden;（宽度要是固定或则100%（块级元素宽度默认就是100%））
+- 浮动元素和文本不在同一行的问题
 
-> 原理：使用了overflow:hidden的父元素要计算超出的部分然后进行隐藏，那么他就会撑开自身把所有的子元素包裹进来。 --  来自百度不权威的解说
+  前面几个 BUG 太匪夷所思，直接忽略掉，这一个可能会常见。
 
-## float 的滥用
-float有以下特性
-
-1. 元素block块状化（砖头化）会把元素的display属性改成 block
-2. 破坏性造成的紧密排列特性（去空格化）让元素环绕，空格也是属于文字
-
-那怎么砌筑砖头呢？
-让元素浮动，然后给每个尺寸固定。就保证了能砌砖布局
-但是该布局太差劲了，不建议使用。
-
-由于浮动的设计是文字环绕效果，所以用来做流体布局是天然的
-
-## 浮动与流体布局
-
-### 第一种
-就是最普通的文字图片环绕效果
-
-### 第二种
-```css
------------------------------------------
-左青龙              中间标题          右白虎
------------------------------------------
-
-上面的实现如下:
-float:left (左青龙)
-float:right(右白虎)
-text-align:center(中间标题 )
-```
-
-### 文字环绕衍生 - 单侧固定
-![](./assets/image/htmlcss/float/文字环绕单侧固定流体布局.png)
-```html
+  ```html
   <div>
-    <h5>文字环绕衍生 - 单侧固定-微博列表</h5>
-    <div class="webolist">
-      <img src="~@/assets/logo.png" class="photo"/>
-      <div class="right">
-        <p class="mib_sms">
-          <a title="徐若瑄VIVIAN" href="#">徐若瑄VIVIAN<i title="新浪认证" class="mib_vip"></i></a>
-          ：一個人的晚餐！茶泡飯！飯 ：一個人的晚餐！茶泡 ：一個人的晚餐！茶泡 ：一個人的晚餐！茶泡 ：一個人的晚餐！茶泡 ：一個人的晚餐！茶泡 ：一個人的晚餐！茶泡 ：一個人的晚餐！茶泡 ：一個人的晚餐！茶泡 ：一個人的晚餐！茶泡 ：一個人的晚餐！茶泡 ：一個人的晚餐！茶泡 ：一個人的晚餐！茶泡 ：一個人的晚餐！茶泡、飯、飯… 今日不減肥，先把病治好再說！ 我認真吃完這，燒就會退了吧？！ 開動啦~~~~~~~~~~~~~~~~~~
-        </p>
-        <div class="feed_img">
-          <img src="http://img.mukewang.com/53e2e9b10001948000890120.jpg" height="120">
-          <img src="http://img.mukewang.com/53e2e9b10001948000890120.jpg" height="120">
-          <img src="http://img.mukewang.com/53e2e9b10001948000890120.jpg" height="120">
-        </div>
-      </div>
-    </div>
-    <div class="webolist2">
-      <img src="~@/assets/logo.png" class="photo"/>
-      <div class="right">
-        <p class="mib_sms">
-          <a title="徐若瑄VIVIAN" href="#">徐若瑄VIVIAN<i title="新浪认证" class="mib_vip"></i></a>
-          ：一個人的晚餐！茶泡飯！飯 ：一個人的晚餐！茶泡 ：一個人的晚餐！茶泡 ：一個人的晚餐！茶泡 ：一個人的晚餐！茶泡 ：一個人的晚餐！茶泡 ：一個人的晚餐！茶泡 ：一個人的晚餐！茶泡 ：一個人的晚餐！茶泡 ：一個人的晚餐！茶泡 ：一個人的晚餐！茶泡 ：一個人的晚餐！茶泡 ：一個人的晚餐！茶泡 ：一個人的晚餐！茶泡、飯、飯… 今日不減肥，先把病治好再說！ 我認真吃完這，燒就會退了吧？！ 開動啦~~~~~~~~~~~~~~~~~~
-        </p>
-        <div class="feed_img">
-          <img src="http://img.mukewang.com/53e2e9b10001948000890120.jpg" height="120">
-          <img src="http://img.mukewang.com/53e2e9b10001948000890120.jpg" height="120">
-          <img src="http://img.mukewang.com/53e2e9b10001948000890120.jpg" height="120">
-        </div>
-      </div>
-    </div>
+    文字标题
+    	<span style="float:right">右浮动</span>
   </div>
-```
-css
-```css
-  .webolist {
-    width 600px
-    margin-left: auto;
-    margin-right: auto;
-    border 1px solid royalblue
-    padding 20px
-    .photo {
-      float left
-      width 100px
-      margin-right: 20px;
-    }
-    .right {
-    // 触发bfc清除浮动的影响，不然等右边文字足够长的时候，就会包裹头像
-      display: table-cell;
-      .mib_sms {
-        line-height: 22px;
-        padding-bottom: 6px;
-        font-size: 14px;
-      }
-    }
-  }
+  
+  以上代码，span 标签使用右浮动后，会导致包裹住它的的 inline-box 的高度塌陷，从而只能包裹住文字，正常情况下，会浮动在右侧，与文字标题在一行。而在 IE7，它会掉下来在另外一行
+  为了兼容的化，使用：文字标题左浮动，span 右浮动，就一样的了
+  ```
 
-  .webolist2 {
-    width 600px
-    margin-left: auto;
-    margin-right: auto;
-    border 1px solid royalblue
-  // 使用overflow清除浮动，让边框始终包裹住内容，但是文字足够长的时候，还是会包裹左边的头像
-    overflow hidden
-    padding 20px
-    .photo {
-      float left
-      width 100px
-      margin-right: 20px;
-    }
-    .right {
-      // 这里是关键，让内容区域 距离边框足够的宽度（头像的宽度和css的宽度）
-      // 这里是 photo.width 100px + photo.margin-right: 20px = 120px
-      // 这样内容和头像始终分离
-      margin-left: 120px;
-      .mib_sms {
-        line-height: 22px;
-        padding-bottom: 6px;
-        font-size: 14px;
-      }
-    }
-  }
-```
+  
 
-上面有两个示例，一个使用 `display: table-cell;`,触发bfc效果，清除浮动的影响。但是不兼容ie8以下
-一个使用`overflow: hidden`清除了浮动，让div始终包裹边框，但是内容还是会包裹头像，所以结合计算头像所占用的宽度，使用`margin-left`隔离。
+忠告：合理使用浮动，不要用浮动去做那些砌砖的布局，多多使用它的文字环绕特性实现流体布局或其他的应用
+
+下面的演示，不是练习，直接感受就好，需要在 IE7 上和 IE8 上观看他们的表现差距：
+
+- [含clear的浮动元素包裹不正确的bug](https://github.com/zq99299/css-zxx/tree/float/6/含clear的浮动元素包裹不正确的bug.html)
+- [浮动与同一行的差异](https://github.com/zq99299/css-zxx/tree/float/6/浮动与同一行的差异.html)
+- [浮动元素倒数2个浮动最后一个字符重复bug](https://github.com/zq99299/css-zxx/tree/float/6/浮动元素倒数2个浮动最后一个字符重复bug.html)
+- [浮动元素倒数2个莫名垂直间距bug（超过3浮动元素）](https://github.com/zq99299/css-zxx/tree/float/6/浮动元素倒数2个莫名垂直间距bug（超过3浮动元素）.html)
+
+
 
 
