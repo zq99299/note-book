@@ -13,6 +13,8 @@ const elasticsearchSeniorSC = require('../elasticsearch-senior')
 const cachePdpSc = require('../cache-pdp')
 const postsSc = require('../_posts')
 const springCloudTutorialSc = require('../spring-cloud-tutorial')
+const cssZxxSc = require('../css-zxx')
+
 
 module.exports = {
   title: 'Mrcode 笔记本',
@@ -126,6 +128,7 @@ module.exports = {
           { text: '本笔记介绍', link: '/introduce/' },
           { text: 'Linux 基础篇', link: 'https://zq99299.github.io/linux-tutorial/' },
           { text: 'Spring Cloud', link: '/spring-cloud-tutorial/' },
+          { text: 'CSS 深入理解（张鑫旭）', link: '/css-zxx/' },
           { text: '笔记精选汇总', link: 'https://github.com/zq99299/repository-summary' }
         ]
       }
@@ -148,7 +151,8 @@ module.exports = {
       '/elasticsearch-core/': elasticsearchCoreSC(),
       '/cache-pdp/': cachePdpSc(),
       '/_posts/': postsSc(),
-      '/spring-cloud-tutorial/': springCloudTutorialSc()
+      '/spring-cloud-tutorial/': springCloudTutorialSc(),
+      '/css-zxx/': cssZxxSc()
     }
   },
   plugins: [
