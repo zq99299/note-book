@@ -68,7 +68,7 @@ relative 和 absolute 是分离的，对立的，他们不是兄弟关系。另�
 
 > 上辈子就是折翼的天使
 
-无依赖的意思是：不受 `relative` 限制的 `absolute` 定位，行为表现上是不使用 `top/right/bottom/left` 任何一个熟悉或使用 `auto` 作为值
+无依赖的意思是：不受 `relative` 限制的 `absolute` 定位，行为表现上是不使用 `top/right/bottom/left` 任何一个属性或使用 `auto` 作为值
 
 ### 定位的表现
 
@@ -308,7 +308,7 @@ relative 和 absolute 是分离的，对立的，他们不是兄弟关系。另�
 
 牛逼的技能也有克星，当遇到 `postition:relative/absolute/fixed/sticky` 时，就被禁锢了
 
-![image-20200501194409062](assets/image-20200501194409062.png)
+![image-20200501194409062](./assets/image-20200501194409062.png)
 
 ## 7. 与 width/height 的特殊表现
 
@@ -365,7 +365,7 @@ position: absolute; left:0; right:200px
 position: absolute; left:0; width:calc(100% - 200px);
 ```
 
-[没有宽度和高度声明实现的全屏自适应效果 demo 演示](https://github.com/zq99299/css-zxx/tree/master/absolute/4-2/没有宽度和高度声明实现的全屏自适应效果.html)
+[没有宽度和高度声明实现的全屏自适应效果 demo 演示](https://github.com/zq99299/css-zxx/tree/master/absolute/7/没有宽度和高度声明实现的全屏自适应效果.html)
 
 ### 相互支持性
 
@@ -378,7 +378,7 @@ position: absolute; left:0; width:calc(100% - 200px);
 
 ![image-20200501200758925](./assets/image-20200501200758925.png)
 
-[无固定width或height容器内的绝对定位元素拉伸 demo 演示](https://github.com/zq99299/css-zxx/tree/master/absolute/4-2/无固定width或height容器内的绝对定位元素拉伸.html)
+[无固定width或height容器内的绝对定位元素拉伸 demo 演示](https://github.com/zq99299/css-zxx/tree/master/absolute/7/无固定width或height容器内的绝对定位元素拉伸.html)
 
 内部拉伸特性应用
 
@@ -400,7 +400,7 @@ position: absolute; left:0; width:calc(100% - 200px);
 
 如上图的九宫格布局，在任意尺寸上的安卓手机，都能够一屏展示 9 宫格。父容器进行绝对定位拉伸而成，子元素可以使用百分比的值
 
-[高度自适应的九宫格效果 demo 演示](https://github.com/zq99299/css-zxx/tree/master/absolute/4-2/高度自适应的九宫格效果.html)
+[高度自适应的九宫格效果 demo 演示](https://github.com/zq99299/css-zxx/tree/master/absolute/7/高度自适应的九宫格效果.html)
 
 ### 相互合作性
 
@@ -420,7 +420,7 @@ postition:absolute;top:0;left:0;right:0;width:50%
 这个绝对居中的场景，需要 IE8+ 支持
 :::
 
-[left或right拉伸和width同时存在 demo 演示](https://github.com/zq99299/css-zxx/tree/master/absolute/4-2/left或right拉伸和width同时存在.html)
+[left或right拉伸和width同时存在 demo 演示](https://github.com/zq99299/css-zxx/tree/master/absolute/7/left或right拉伸和width同时存在.html)
 
 ## 8. absolute 网页整体布局
 
@@ -460,7 +460,7 @@ html,body {height:100%;}
 
 ### 各模块、侧边栏（PC 端）各居其位
 
-![image-20200501215020465](assets/image-20200501215020465.png)
+![image-20200501215020465](./assets/image-20200501215020465.png)
 
 ```css
 /*注意其中的 absolute*/
@@ -514,5 +514,5 @@ aside {
 <div class="overlay"></div>
 ```
 
-这是完整的 [慕课网-绝对定位整页布局演示 demo 演示](https://github.com/zq99299/css-zxx/tree/master/absolute/4-2/慕课网-绝对定位整页布局演示.html)
+这是完整的 [慕课网-绝对定位整页布局演示 demo 演示](https://github.com/zq99299/css-zxx/tree/master/absolute/8/慕课网-绝对定位整页布局演示.html)
 

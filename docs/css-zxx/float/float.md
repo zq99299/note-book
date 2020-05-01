@@ -326,10 +326,10 @@ IE 6 太古老不兼容太多，不要管了。
 
 下面的演示，不是练习，直接感受就好，需要在 IE7 上和 IE8 上观看他们的表现差距：
 
-- [含clear的浮动元素包裹不正确的bug](https://github.com/zq99299/css-zxx/tree/master/float/6/含clear的浮动元素包裹不正确的bug.html)
-- [浮动与同一行的差异](https://github.com/zq99299/css-zxx/tree/master/float/6/浮动与同一行的差异.html)
-- [浮动元素倒数2个浮动最后一个字符重复bug](https://github.com/zq99299/css-zxx/tree/master/float/6/浮动元素倒数2个浮动最后一个字符重复bug.html)
-- [浮动元素倒数2个莫名垂直间距bug（超过3浮动元素）](https://github.com/zq99299/css-zxx/tree/master/float/6/浮动元素倒数2个莫名垂直间距bug（超过3浮动元素）.html)
+- [含clear的浮动元素包裹不正确的bug](https://github.com/zq99299/css-zxx/tree/master/float/7/含clear的浮动元素包裹不正确的bug.html)
+- [浮动与同一行的差异](https://github.com/zq99299/css-zxx/tree/master/float/7/浮动与同一行的差异.html)
+- [浮动元素倒数2个浮动最后一个字符重复bug](https://github.com/zq99299/css-zxx/tree/master/float/7/浮动元素倒数2个浮动最后一个字符重复bug.html)
+- [浮动元素倒数2个莫名垂直间距bug（超过3浮动元素）](https://github.com/zq99299/css-zxx/tree/master/float/7/浮动元素倒数2个莫名垂直间距bug（超过3浮动元素）.html)
 
 
 
