@@ -1,4 +1,4 @@
-# CSS 深入理解之 float 浮动
+# float 浮动
 
 本节能学到的知识:
 
@@ -6,7 +6,7 @@
 
 ## 1. float 的历史
 
-设计的初衷不是为了高大上的布局，而仅仅是文字环绕效果。 （文字环绕图文），可以感受 [文字环绕效果感受](https://github.com/zq99299/css-zxx/tree/float/1-2) ，记得需要先看问题的效果，再去看解决后的效果，就有直观的感受了
+设计的初衷不是为了高大上的布局，而仅仅是文字环绕效果。 （文字环绕图文），可以感受 [文字环绕效果感受](https://github.com/zq99299/css-zxx/tree/master/float/1-2) ，记得需要先看问题的效果，再去看解决后的效果，就有直观的感受了
 
 ## 2. 包裹与破坏
 
@@ -21,6 +21,10 @@
 - 收缩：只会在容器内，被包裹住
 - 坚挺：之前没有高度，现在高度和容器一样高
 - 隔绝：里面的人发生任何的事情，对外面都没有任何的影响，这种特性称为 **BFC（Block formatting context 块级格式化上下文）**
+
+::: tip 特别注意
+包裹性是指把 float 施加到父元素上，父元素会包裹住子元素
+:::
 
 ### 具有包裹性的其他元素
 
@@ -53,6 +57,10 @@
 
 因此：浮动是魔鬼，三无准则：无宽度、无图片、无浮动
 
+::: tip 特别注意
+破坏性是指把 float 施加到子元素上，父元素高度塌陷
+:::
+
 ## 3. 被误解的 float 浮动
 
 **浮动使高度塌陷不是 Bug，而是标准**
@@ -63,7 +71,7 @@
 
 大哥被限制在红框中了，为了放荡一下，给自己增加了 float 属性，然后可见，开始靠边站、并且容器高度塌陷，由于塌陷，下面的美女元素就自动靠在图片后面了
 
-![image-20200430225939109](assets/image-20200430225939109.png)
+![image-20200430225939109](./assets/image-20200430225939109.png)
 
 
 
@@ -160,7 +168,7 @@
 
 ### clear 与 margin 重叠
 
-这个是一个[感受题，注意仔细观察体验](https://github.com/zq99299/css-zxx/tree/float/1-2 )，请前往查看尝试效果
+这个是一个[感受题，注意仔细观察体验](https://github.com/zq99299/css-zxx/tree/master/float/1-2 )，请前往查看尝试效果
 
 ## 5. 浮动的滥用
 
@@ -172,7 +180,7 @@
 
 ### 为啥浮动可以用来砌砖头?
 
-- 元素 block 块状化（砖头化）：[浮动与display:block化 demo 演示](https://github.com/zq99299/css-zxx/tree/float/5/浮动与display:block化.html)
+- 元素 block 块状化（砖头化）：[浮动与display:block化 demo 演示](https://github.com/zq99299/css-zxx/tree/master/float/5/浮动与display:block化.html)
 
   原本不是 block 的元素，被施加了 float 后，会变成 block 的
 
@@ -184,13 +192,13 @@
 
 #### 去空格化
 
-[浮动去空格 demo 演示 1](https://github.com/zq99299/css-zxx/tree/float/5/浮动去空格.html)
+[浮动去空格 demo 演示 1](https://github.com/zq99299/css-zxx/tree/master/float/5/浮动去空格.html)
 
 ![image-20200501002909403](./assets/image-20200501002909403.png)
 
 去掉换行产生的间隔，发现下面的 P 标签的距离和上面的重叠了
 
-[浮动去空格 demo 演示 2](https://github.com/zq99299/css-zxx/tree/float/5/浮动去空格2.html)
+[浮动去空格 demo 演示 2](https://github.com/zq99299/css-zxx/tree/master/float/5/浮动去空格2.html)
 
 ![image-20200501003259558](./assets/image-20200501003259558.png)
 
@@ -233,7 +241,7 @@ float 的看家本领就是文字环绕，float 后跟随着许多跟随元素
 
 ![image-20200501011119120](./assets/image-20200501011119120.png)
 
-[文字环绕变身-左青龙右白虎 demo 演示 ](https://github.com/zq99299/css-zxx/tree/float/6/文字环绕变身-左青龙右白虎.html)
+[文字环绕变身-左青龙右白虎 demo 演示 ](https://github.com/zq99299/css-zxx/tree/master/float/6/文字环绕变身-左青龙右白虎.html)
 
 注意，上述的顺序，文字只能在后面，前面两个浮动后，文字才会跟随上去，否则会造成，右白虎前面有文字，看起来掉在了下一行
 
@@ -241,7 +249,7 @@ float 的看家本领就是文字环绕，float 后跟随着许多跟随元素
 
 ![image-20200501012612231](./assets/image-20200501012612231.png)
 
-[浮动与单侧尺寸固定的流体布局 demo 演示 ](https://github.com/zq99299/css-zxx/tree/float/6/浮动与单侧尺寸固定的流体布局.html)
+[浮动与单侧尺寸固定的流体布局 demo 演示 ](https://github.com/zq99299/css-zxx/tree/master/float/6/浮动与单侧尺寸固定的流体布局.html)
 
 上图中，上面的实现标识了两种：
 
@@ -265,7 +273,7 @@ float 的看家本领就是文字环绕，float 后跟随着许多跟随元素
     - 左浮动，跟随内容区域，由于内容区域 100% 宽度，导致头像往下掉
     - 利用 margin-left 负值达到显示在同一行中
 
-[浮动与单侧尺寸固定的流体布局 demo 演示 ](https://github.com/zq99299/css-zxx/tree/float/6/浮动与右侧尺寸固定的流体布局.html)
+[浮动与单侧尺寸固定的流体布局 demo 演示 ](https://github.com/zq99299/css-zxx/tree/master/float/6/浮动与右侧尺寸固定的流体布局.html)
 
 ### 高级进化-智能自适应尺寸
 
@@ -273,7 +281,7 @@ float 的看家本领就是文字环绕，float 后跟随着许多跟随元素
 
 ![image-20200501014118024](./assets/image-20200501014118024.png)
 
-[浮动与两侧皆自适应的流体布局 demo 演示 ](https://github.com/zq99299/css-zxx/tree/float/6/浮动与两侧皆自适应的流体布局.html)，实现方式：
+[浮动与两侧皆自适应的流体布局 demo 演示 ](https://github.com/zq99299/css-zxx/tree/master/float/6/浮动与两侧皆自适应的流体布局.html)，实现方式：
 
 - 头像：左浮动
 - 内容：使用 `display: table-cell` 
@@ -318,10 +326,10 @@ IE 6 太古老不兼容太多，不要管了。
 
 下面的演示，不是练习，直接感受就好，需要在 IE7 上和 IE8 上观看他们的表现差距：
 
-- [含clear的浮动元素包裹不正确的bug](https://github.com/zq99299/css-zxx/tree/float/6/含clear的浮动元素包裹不正确的bug.html)
-- [浮动与同一行的差异](https://github.com/zq99299/css-zxx/tree/float/6/浮动与同一行的差异.html)
-- [浮动元素倒数2个浮动最后一个字符重复bug](https://github.com/zq99299/css-zxx/tree/float/6/浮动元素倒数2个浮动最后一个字符重复bug.html)
-- [浮动元素倒数2个莫名垂直间距bug（超过3浮动元素）](https://github.com/zq99299/css-zxx/tree/float/6/浮动元素倒数2个莫名垂直间距bug（超过3浮动元素）.html)
+- [含clear的浮动元素包裹不正确的bug](https://github.com/zq99299/css-zxx/tree/master/float/6/含clear的浮动元素包裹不正确的bug.html)
+- [浮动与同一行的差异](https://github.com/zq99299/css-zxx/tree/master/float/6/浮动与同一行的差异.html)
+- [浮动元素倒数2个浮动最后一个字符重复bug](https://github.com/zq99299/css-zxx/tree/master/float/6/浮动元素倒数2个浮动最后一个字符重复bug.html)
+- [浮动元素倒数2个莫名垂直间距bug（超过3浮动元素）](https://github.com/zq99299/css-zxx/tree/master/float/6/浮动元素倒数2个莫名垂直间距bug（超过3浮动元素）.html)
 
 
 
