@@ -1,5 +1,6 @@
 # line-height 行高
 简介：本课程将带领大家深入理解 
+
 - line-height 的定义
 - line-height 与恒内框盒子模型的关系
 - 高度机理
@@ -139,7 +140,7 @@
 
 所以 **内联元素的高度是由 line-height** 决定的！
 
-> **第 1 小节的问题：**line-height 明明是两基线距离，单行文字哪来行高？还控制了高度？
+> **第 1 小节的问题：** line-height 明明是两基线距离，单行文字哪来行高？还控制了高度？
 
 要回答这个问题，我们需要提前知道的知识点有：
 
@@ -232,16 +233,15 @@ line-height:360px;
 
 由于行高极其不确定的状态下，一般开发中都会在 body 中重置行高。
 
-### `<number>`
+### `number`
 
 使用数值作为行高值。例如 `line-height: 1.5;` 则行高像素值，是根据当前元素的 font-size 大小计算。
 
 例如：假设文字大小（font-size） 20 px，则实际的行高像素值是 `line-height` = `1.5 * 20px` = `30px`
 
-### `<length>`
+### `length`
 
 使用具体的长度值作为行高值。例如
-
 
 ```css
 line-height: 1.5em；  // 相对单位
@@ -250,16 +250,17 @@ line-height: 20px;
 line-height: 20pt;
 ```
 
-### `<percent>`
+### `percent`
 
-使用百分比作为行高值。例如`line-height:150%`.
+使用百分比作为行高值。例如 `line-height:150%`.
 
-相对于设置了该`line-height`属性的元素的`font-size`大小计算  
+相对于设置了该 `line-height` 属性的元素的 `font-size` 大小计算  
 
 假设文字大小是 20px，则实际的行高像素值是：`line-height = 150% * 20px = 30px`
 
-### ` inherit`
+### `inherit`
 行高继承。ie8+
+
 ```css
 input { line-height:inherit; }
 ```
@@ -270,15 +271,17 @@ input { line-height:inherit; }
 ### 各种类型设置有什么区别？
 
 下面几种设置有啥区别？
+
 ```css
 line-height:1.5
 line-height:1.5rem
 line-height:1.5em;
 ```
+
 计算无差别。应用元素有差别
 
-* `line-height: 1.5` ：所有可继承元素根据 font-size 重计算行高
-* `line-height: 150%、1.5em `：当前元素根据 font-size 计算行高，继承给下面的元素（所有的子元素不会重新按照自己的 font-size 计算）
+- `line-height: 1.5`：所有可继承元素根据 font-size 重计算行高
+- `line-height: 150%、1.5em `：当前元素根据 font-size 计算行高，继承给下面的元素（所有的子元素不会重新按照自己的 font-size 计算）
 
 ![image-20200502152225478](./assets/image-20200502152225478.png)
 
@@ -303,7 +306,7 @@ line-height = 20px / 14px 约等于 1.42857
 
 body { font-size: 14px; line-height: 1.42857？}
 
-在 Chrome 浏览器中，`1.42857` 会被还原为 19 px，所以向上舍入
+在 Chrome 浏览器中，1.42857 会被还原为 19 px，所以向上舍入
 
 body { font-size: 14px; line-height: 1.4286; }
 ```
@@ -376,7 +379,7 @@ body { font-size: 14px; line-height: 1.4286; }
 2. 图片底线对齐
 
    ```css
-   img { `vertical-align: bottom; }
+   img { vertical-align: bottom; }
    ```
 
    默认是基线对齐，改为底线对齐，就可以了
