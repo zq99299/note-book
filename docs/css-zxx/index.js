@@ -8,7 +8,8 @@ module.exports = () => {
         'float/float.md',
         'absolute/absolute.md',
         'overflow/overflow.md',
-        'line-height/line-height.md'
+        'line-height/line-height.md',
+        'relative/relative.md'
       ]
     }
   ]

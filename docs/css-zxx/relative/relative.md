@@ -7,7 +7,7 @@
 
 [[toc]]
 
-## relative 和 absolute 相煎关系
+## 1. relative 和 absolute 相煎关系
 
 ### 同源性
 
@@ -57,7 +57,7 @@ absolute 可以超越 overflow，relative 后，就不能超越了
 
   只能限制 z-index 属性
 
-## relative 与定位
+## 2. relative 与定位
 
 relative 自身的定位有两个特性：
 
@@ -109,7 +109,7 @@ relative 后面的元素没有发生任何的变化。这就是它的特性
 
 `left/right` 同时存在，只有 left 生效
 
-## relative 与 z-index 层级的关系
+## 3. relative 与 z-index 层级的关系
 
 ### 提高层叠上下文
 
@@ -131,7 +131,7 @@ relative 的默认层级是 auto，可以看到，原来绝对定位元素的层
 
 **结论**：没有限制内部 absolute 元素层叠的问题（不包括 IE6 和 IE 7）
 
-## relative 的最小化影响准则
+## 4. relative 的最小化影响准则
 
 本章是讲心得干货，最佳实践
 
