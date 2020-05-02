@@ -2,6 +2,8 @@
 
 深入理解 CSS 的 position:absolute 声明的表现、掌握一些 position:absolute 的高级应用。
 
+[[toc]]
+
 ## 1. absolute 和 float
 
 一个是值，一个是属性名不是一个类别，但是他们的确是亲兄弟：一致的包裹与破坏性。

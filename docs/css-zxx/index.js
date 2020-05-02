@@ -6,7 +6,8 @@ module.exports = () => {
       children: [
         '',
         'float/float.md',
-        'absolute/absolute.md'
+        'absolute/absolute.md',
+        'overflow/overflow.md',
       ]
     }
   ]
