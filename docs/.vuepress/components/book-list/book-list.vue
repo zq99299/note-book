@@ -2,6 +2,21 @@
   <div class="book-list">
     <div class="single-member effect-2">
       <div class="member-image">
+        <img src="./none.png" alt="Member">
+      </div>
+      <div class="member-info">
+        <h3>缓存架构-亿级流量电商详情页系统实战</h3>
+        <h5>学习笔记-完整 195 章</h5>
+        <p>第二版：缓存架构+高可用服务架构+微服务架构</p>
+        <div class="social-touch">
+          <a href="cache-pdp/">
+            阅读更多
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="single-member effect-2">
+      <div class="member-image">
         <img src="./elasticsearch.png" alt="Member">
       </div>
       <div class="member-info">
@@ -133,6 +148,21 @@
         <p>暂无更多的内容提供</p>
         <div class="social-touch">
           <a href="vue/">
+            阅读更多
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="single-member effect-2">
+      <div class="member-image">
+        <img src="./none.png" alt="Member">
+      </div>
+      <div class="member-info">
+        <h3>CSS 深入理解</h3>
+        <h5>学习笔记-张鑫旭讲解</h5>
+        <p>9 个常用 CSS 元素的深入讲解，干货多多，通俗易懂，必备工具书</p>
+        <div class="social-touch">
+          <a href="css-zxx/">
             阅读更多
           </a>
         </div>

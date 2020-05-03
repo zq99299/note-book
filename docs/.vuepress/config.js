@@ -23,7 +23,6 @@ module.exports = {
   dest: 'build/.vuepress/dist',  // 目录配置在外,纯粹是有代码洁癖和强迫症，并不能规避开发模式下同时构建不报错的问题
   host: 'localhost', // dev 的域名
   port: 8080,
-  ga: 'UA-125573163-1', // 添加 ga 统计
   // locales: {
   //     // 键名是该语言所属的子路径
   //     // 作为特例，默认语言可以使用 '/' 作为其路径。
@@ -66,17 +65,11 @@ module.exports = {
       // }
     },
     nav: [
-      { text: 'Home', link: '/' },
+      { text: '博客（零散文章）', link: '/_posts/' },
       {
         text: '设计模式', items: [
           { text: '设计模式（慕课）', link: '/imocc/design_pattern/' },
           { text: '研磨设计模式（李兴华）', link: '/design_pattern/' }
-        ]
-      },
-      {
-        text: 'Mycat', items: [
-          { text: 'Mycat 1', link: '/mycat/' },
-          { text: 'Mycat 2', link: '/mycat2/' }
         ]
       },
       {
@@ -119,16 +112,18 @@ module.exports = {
           }
         ]
       },
-      { text: '博客（零散文章）', link: '/_posts/' },
-      // {text: '系列学习中', items: [
-      //   {text: 'Spring Cloud 官网教程实践笔记', link: '/spring-cloud-tutorial/'}
-      // ]},
       {
         text: '更多', items: [
           { text: '本笔记介绍', link: '/introduce/' },
           { text: 'Linux 基础篇', link: 'https://zq99299.github.io/linux-tutorial/' },
           { text: 'Spring Cloud', link: '/spring-cloud-tutorial/' },
           { text: 'CSS 深入理解（张鑫旭）', link: '/css-zxx/' },
+          {
+            text: 'Mycat', items: [
+              { text: 'Mycat 1', link: '/mycat/' },
+              { text: 'Mycat 2', link: '/mycat2/' }
+            ]
+          },
           { text: '笔记精选汇总', link: 'https://github.com/zq99299/repository-summary' }
         ]
       }
