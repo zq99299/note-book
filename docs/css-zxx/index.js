@@ -10,7 +10,10 @@ module.exports = () => {
         'overflow/overflow.md',
         'line-height/line-height.md',
         'relative/relative.md',
-        'z-index/z-index.md'
+        'z-index/z-index.md',
+        'margin/margin.md',
+        'padding/padding.md',
+        'border/border.md'
       ]
     }
   ]
