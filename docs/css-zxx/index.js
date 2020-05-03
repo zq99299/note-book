@@ -9,7 +9,8 @@ module.exports = () => {
         'absolute/absolute.md',
         'overflow/overflow.md',
         'line-height/line-height.md',
-        'relative/relative.md'
+        'relative/relative.md',
+        'z-index/z-index.md'
       ]
     }
   ]
