@@ -408,11 +408,11 @@ Block formatting context : 块级格式化上下文 ；
 
 先看一个 `overflow:hidden` 失效的列子
 
-![image-20200502093843007](assets/image-20200502093843007.png)
+![image-20200502093843007](./assets/image-20200502093843007.png)
 
 图片比容器大，容器使用 hidden 后，让图片溢出部分不可见了。但是当图片施加 absolute 后
 
-![image-20200502093939962](assets/./image-20200502093939962.png)
+![image-20200502093939962](./assets/./image-20200502093939962.png)
 
 hidden 就失效了
 
