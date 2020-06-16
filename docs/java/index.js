@@ -4,7 +4,8 @@ module.exports = () => {
             title: "JAVA",
             collapsable: false,
             children: [
-                ''
+                '',
+                'javafx/'
             ]
         }
     ]

@@ -11,7 +11,7 @@ const xiemengyuanGenSidebarConfig = require('../xiemengyuan')
 const elasticsearchCoreSC = require('../elasticsearch-core')
 const elasticsearchSeniorSC = require('../elasticsearch-senior')
 const cachePdpSc = require('../cache-pdp')
-const postsSc = require('../_posts')
+const postsSc = require('../posts')
 const springCloudTutorialSc = require('../spring-cloud-tutorial')
 const cssZxxSc = require('../css-zxx')
 
@@ -65,7 +65,7 @@ module.exports = {
       // }
     },
     nav: [
-      { text: '博客（零散文章）', link: '/_posts/' },
+      { text: '博客（零散文章）', link: '/posts/' },
       {
         text: '设计模式', items: [
           { text: '设计模式（慕课）', link: '/imocc/design_pattern/' },
@@ -118,13 +118,19 @@ module.exports = {
           { text: 'Linux 基础篇', link: 'https://zq99299.github.io/linux-tutorial/' },
           { text: 'Spring Cloud', link: '/spring-cloud-tutorial/' },
           { text: 'CSS 深入理解（张鑫旭）', link: '/css-zxx/' },
+          { text: 'git', link: '/git/' },
+          { text: 'vue', link: '/vue/' },
+          { text: 'node', link: '/node/' },
+          { text: 'gradle', link: '/gradle/' },
+          { text: 'java', link: '/java/' },
           {
             text: 'Mycat', items: [
               { text: 'Mycat 1', link: '/mycat/' },
               { text: 'Mycat 2', link: '/mycat2/' }
             ]
           },
-          { text: '笔记精选汇总', link: 'https://github.com/zq99299/repository-summary' }
+          { text: '笔记精选汇总', link: 'https://github.com/zq99299/repository-summary' },
+          { text: '博客文章 /_posts/ 路径失效说明', link: '/posts-failure.md' },
         ]
       }
       /*
@@ -145,7 +151,7 @@ module.exports = {
       '/elasticsearch-senior/': elasticsearchSeniorSC(),
       '/elasticsearch-core/': elasticsearchCoreSC(),
       '/cache-pdp/': cachePdpSc(),
-      '/_posts/': postsSc(),
+      '/posts/': postsSc(),
       '/spring-cloud-tutorial/': springCloudTutorialSc(),
       '/css-zxx/': cssZxxSc()
     }
