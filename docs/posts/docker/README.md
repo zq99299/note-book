@@ -87,6 +87,21 @@ docker tag [ 镜像名 or 镜像 id ] [ 新镜像名 ]:[ 新 tag ]
 
 ```
 
+### 批量删除无 tag 的镜像
+
+```bash
+docker images|grep none|awk '{print $3}'|xargs docker rmi
+
+说明：
+docker images ：镜像列表
+|grep none : 筛选含 none 的行
+|awk '{print $3}' ：awk行处理器打印第三个参数（IMAGE ID）
+|xargs ： 参数列表转换
+docker rmi ： 镜像删除命令
+```
+
+
+
 ## 本地容器
 
 ```bash

@@ -7,6 +7,14 @@
 官网的 [快速上手](https://vuepress.vuejs.org/zh/guide/getting-started.html#%E5%85%A8%E5%B1%80%E5%AE%89%E8%A3%85)
 能教你怎么快速的看到一个主页面。这里总结下步骤
 
+::: tip
+本教程对于 vuepress 的说明是 0.x 版本的，现在 vuepress 是 1.5.x 了，所以部分配置可能不适合；
+
+通用的有：部署到 gh-page、在 md 中使用 vue
+
+1.5.x 分支模板：可以直接用来快速创建一个常用的新笔记仓库：https://github.com/zq99299/mq-tutorial/tree/vuepress-tpl
+:::
+
 1. 创建一个项目
 
     ```
@@ -249,4 +257,8 @@ ssh-keygen -t rsa -C "邮箱地址"
 
 > 分支地址如下：
 >
-> https://github.com/zq99299/note-book/tree/vuepress-demo
+> 0.x 分支 https://github.com/zq99299/note-book/tree/vuepress-demo
+
+> 1.5.x 分支模板：可以直接用来快速创建一个常用的新笔记仓库
+> 
+> https://github.com/zq99299/mq-tutorial/tree/vuepress-tpl
