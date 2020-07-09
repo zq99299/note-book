@@ -22,7 +22,7 @@
 
 > 职业发展中
 
-我面试过的人中有在建立上写了 redis、memcached、activemq、zookeeper、kafka、lucene、activiti、爬虫等等，各种技术写了都几十种技术
+我面试过的人中有在简历上写了 redis、memcached、activemq、zookeeper、kafka、lucene、activiti、爬虫等等，各种技术写了都几十种技术
 
 没有一样是精通的，redis 就会简单的操作，memcached、activemq、zookeeper、爬虫等全都是简单的操作
 
