@@ -23,6 +23,14 @@ module.exports = () => {
         'k8s/configure-redis-using-configmap.md'
       ]
     },
-    'npm/'
+    'npm/',
+    {
+      title: 'vuepress',
+      collapsable: true,
+      children: [
+        'vuepress/plugin/plugin-dev.md',
+        'vuepress/nginx/',
+      ]
+    }
   ]
 }
