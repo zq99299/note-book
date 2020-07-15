@@ -104,7 +104,7 @@ module.exports = {
               { text: '缓存雪崩解决方案', link: '/cache-pdp/110.md' },
               { text: '缓存穿透解决方案', link: '/cache-pdp/117.md' },
               { text: '缓存失效解决方案', link: '/cache-pdp/119.md' },
-              { text: '高可用分布式系统架构设计（hystrix 篇）', link: '/cache-pdp/084.md' },
+              { text: '高可用分布式系统架构设计（hystrix 篇）', link: '/cache-pdp/hystrix/084.md' },
               { text: 'spring boot 整合 ehcache', link: '/cache-pdp/047.md' },
               { text: '史上最通俗易懂 Storm 教程', link: '/cache-pdp/storm/062.md' }
             ]
