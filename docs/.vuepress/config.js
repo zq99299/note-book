@@ -15,7 +15,6 @@ const postsSc = require('../posts')
 const springCloudTutorialSc = require('../spring-cloud-tutorial')
 const cssZxxSc = require('../css-zxx')
 
-
 module.exports = {
   title: 'Mrcode 笔记本',
   description: '用来记录工作和学习过程中的笔记，汇总成册方便查阅，类容涵盖各类技术，如：Java、Git、ElasticSearch、MyCat、设计模式、Gradle、Vue - mrcode.cn',
@@ -129,7 +128,13 @@ module.exports = {
               { text: 'Mycat 2', link: '/mycat2/' }
             ]
           },
-          { text: '笔记精选汇总', link: 'https://github.com/zq99299/repository-summary' },
+          {
+            text: '笔记精选汇总',
+            items: [
+              { text: 'GitHub 站', link: 'https://github.com/zq99299/repository-summary' },
+              { text: '国内镜像站', link: 'http://book.mrcode.cn/' }
+            ]
+          },
           { text: '博客文章 /_posts/ 路径失效说明', link: '/posts-failure.md' },
         ]
       }
