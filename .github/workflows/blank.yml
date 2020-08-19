@@ -1,0 +1,34 @@
+name: CI
+
+# 控制如何触发事件，这里针对 master 分支 
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+# 一个工作流运行是由一个或多个作业组成的，这些作业可以连续或并行运行。
+jobs:
+  # 该工作流包含一个名为 "build " 的单一工作。
+  build:
+    # 工作要运行的运行器类型。
+    runs-on: ubuntu-latest
+
+    # 步骤代表了作为工作的一部分将要执行的任务序列
+    steps:
+    # 签出你在 $GITHUB_WORKSPACE 下的仓库，这样你的工作就可以访问它。
+    - uses: actions/checkout@v2
+
+    # 使用 runners shell 运行一条命令。
+    - name: Run a one-line script
+      run: echo Hello, world!
+
+    # 打包并推送到 githubpages
+    - name: 打包并推送到 gitHubPages
+      uses: JamesIves/github-pages-deploy-action@master
+      env:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: build/.vuepress/dist
+        BUILD_SCRIPT: yarn install && yarn run docs:build
+     
