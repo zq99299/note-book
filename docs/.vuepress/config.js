@@ -14,6 +14,7 @@ const cachePdpSc = require('../cache-pdp')
 const postsSc = require('../posts')
 const springCloudTutorialSc = require('../spring-cloud-tutorial')
 const cssZxxSc = require('../css-zxx')
+const gitScmSc = require('../git-scm')
 
 module.exports = {
   title: 'Mrcode 笔记本',
@@ -118,6 +119,12 @@ module.exports = {
           { text: 'Spring Cloud', link: '/spring-cloud-tutorial/' },
           { text: 'CSS 深入理解（张鑫旭）', link: '/css-zxx/' },
           { text: 'git', link: '/git/' },
+          {
+            text: 'git', items: [
+              { text: 'git 零散知识', link: '/git/' },
+              { text: 'Git 系统学习笔记', link: '/git-scm/' },
+            ]
+          },
           { text: 'vue', link: '/vue/' },
           { text: 'node', link: '/node/' },
           { text: 'gradle', link: '/gradle/' },
@@ -158,7 +165,8 @@ module.exports = {
       '/cache-pdp/': cachePdpSc(),
       '/posts/': postsSc(),
       '/spring-cloud-tutorial/': springCloudTutorialSc(),
-      '/css-zxx/': cssZxxSc()
+      '/css-zxx/': cssZxxSc(),
+      '/git-scm/': gitScmSc()
     }
   },
   plugins: [

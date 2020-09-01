@@ -1,6 +1,9 @@
 # Git
 
+[Git 系统学习笔记](./git-scm/)
+
 ## GitHub 如何测试别人提交的 pr
+
 > [官网文档 ](https://help.github.com/articles/checking-out-pull-requests-locally/)
 
 1. clone 原仓库
