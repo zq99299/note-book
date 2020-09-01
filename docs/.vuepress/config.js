@@ -118,7 +118,6 @@ module.exports = {
           { text: 'Linux 基础篇', link: 'https://zq99299.github.io/linux-tutorial/' },
           { text: 'Spring Cloud', link: '/spring-cloud-tutorial/' },
           { text: 'CSS 深入理解（张鑫旭）', link: '/css-zxx/' },
-          { text: 'git', link: '/git/' },
           {
             text: 'git', items: [
               { text: 'git 零散知识', link: '/git/' },
