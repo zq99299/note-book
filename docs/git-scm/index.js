@@ -44,6 +44,17 @@ module.exports = () => {
         '04/08.md',
         '04/09.md'
       ]
+    },
+    {
+      title: '分布式 Git',
+      collapsable: true,
+      children: [
+        '05/',
+        '05/01.md',
+        '05/02.md',
+        '05/03.md',
+        '05/04.md'
+      ]
     }
   ]
 }
