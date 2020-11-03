@@ -1,4 +1,16 @@
 # docker
+
+```bash
+# 启动
+systemctl start docker
+# 重启
+systemctl restart docker
+# 关闭
+systemctl stop docker
+```
+
+
+
 ## Dockerfile
 打包一个 image。下面是一个 cloud boot 项目的打包配置
 
