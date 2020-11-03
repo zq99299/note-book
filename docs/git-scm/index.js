@@ -4,7 +4,7 @@ module.exports = () => {
     '01/',
     {
       title: 'Git 基础',
-      collapsable: false,
+      collapsable: true,
       children: [
         '02/',
         '02/01.md',
@@ -18,7 +18,7 @@ module.exports = () => {
     },
     {
       title: '分支',
-      collapsable: false,
+      collapsable: true,
       children: [
         '03/',
         '03/01.md',
@@ -27,6 +27,22 @@ module.exports = () => {
         '03/04.md',
         '03/05.md',
         '03/06.md'
+      ]
+    },
+    {
+      title: '服务器上的 Git',
+      collapsable: true,
+      children: [
+        '04/',
+        '04/01.md',
+        '04/02.md',
+        '04/03.md',
+        '04/04.md',
+        '04/05.md',
+        '04/06.md',
+        '04/07.md',
+        '04/08.md',
+        '04/09.md'
       ]
     }
   ]
