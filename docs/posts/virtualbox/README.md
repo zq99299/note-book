@@ -10,7 +10,19 @@ bcdedit /set hypervisorlaunchtype off
 bcdedit /set hypervisorlaunchtype Auto
 ```
 
+## 启动报错
+
+之前好好的，突然就不能启动了，提示：`创建 VirtualBoxClient COM 对象失败,应用程序将被中断`
+
+解决方案：
+
+1. 运行命令窗口（“Win+R”键，输入 cmd 回车）
+2. 进入VirtualBox 的安装目录，默认是 ` X:\Program Files\VirtualBox`(视具体情况)
+3. 执行命令 `VBoxSVC /ReRegServer`
+4. 执行命令：`regsvr32 VBoxC.dll`
+
 ## 网络篇- Host Only（win10）
+
 默认是不可上网的。需要配置宿主机上可上网的网卡共享才可以；
 
 好处：与 VMware Network Adapter VMnet8 的功能一致

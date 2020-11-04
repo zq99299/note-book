@@ -152,4 +152,7 @@ docker commit [ 容器名 or 容器 id ] [ 镜像名 ]:[ tag ]
 # 使用dockfile构建镜像
 docker build -t [ 镜像名 ]:[ tag ] -f [ DockerFile 名 ] [ DockerFile 所在目录 ]
 
+# 查看容器日志
+docker logs -f [ 容器名 or 容器 id ]
+
 ```
