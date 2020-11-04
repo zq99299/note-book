@@ -55,6 +55,19 @@ module.exports = () => {
         '05/03.md',
         '05/04.md'
       ]
+    },
+    {
+      title: 'GitHub',
+      collapsable: true,
+      children: [
+        '06/',
+        '06/01.md',
+        '06/02.md',
+        '06/03.md',
+        '06/04.md',
+        '06/05.md',
+        '06/06.md'
+      ]
     }
   ]
 }
