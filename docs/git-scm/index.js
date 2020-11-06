@@ -90,6 +90,17 @@ module.exports = () => {
         '07/14.md',
         '07/15.md'
       ]
+    },
+    {
+      title: '自定义 Git',
+      collapsable: true,
+      children: [
+        '08/',
+        '08/01.md',
+        '08/02.md',
+        '08/03.md',
+        '08/04.md'
+      ]
     }
   ]
 }
