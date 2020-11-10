@@ -16,6 +16,15 @@
 在下载页面下载安装包：[立即下载](https://github.com/coreybutler/nvm-windows/releases)！，安装之后就可以使用 nvm 命令了
 
 ```bash
+# 查看可安装版本
+$ nvm list available
+
+|   CURRENT    |     LTS      |  OLD STABLE  | OLD UNSTABLE |
+|--------------|--------------|--------------|--------------|
+|    15.1.0    |   14.15.0    |   0.12.18    |   0.11.16    |
+|    15.0.1    |   12.19.0    |   0.12.17    |   0.11.15    |
+...
+
 # 安装版本
 $ nvm install <version>
 
