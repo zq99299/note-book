@@ -38,6 +38,29 @@ module.exports = () => {
         'vuepress/plugin/plugin-dev.md',
         'vuepress/nginx/',
       ]
+    },
+    {
+      title: 'JAVA',
+      collapsable: true,
+      children: [
+        'java/',
+        'java/javafx/'
+      ]
+    },
+    {
+      title: "Gradle",
+      collapsable: true,
+      children: [
+        'gradle/',
+        'gradle/push-to-maven.md'
+      ]
+    },
+    {
+      title: "Vue",
+      collapsable: true,
+      children: [
+        'vue/'
+      ]
     }
   ]
 }

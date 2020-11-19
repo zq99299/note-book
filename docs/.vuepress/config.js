@@ -2,11 +2,8 @@ const introduceGenSidebarConfig = require('../introduce')
 const imoccDesignPatternGenSidebarConfig = require('../imocc/design_pattern')
 const designPatternGenSidebarConfig = require('../design_pattern')
 const mycatGenSidebarConfig = require('../mycat')
-const vueGenSidebarConfig = require('../vue')
 const mycat2GenSidebarConfig = require('../mycat2')
-const gradleGenSidebarConfig = require('../gradle')
 const gitGenSidebarConfig = require('../git')
-const javaGenSidebarConfig = require('../java')
 const xiemengyuanGenSidebarConfig = require('../xiemengyuan')
 const elasticsearchCoreSC = require('../elasticsearch-core')
 const elasticsearchSeniorSC = require('../elasticsearch-senior')
@@ -125,9 +122,7 @@ module.exports = {
             ]
           },
           { text: 'vue', link: '/vue/' },
-          { text: 'node', link: '/node/' },
           { text: 'gradle', link: '/gradle/' },
-          { text: 'java', link: '/java/' },
           {
             text: 'Mycat', items: [
               { text: 'Mycat 1', link: '/mycat/' },
@@ -153,11 +148,8 @@ module.exports = {
       '/imocc/design_pattern/': imoccDesignPatternGenSidebarConfig(),
       '/design_pattern/': designPatternGenSidebarConfig(),
       '/mycat/': mycatGenSidebarConfig(),
-      '/vue/': vueGenSidebarConfig(),
       '/mycat2/': mycat2GenSidebarConfig(),
-      '/gradle/': gradleGenSidebarConfig(),
       '/git/': gitGenSidebarConfig(),
-      '/java/': javaGenSidebarConfig(),
       '/xiemengyuan/': xiemengyuanGenSidebarConfig(),
       '/elasticsearch-senior/': elasticsearchSeniorSC(),
       '/elasticsearch-core/': elasticsearchCoreSC(),

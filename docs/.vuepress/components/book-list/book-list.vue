@@ -94,21 +94,6 @@
     </div>
     <div class="single-member effect-2">
       <div class="member-image">
-        <img src="./java.png" alt="Member">
-      </div>
-      <div class="member-info">
-        <h3>JAVA</h3>
-        <h5>学习笔记</h5>
-        <p>jdk 性能、有用工具记录</p>
-        <div class="social-touch">
-          <a href="java/">
-            阅读更多
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="single-member effect-2">
-      <div class="member-image">
         <img src="./none.png" alt="Member">
       </div>
       <div class="member-info">
@@ -140,21 +125,6 @@
     </div>
     <div class="single-member effect-2">
       <div class="member-image">
-        <img src="./vue.png" alt="Member">
-      </div>
-      <div class="member-info">
-        <h3>Vue</h3>
-        <h5>学习笔记</h5>
-        <p>暂无更多的内容提供</p>
-        <div class="social-touch">
-          <a href="vue/">
-            阅读更多
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="single-member effect-2">
-      <div class="member-image">
         <img src="./none.png" alt="Member">
       </div>
       <div class="member-info">
@@ -163,21 +133,6 @@
         <p>9 个常用 CSS 元素的深入讲解，干货多多，通俗易懂，必备工具书</p>
         <div class="social-touch">
           <a href="css-zxx/">
-            阅读更多
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="single-member effect-2">
-      <div class="member-image">
-        <img src="./gradle.png" alt="Member">
-      </div>
-      <div class="member-info">
-        <h3>Gradle</h3>
-        <h5>学习笔记</h5>
-        <p>发布包到 maven 仓库</p>
-        <div class="social-touch">
-          <a href="gradle/">
             阅读更多
           </a>
         </div>
