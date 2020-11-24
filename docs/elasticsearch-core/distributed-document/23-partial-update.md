@@ -75,6 +75,7 @@ POST /test_index/test_type/10/_update
     "test_field2": "updated test2"
   }
 }
+
 ```
 
 
@@ -132,9 +133,10 @@ POST /test_index/test_type/11/_update
 }
 ```
 
-对于这个脚本的语法这里没有说从哪里来的。
+这些语法在官方文档中有介绍，比如后面的 painless 脚本语法介绍中给出的官方文档链接
 
 ### 外置脚本
+
 什么是外置脚本？ 语法内容存储在 `/config/scripts` 目录中的文件中，通过 api 指定哪一个文件获取文件中的脚本内容
 
 test-add-tags.groovy
@@ -245,6 +247,206 @@ POST /test_index/test_type/11/_update
 ```
 
 可以执行两次该操作，查看内容。
+
+## `painless` 脚本语法
+
+::: tip
+
+本小节是后补的，实际项目中用到了，可能是与这个版本不一致，默认的脚本语言已经不是 groovy 了
+
+这里的创建索引等功能，是后续章节的用法
+
+:::
+
+默认脚本使用的是  `painless` ，这个在 [官方文档中有介绍](https://www.elastic.co/guide/en/elasticsearch/reference/5.5/modules-scripting-painless.html)，该语言的 API 继承了 JAVA 的 **部分类的部分方法**，这个说明在 官方文档 [附录 A 中有说明](https://www.elastic.co/guide/en/elasticsearch/painless/5.5/painless-api-reference.html#painless-api-reference-String) 哪些方法可以使用 
+
+比如下面的查询和批量更新中都可以使用该脚本处理
+
+```json
+// 先创建索引，主要目的是让 email 的字段为 keyword，不然在查询的时候会报错（这个错误后续章节学完后可以自行解决的）
+PUT /test_index2
+{
+  "mappings": {
+    "test_type2": {
+      "properties": {
+        "email": {
+          "type": "keyword"
+        }
+      }
+    }
+  }
+}
+
+// 插入两条测试数据
+PUT /test_index2/test_type2/110
+{
+    "email":"99299684@qq.com"
+}
+PUT /test_index2/test_type2/111
+{
+    "email":"99299684@163.com"
+}
+```
+
+看下两条数据在数据库中的样子
+
+```json
+GET /test_index2/test_type2/_search
+```
+
+响应
+
+```json
+{
+  "took": 1,
+  "timed_out": false,
+  "_shards": {
+    "total": 5,
+    "successful": 5,
+    "failed": 0
+  },
+  "hits": {
+    "total": 2,
+    "max_score": 1,
+    "hits": [
+      {
+        "_index": "test_index2",
+        "_type": "test_type2",
+        "_id": "110",
+        "_score": 1,
+        "_source": {
+          "email": "99299684@qq.com"
+        }
+      },
+      {
+        "_index": "test_index2",
+        "_type": "test_type2",
+        "_id": "111",
+        "_score": 1,
+        "_source": {
+          "email": "99299684@163.com"
+        }
+      }
+    ]
+  }
+}
+```
+
+
+
+### 查询中使用 painless script
+
+查询的时候，使用脚本将 email 字段处理成  test 字段返回，并使用脚本语言的字符串函数对 email 字段进行裁剪操作
+
+```json
+GET /test_index2/test_type2/_search
+{
+  "size": 1, 
+  "script_fields": {
+    "test": {
+      "script": {
+        "lang": "painless",
+        "inline": "doc['email'].value.substring(doc['email'].value.indexOf('@'))"
+      }
+    }
+  }
+}
+```
+
+响应
+
+```json
+{
+  "took": 1,
+  "timed_out": false,
+  "_shards": {
+    "total": 5,
+    "successful": 5,
+    "failed": 0
+  },
+  "hits": {
+    "total": 2,
+    "max_score": 1,
+    "hits": [
+      {
+        "_index": "test_index2",
+        "_type": "test_type2",
+        "_id": "110",
+        "_score": 1,
+        "fields": {
+          "test": [
+            "@qq.com"
+          ]
+        }
+      }
+    ]
+  }
+}
+```
+
+### `_update_by_query` 批量更新中使用 painless script
+
+对所有文档新增一个 emailSuffix 字段，emailSuffix 字段的值是 email 字段邮箱后缀
+
+```json
+POST /test_index2/test_type2/_update_by_query
+{
+    "query": {
+      "match_all": {}
+    },
+    "script": {
+        "inline": "ctx._source.emailSuffix = ctx._source.email.substring(ctx._source.email.indexOf('@')+1)"
+    }
+}
+```
+
+查询看看结果
+
+```
+GET /test_index2/test_type2/_search
+```
+
+响应
+
+```json
+{
+  "took": 1,
+  "timed_out": false,
+  "_shards": {
+    "total": 5,
+    "successful": 5,
+    "failed": 0
+  },
+  "hits": {
+    "total": 2,
+    "max_score": 1,
+    "hits": [
+      {
+        "_index": "test_index2",
+        "_type": "test_type2",
+        "_id": "110",
+        "_score": 1,
+        "_source": {
+          "emailSuffix": "qq.com",
+          "email": "99299684@qq.com"
+        }
+      },
+      {
+        "_index": "test_index2",
+        "_type": "test_type2",
+        "_id": "111",
+        "_score": 1,
+        "_source": {
+          "emailSuffix": "163.com",
+          "email": "99299684@163.com"
+        }
+      }
+    ]
+  }
+}
+```
+
+
 
 ## 图解乐观锁并发控制原理与操作
 
