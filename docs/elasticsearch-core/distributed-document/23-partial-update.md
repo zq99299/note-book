@@ -446,6 +446,14 @@ GET /test_index2/test_type2/_search
 }
 ```
 
+## 监控批量更新状态
+
+如上，使用脚本批量更新的话，当数据量很大的时候，就需要监控他的执行状态了
+
+```
+GET _tasks?detailed=true&actions=*byquery
+```
+
 
 
 ## 图解乐观锁并发控制原理与操作
