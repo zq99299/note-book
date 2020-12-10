@@ -36,7 +36,7 @@ module.exports = {
     docsDir: 'docs',
     sidebar: 'auto',
     sidebarDepth: 3, // 嵌套标题侧边栏提取深度，最大为 2，会提取到 h3
-    lastUpdated: '上次更新: ', // string | boolean
+    lastUpdated: '上次更新', // string | boolean
     // 假定是 GitHub. 同时也可以是一个完整的 GitLab URL
     repo: 'https://github.com/zq99299/note-book',
     // 自定义仓库链接文字。默认从 `themeConfig.repo` 中自动推断为
@@ -181,8 +181,9 @@ module.exports = {
       transformer: (timestamp, lang) => {
         // 不要忘了安装 moment
         const moment = require('moment')
-        moment.locale(lang)
-        return moment(timestamp).fromNow()
+        // moment.locale(lang)
+        // return moment(timestamp).fromNow()
+        return moment(timestamp).format("YYYY-MM-DD HH:mm:ss")
       }
     }],
     ['vuepress-plugin-baidu-tongji-analytics', {
