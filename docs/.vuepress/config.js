@@ -13,6 +13,7 @@ const springCloudTutorialSc = require('../spring-cloud-tutorial')
 const cssZxxSc = require('../css-zxx')
 const gitScmSc = require('../git-scm')
 const backEndStorageSc = require('../back-end-storage')
+const middlegroundSc = require('../middleground')
 
 module.exports = {
   title: 'Mrcode 笔记本',
@@ -116,10 +117,15 @@ module.exports = {
           { text: 'Linux 基础篇', link: 'https://zq99299.github.io/linux-tutorial/' },
           { text: 'Spring Cloud', link: '/spring-cloud-tutorial/' },
           { text: 'CSS 深入理解（张鑫旭）', link: '/css-zxx/' },
-          { text: '后端存储实战', link: '/back-end-storage/' },
           {
-            text: 'git', items: [
-              { text: 'git 零散知识', link: '/git/' },
+            text: '思路拓展', items: [
+              { text: '后端存储实战', link: '/back-end-storage/' },
+              { text: '说透中台', link: '/middleground/' }
+            ]
+          },
+          {
+            text: 'Git', items: [
+              { text: 'Git 零散知识', link: '/git/' },
               { text: 'Git 系统学习笔记', link: '/git-scm/' },
             ]
           },
@@ -158,7 +164,8 @@ module.exports = {
       '/spring-cloud-tutorial/': springCloudTutorialSc(),
       '/css-zxx/': cssZxxSc(),
       '/git-scm/': gitScmSc(),
-      '/back-end-storage/': backEndStorageSc()
+      '/back-end-storage/': backEndStorageSc(),
+      '/middleground/': middlegroundSc()
     }
   },
   plugins: [
@@ -183,7 +190,7 @@ module.exports = {
         const moment = require('moment')
         // moment.locale(lang)
         // return moment(timestamp).fromNow()
-        return moment(timestamp).format("YYYY-MM-DD HH:mm:ss")
+        return moment(timestamp).format('YYYY-MM-DD HH:mm:ss')
       }
     }],
     ['vuepress-plugin-baidu-tongji-analytics', {
