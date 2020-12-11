@@ -13,7 +13,7 @@ const springCloudTutorialSc = require('../spring-cloud-tutorial')
 const cssZxxSc = require('../css-zxx')
 const gitScmSc = require('../git-scm')
 const backEndStorageSc = require('../back-end-storage')
-const middlegroundSc = require('../middleground')
+const middlegroundSc = require('../middle-office')
 
 module.exports = {
   title: 'Mrcode 笔记本',
@@ -120,7 +120,7 @@ module.exports = {
           {
             text: '思路拓展', items: [
               { text: '后端存储实战', link: '/back-end-storage/' },
-              { text: '说透中台', link: '/middleground/' }
+              { text: '说透中台', link: '/middle-office/' }
             ]
           },
           {
@@ -165,7 +165,7 @@ module.exports = {
       '/css-zxx/': cssZxxSc(),
       '/git-scm/': gitScmSc(),
       '/back-end-storage/': backEndStorageSc(),
-      '/middleground/': middlegroundSc()
+      '/middle-office/': middlegroundSc()
     }
   },
   plugins: [
