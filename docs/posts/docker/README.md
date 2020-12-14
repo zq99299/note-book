@@ -9,9 +9,22 @@ systemctl restart docker
 systemctl stop docker
 ```
 
+##  拓展阅读
 
+更详细的系统的教程：
+
+- [如何使用 Docker 虚拟机](https://zq99299.github.io/mysql-tutorial/ali-new-retail/09/02.html)
+
+  非常基础的介绍，安装、镜像、容器、虚拟机管理命令等
+
+- [分布式 Docker 环境](https://zq99299.github.io/mysql-tutorial/ali-new-retail/09/03.html)
+
+  Swarm 组网知识。
+
+- [管理 Docker 数据卷](https://zq99299.github.io/mysql-tutorial/ali-new-retail/09/04.html#%E7%AE%A1%E7%90%86-docker-%E6%95%B0%E6%8D%AE%E5%8D%B7)
 
 ## Dockerfile
+
 打包一个 image。下面是一个 cloud boot 项目的打包配置
 
 ```
