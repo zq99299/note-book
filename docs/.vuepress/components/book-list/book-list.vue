@@ -153,21 +153,21 @@
         </div>
       </div>
     </div>
-    <div class="single-member effect-2">
-      <div class="member-image">
-        <img src="./none.png" alt="Member">
-      </div>
-      <div class="member-info">
-        <h3>谢孟媛</h3>
-        <h5>学习笔记</h5>
-        <p>英语发音篇、kk音标</p>
-        <div class="social-touch">
-          <a href="xiemengyuan/">
-            阅读更多
-          </a>
-        </div>
-      </div>
-    </div>
+<!--    <div class="single-member effect-2">-->
+<!--      <div class="member-image">-->
+<!--        <img src="./none.png" alt="Member">-->
+<!--      </div>-->
+<!--      <div class="member-info">-->
+<!--        <h3>谢孟媛</h3>-->
+<!--        <h5>学习笔记</h5>-->
+<!--        <p>英语发音篇、kk音标</p>-->
+<!--        <div class="social-touch">-->
+<!--          <a href="xiemengyuan/">-->
+<!--            阅读更多-->
+<!--          </a>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
   </div>
 </template>
 
