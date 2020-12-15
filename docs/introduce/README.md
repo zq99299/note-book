@@ -1,5 +1,4 @@
 # note-book 介绍与规约
-<demo-01/>
 
 ::: tip
 旧的笔记 [essay-note](https://github.com/zq99299/essay-note) 将停更,新的笔会用本项目记录。
