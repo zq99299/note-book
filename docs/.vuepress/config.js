@@ -14,6 +14,7 @@ const cssZxxSc = require('../css-zxx')
 const gitScmSc = require('../git-scm')
 const backEndStorageSc = require('../back-end-storage')
 const middlegroundSc = require('../middle-office')
+const oath2Sc = require('../oath2')
 
 module.exports = {
   title: 'Mrcode 笔记本',
@@ -120,7 +121,8 @@ module.exports = {
           {
             text: '思路拓展', items: [
               { text: '后端存储实战', link: '/back-end-storage/' },
-              { text: '说透中台', link: '/middle-office/' }
+              { text: '说透中台', link: '/middle-office/' },
+              { text: 'Oath 2.0 实战', link: '/oath2/' },
             ]
           },
           {
@@ -165,7 +167,8 @@ module.exports = {
       '/css-zxx/': cssZxxSc(),
       '/git-scm/': gitScmSc(),
       '/back-end-storage/': backEndStorageSc(),
-      '/middle-office/': middlegroundSc()
+      '/middle-office/': middlegroundSc(),
+      '/oath2/': oath2Sc()
     }
   },
   plugins: [
