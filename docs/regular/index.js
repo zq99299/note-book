@@ -2,7 +2,7 @@ module.exports = () => {
   return [
     '',
     {
-      title: '01 | 开篇',
+      title: '01丨开篇',
       collapsable: true,
       children: [
         '01/',
@@ -11,28 +11,40 @@ module.exports = () => {
       ]
     },
     {
-      title: '02 | 基础篇',
+      title: '02丨基础篇',
       collapsable: true,
       children: [
-        '02/'
+        '02/',
+        '02/01.md',
+        '02/02.md',
+        '02/03.md',
+        '02/04.md'
       ]
     },
     {
-      title: '03 | 应用篇',
+      title: '03丨应用篇',
       collapsable: true,
       children: [
-        '03/'
+        '03/',
+        '03/01.md',
+        '03/02.md',
+        '03/03.md',
+        '03/04.md',
+        '03/05.md',
+        '03/06.md',
+        '03/07.md',
+        '03/08.md'
       ]
     },
     {
-      title: '04 | 加餐',
+      title: '04丨加餐',
       collapsable: true,
       children: [
         '04/'
       ]
     },
     {
-      title: '05 | 结束',
+      title: '05丨结束',
       collapsable: true,
       children: [
         '05/'
