@@ -6,9 +6,9 @@
   "private": false,
   "scripts": {
     "docs:devx": "vuepress dev docs --open",
-    "docs:dev": "node --max_old_space_size=4096  --stack-size=65535 ./node_modules/vuepress/cli.js dev docs --open",
+    "docs:dev": "node --max_old_space_size=4096  --stack-size=60000 ./node_modules/vuepress/cli.js dev docs --open",
     "docs:buildx": "vuepress build docs --debug",
-    "docs:build": "node --max_old_space_size=4096 --stack-size=65535 ./node_modules/vuepress/cli.js build docs"
+    "docs:build": "node --max_old_space_size=4096 --stack-size=60000 ./node_modules/vuepress/cli.js build docs"
   },
   "dependencies": {
     "moment": "^2.24.0",
