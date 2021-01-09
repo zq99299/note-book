@@ -210,5 +210,88 @@ nohup java -jar ${APP_JAR} --spring.profiles.active=${ACTIVE} --server.servlet.s
 
    2. `__` 后面的是你的描述，可以随意填写
 
-   
+##  Spring MVC 缓存控制(HTTP 缓存)
 
+使用 bootJar 内嵌启动的话，Spring MVC 也提供了一些缓存控制功能，[官方比较详细](https://docs.spring.io/spring-framework/docs/current/reference/html/web.html#mvc-caching)。
+
+注意：你用 spring boot，但是里面 wen 层，用的是 Spring mvc ，那么就你要去找 Spring MVC 的官方文档，而不是 boot 的文档
+
+该文档中有：
+
+- Controllers：对 controller 提供缓存支持
+- Static Resources：对静态资源提供缓存支持
+
+这里讲解下如何对一个 Controller 提供 HTTP 缓存的支持
+
+### 背景
+
+提供了一个接口：根据 ID 查询一张图片，通过流的形式响应
+
+一般来说，这种接口无法触发浏览器的 缓存机制，但是通过如下方式可以做到
+
+### 解决方案
+
+没有缓存的写法
+
+```java
+    /**
+     * 图片读取
+     */
+    @GetMapping("/img/{tppFaceId}")
+    public void img(@PathVariable String tppFaceId,
+                    HttpServletResponse response) throws IOException {
+        TppFace face = faceService.getById(tppFaceId);
+        if(face == null){
+            throw new Exception("没有该资源");
+        }
+        final String img = face.getImg();
+        response.addDateHeader("Expires", System.currentTimeMillis() + 1000 * 60 * 60);
+        response.addDateHeader("Last-Modified", System.currentTimeMillis());
+        response.addHeader("Cache-Control", "public");
+        final Path path = Paths.get(pathServiceProperties.getWorkPath(), img);
+        String contentType = new Tika().detect(path.getFileName().toString());
+        response.setContentType(contentType);
+        try (
+                final InputStream is = Files.newInputStream(path)
+        ) {
+            IoUtil.copy(is, response.getOutputStream());
+        }
+    }
+```
+
+上述写了 缓存头，过期时间之类的，其实并不会生效。
+
+下面是生效的写法
+
+```java
+    @GetMapping("/img/{tppFaceId}")
+    public void img(@PathVariable String tppFaceId,
+                    WebRequest request) throws IOException {
+		// 在本场景中，图片生成之后，就永远不会改变，这里的版本号我就写死成 1 了
+        final String eTag = "1";
+        // 这里检查该请求携带过来的 eTag 版本号，如果与我们这里的一致，就直接返回
+        // 返回时: 框架帮我们做了重要的一件事件，更改了响应状态码为 304
+        if (request.checkNotModified(eTag)) {
+            return;
+        }
+
+        TppFace face = faceService.getById(tppFaceId);
+        if (face == null) {
+            throw new Exception("没有该资源");
+        }
+        final String img = face.getImg();
+        response.addDateHeader("Last-Modified", System.currentTimeMillis());
+        // 利用缓存配置构建设置头  max-age 的时间等信息
+        response.addHeader(HttpHeaders.CACHE_CONTROL, CacheControl.maxAge(1, TimeUnit.DAYS).getHeaderValue());
+        // 该 id 首次响应的时候，添加响应头，版本也写  1
+        response.addHeader("eTag", "1");
+        final Path path = Paths.get(pathServiceProperties.getWorkPath(), img);
+        String contentType = new Tika().detect(path.getFileName().toString());
+        response.setContentType(contentType);
+        try (
+                final InputStream is = Files.newInputStream(path)
+        ) {
+            IoUtil.copy(is, response.getOutputStream());
+        }
+    }
+```
