@@ -21,19 +21,19 @@
 * 第1章 课程导学
 
   本章节主要讲解大家能收获什么，课程具体包含哪些内容，通过哪些方式来学习设计模式，以及怎么讲，怎么安排，通过本章的学习，让大家为整个课程高效的学习打下基础。
-  - [课程导学](01/课程导学.md)
+  - [课程导学](01/)
 
 * 第2章 UML急速入门
 
   本章节主要讲解UML基础、UML类图、UML类关系、UML时序图、UML类关系记忆技巧等，让大家急速入门UML，从而为后面设计模式的学习做好准备。
 
-  - [本章导航](./02_uml/本章导航.md)
-  - [UML 类图讲解](./02_uml/UML类图讲解.md)
+  - [本章导航](./02_uml/)
+  - [UML 类图讲解](./02_uml/01.md)
 
 * 第3章 软件设计七大原则
 
   本章节主要讲解软件设计七大原则，同时结合业务场景及演进手把手coding，让大家更好的理解软件设计原则。
-  - [本章导航](./03_design_principles/本章导航.md)
+  - [本章导航](./03_design_principles/)
   - [开闭原则](./03_design_principles/open_close.md)
   - [依赖倒置原则](./03_design_principles/dependency_inversion.md)
   - [单一职责原则](./03_design_principles/single_responsibility.md)
