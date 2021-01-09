@@ -1023,9 +1023,10 @@
   dependencies:
     lodash.debounce "^4.0.8"
 
-"@vuepress/plugin-back-to-top@^1.7.1":
+"@vuepress/plugin-back-to-top@1.7.1":
   version "1.7.1"
   resolved "https://registry.yarnpkg.com/@vuepress/plugin-back-to-top/-/plugin-back-to-top-1.7.1.tgz#8bdc4a2de95f8244f167b3b3066c2610b88aabeb"
+  integrity sha512-Hw/5kQjqtkHEstifcq4gpdVwS38C3ecruLCUibq3YEES6DJUYZ8tN1oo3FTugYgpXsyn3HxWftyalozcZ2IutA==
   dependencies:
     lodash.debounce "^4.0.8"
 
@@ -1035,9 +1036,10 @@
   dependencies:
     cross-spawn "^6.0.5"
 
-"@vuepress/plugin-medium-zoom@^1.7.1":
+"@vuepress/plugin-medium-zoom@1.7.1":
   version "1.7.1"
   resolved "https://registry.yarnpkg.com/@vuepress/plugin-medium-zoom/-/plugin-medium-zoom-1.7.1.tgz#170598bba9941dbd047cffaa659023db8f46e337"
+  integrity sha512-pYI6myr4bi9SYzvR6D4r7+YpjpXgudCbontXKZIARS7hJ+kVBapVYnetrbeNFKq+7a/QGOkAuAK2j39dQLaMXQ==
   dependencies:
     medium-zoom "^1.0.4"
 
@@ -1047,9 +1049,10 @@
   dependencies:
     nprogress "^0.2.0"
 
-"@vuepress/plugin-pwa@^1.7.1":
+"@vuepress/plugin-pwa@1.7.1":
   version "1.7.1"
   resolved "https://registry.yarnpkg.com/@vuepress/plugin-pwa/-/plugin-pwa-1.7.1.tgz#22fb176b48a4f9cba3d69a0a8c6d1971efb7e49d"
+  integrity sha512-c3oozxPPGpraU+UnY3gp3sWnKYO3mOLcexQWXaYABWnUC3yFbHx4e8wIF8LGqp7Z75bjQuUoI+LcHqpQXyYNag==
   dependencies:
     "@vuepress/shared-utils" "1.7.1"
     register-service-worker "^1.7.0"
@@ -6581,6 +6584,11 @@ vue-loader@^15.7.1:
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
 
+vue-router@3.4.5:
+  version "3.4.5"
+  resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-3.4.5.tgz#d396ec037b35931bdd1e9b7edd86f9788dc15175"
+  integrity sha512-ioRY5QyDpXM9TDjOX6hX79gtaMXSVDDzSlbIlyAmbHNteIL81WIVB2e+jbzV23vzxtoV0krdS2XHm+GxFg+Nxg==
+
 vue-router@^3.4.5:
   version "3.4.7"
   resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-3.4.7.tgz#bf189bafd16f4e4ef783c4a6250a3090f2c1fa1b"
@@ -6661,9 +6669,10 @@ vuepress-plugin-tags@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/vuepress-plugin-tags/-/vuepress-plugin-tags-1.0.0.tgz#e55104bb7772a5817540696ec617617c74155a30"
 
-vuepress@^1.7.1:
+vuepress@1.7.1:
   version "1.7.1"
   resolved "https://registry.yarnpkg.com/vuepress/-/vuepress-1.7.1.tgz#bb0e139d8c407a0b5aa962cf9577832a5808937e"
+  integrity sha512-AdA3do1L4DNzeF8sMTE+cSUJ5hR/6f3YujU8DVowi/vFOg/SX2lJF8urvDkZUSXzaAT6aSgkI9L+B6D+i7SJjA==
   dependencies:
     "@vuepress/core" "1.7.1"
     "@vuepress/theme-default" "1.7.1"
