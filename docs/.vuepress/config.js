@@ -15,6 +15,7 @@ const gitScmSc = require('../git-scm')
 const backEndStorageSc = require('../back-end-storage')
 const middlegroundSc = require('../middle-office')
 const oath2Sc = require('../oath2')
+const regularSc = require('../regular')
 
 module.exports = {
   title: 'Mrcode 笔记本',
@@ -118,6 +119,7 @@ module.exports = {
           { text: 'Linux 基础篇', link: 'https://zq99299.github.io/linux-tutorial/' },
           { text: 'Spring Cloud', link: '/spring-cloud-tutorial/' },
           { text: 'CSS 深入理解（张鑫旭）', link: '/css-zxx/' },
+          { text: '正则入门', link: '/regular/' },
           {
             text: '思路拓展', items: [
               { text: '后端存储实战', link: '/back-end-storage/' },
@@ -168,7 +170,8 @@ module.exports = {
       '/git-scm/': gitScmSc(),
       '/back-end-storage/': backEndStorageSc(),
       '/middle-office/': middlegroundSc(),
-      '/oath2/': oath2Sc()
+      '/oath2/': oath2Sc(),
+      '/regular/': regularSc()
     }
   },
   plugins: [
