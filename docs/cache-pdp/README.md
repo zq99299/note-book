@@ -196,7 +196,7 @@ cache-pdp：Cache architecture product details page
 - [182. 商品详情页动态渲染系统：在 CentOS 6 安装 maven、git 以及推送 github](./dr/182.md)
 - [183. 商品详情页动态渲染系统：通过 jenkins+docker 部署 eureka 服务](./dr/183.md)
 - [184. 商品详情页动态渲染系统：twemproxy hash tag+mget 优化思路介绍](./dr/184.md)
-- [185. 商品详情页动态渲染系统：所有服务最终修改以及 jenkins+docker 部署](./onservice/185.md)
+- [185. 商品详情页动态渲染系统：所有服务最终修改以及 jenkins+docker 部署](./dr/185.md)
 - [186. 商品详情页 OneService 系统：整体架构设计](./onservice/186.md)
 - [187. 商品详情页 OneService 系统：基于 Spring Cloud 构建 OneService 服务](./onservice/187.md)
 - [188. 商品详情页 OneService 系统：库存服务与价格服务的代理接口开发](./onservice/188.md)

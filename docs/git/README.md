@@ -1,6 +1,6 @@
 # Git
 
-[Git 系统学习笔记](./git-scm/)
+[Git 系统学习笔记](../git-scm/)
 
 ## GitHub 如何测试别人提交的 pr
 

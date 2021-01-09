@@ -1,6 +1,6 @@
 # client 集群自动探查以及汽车零售店案例背景
 
-快速入门篇（[练习例子-员工管理](./elasticsearch-core/72-employee-example.md) ），讲解过了一些基本的 java api，包括了 document 增删改查，基本的搜索，基本的聚合
+快速入门篇（[练习例子-员工管理](../../elasticsearch-core/72-employee-example.md) ），讲解过了一些基本的 java api，包括了 document 增删改查，基本的搜索，基本的聚合
 
 高手进阶篇，必须将 java api 这块深入讲解一下，介绍一些最常用的，最核心的一些 api 的使用，用一个模拟现实的案例背景，让大家在学习的时候更加贴近业务
 
