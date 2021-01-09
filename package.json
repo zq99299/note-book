@@ -17,10 +17,10 @@
     "vuepress-plugin-tags": "^1.0.0"
   },
   "devDependencies": {
-    "@vuepress/plugin-back-to-top": "1.8.0",
-    "@vuepress/plugin-medium-zoom": "1.8.0",
-    "@vuepress/plugin-pwa": "1.8.0",
-    "vuepress": "1.8.0",
+    "@vuepress/plugin-back-to-top": "1.7.0",
+    "@vuepress/plugin-medium-zoom": "1.7.0",
+    "@vuepress/plugin-pwa": "1.7.0",
+    "vuepress": "1.7.0",
     "vuepress-plugin-baidu-autopush": "^1.0.1"
   }
 }
