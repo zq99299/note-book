@@ -8,6 +8,7 @@
     "docs:devx": "vuepress dev docs --open",
     "docs:dev": "node --max_old_space_size=4096 ./node_modules/vuepress/cli.js dev docs --open",
     "docs:buildx": "vuepress build docs",
+    "description": "在 build 时不要添加 --debug 之类的选项，否则会导致生成之后的搜索和侧边栏点击无效的问题",
     "docs:build": "node --max_old_space_size=4096 ./node_modules/vuepress/cli.js build docs"
   },
   "dependencies": {
