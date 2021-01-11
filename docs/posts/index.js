@@ -61,13 +61,6 @@ module.exports = () => {
       children: [
         'vue/'
       ]
-    },
-    {
-      title: 'Spring 实战技巧',
-      collapsable: true,
-      children: [
-        'spring-combat/'
-      ]
     }
   ]
 }
