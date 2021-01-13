@@ -48,7 +48,7 @@ module.exports = () => {
       ]
     },
     {
-      title: "Gradle",
+      title: 'Gradle',
       collapsable: true,
       children: [
         'gradle/',
@@ -56,17 +56,10 @@ module.exports = () => {
       ]
     },
     {
-      title: "Vue",
+      title: 'Vue',
       collapsable: true,
       children: [
         'vue/'
-      ]
-    },
-    {
-      title: "Spring 实战技巧",
-      collapsable: true,
-      children: [
-        'spring-combat/'
       ]
     }
   ]
