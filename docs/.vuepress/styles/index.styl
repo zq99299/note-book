@@ -1,14 +1,3 @@
-body {
-  //color: rgba(0,0,0,.65);
-  //font-family: -apple-system,BlinkMacSystemFont,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;
-  //font-feature-settings: "tnum";
-  //font-variant: tabular-nums;
-
-  //a {
-  //  font-weight: 400;
-  //}
-}
-
 @media (min-width: 1024px) {
   .page {
     .theme-default-content, .page-edit, .page-nav {
@@ -18,7 +7,6 @@ body {
 }
 
 /*>=1024的设备*/
-
 @media (min-width: 1100px) {
   .page {
     .theme-default-content, .page-edit, .page-nav {
@@ -37,7 +25,6 @@ body {
 }
 
 /*>=1280的设备*/
-
 @media (min-width: 1366px) {
   .page {
     .theme-default-content, .page-edit, .page-nav {
@@ -72,6 +59,30 @@ body {
   }
 }
 
+body {
+  //font-family: -apple-system, BlinkMacSystemFont, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  //font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+  //fomt-family: Hiragino Sans GB, MicroSoft YaHei;
+  font-family: -apple-system, "Hiragino Sans GB", "MicroSoft YaHei", BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  //color: rgba(0, 0, 0, .65);
+  color: #333
+  font-size 16px
+  line-height: 1.75;
+  font-weight: 400;
+  font-feature-settings: "tnum";
+  font-variant: tabular-nums;
+}
+
+.feature p, .page p {
+  word-break: break-all;
+  text-align: justify;
+  font-weight: 400;
+  letter-spacing: 1.6px;
+}
+
+ol, p, ul {
+  line-height: 1.75;
+}
 
 // 侧边栏 root 间隔变小，字体变小
 .sidebar > .sidebar-links > li:not(:first-child) {
@@ -83,20 +94,3 @@ body {
   line-height: 1.5 !important;
   font-weight: normal !important;
 }
-
-// 第一个为一个专题标题
-.sidebar > .sidebar-links > li:first-child {
-  //  color: #24292e!important
-  //  font-weight: 400;
-  //  line-height: 1.125;
-  //  background: #dfe2e5;
-}
-
-// 让 > 引用片段作为小标题使用的样式
-
-//blockquote {
-//    font-size: 0.95rem!important;
-//    color: #2c3e50!important;
-//    border-left: 0.5rem solid #2c3e50ed!important;
-//    font-weight: 700;
-//}

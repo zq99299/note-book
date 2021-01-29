@@ -16,7 +16,7 @@
     "vue-router": "3.4.5",
     "vuepress-plugin-baidu-tongji-analytics": "^1.0.1",
     "vuepress-plugin-code-copy": "^1.0.4",
-    "vuepress-plugin-tags": "^1.0.0"
+    "vuepress-plugin-tags": "1.0.2"
   },
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "1.8.0",
