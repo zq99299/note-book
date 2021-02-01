@@ -1,3 +1,14 @@
+<p align="center">
+  <a href="https://github.com/zq99299/repository-summary" target="_blank">
+     <img width="200" src="./docs/.vuepress/public/MLOGO200x200.png" alt="logo">
+  </a>
+  <br/>
+  <br/>
+  <a href="https://github.com/zq99299/repository-summary" target="_blank"> 
+    所有笔记 → 系列导航
+  </a>
+</p>
+
 # note-book
 用来记录工作和学习过程中的笔记，汇总成册方便查阅，类容涵盖各类技术
 

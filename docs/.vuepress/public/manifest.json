@@ -1,0 +1,25 @@
+{
+  "name": "NOTE-BOOK2",
+  "short_name": "MRCODE",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "零散短小的笔记项目，MRCODE 笔记本",
+  "icons": [
+    {
+      "src": "MLOGO100x100.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "MLOGO100x100.png",
+      "sizes": "100x100",
+      "type": "image/png"
+    },
+    {
+      "src": "MLOGO200x200.png",
+      "sizes": "200x200",
+      "type": "image/png"
+    }
+  ]
+}
