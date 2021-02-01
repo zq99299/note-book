@@ -31,6 +31,10 @@ module.exports = {
   //     //     lang: 'zh-CN', // 将会被设置为 <html> 的 lang 属性
   //     // }
   // },
+  head:[
+    ['link', { rel: 'icon', href: '/favicon.ico' }],
+    ['link', { rel: 'manifest', href: '/manifest.json' }],
+  ],
   markdown: {
     lineNumbers: true
   },
