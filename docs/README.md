@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: MLOGO200x200.png
+heroImage: mlogo.svg
 actionText: 项目介绍 →
 actionLink: /introduce/
 features:

@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/zq99299/repository-summary" target="_blank">
-     <img width="200" src="./docs/.vuepress/public/MLOGO200x200.png" alt="logo">
+     <img width="200" src="./docs/.vuepress/public/mlogo.svg" alt="logo">
   </a>
   <br/>
   <br/>
