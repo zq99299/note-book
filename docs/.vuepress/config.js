@@ -60,7 +60,7 @@ module.exports = {
     editLinks: true,
     // 默认为 "Edit this page"
     editLinkText: '帮助我们改善此页面！',
-    logo: 'mlogo.svg',
+    logo: '/mlogo.svg',
     // 主题级别的配置
     serviceWorker: {
       updatePopup: true // Boolean | Object, 默认值是 undefined.
