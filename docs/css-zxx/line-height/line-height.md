@@ -411,7 +411,7 @@ body { font-size: 14px; line-height: 1.4286; }
 
 ### 图片水平垂直居中
 
-![./image-20200502160804588](assets/image-20200502160804588.png)
+![image-20200502160804588](./assets/image-20200502160804588.png)
 
 近似的达到垂直居中，这个就是 `vertical-align middle` 的知识点了，简单的提一下，middle 是基线往上 `二分之一x` 高度
 
