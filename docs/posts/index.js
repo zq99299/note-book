@@ -61,6 +61,13 @@ module.exports = () => {
       children: [
         'vue/'
       ]
+    },
+    {
+      title: '随笔',
+      collapsable: true,
+      children: [
+        'others/'
+      ]
     }
   ]
 }
