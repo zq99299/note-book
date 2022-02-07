@@ -66,7 +66,8 @@ module.exports = () => {
       title: '随笔',
       collapsable: true,
       children: [
-        'others/'
+        'others/',
+        'others/001.md'
       ]
     }
   ]
