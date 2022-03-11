@@ -67,7 +67,9 @@ module.exports = () => {
       collapsable: true,
       children: [
         'others/',
-        'others/001.md'
+        'others/001.md',
+        'others/002.md',
+        'others/003.md',
       ]
     }
   ]
