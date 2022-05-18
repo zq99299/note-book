@@ -73,6 +73,7 @@ public class JavaCourse implements ICourse {
 
 ```
 
+
 ```java{3}
 public class Test {
     public static void main(String[] args) {
@@ -109,6 +110,61 @@ ID:96，课程名称：设计模式，价格：389.0
 一看业务变化，上面的方案对于维护来说都是个不好的办法，那么应该怎么办呢？
 
 **开闭原则**：模块和函数应该对扩展开放，对修改关闭
+
+我觉得这个例子 增加子类 是没有必要的，假如存在c++课程需要打折, 也需要创建  一个c++打折类   结果会导致子类爆炸， 
+  建议使用  组合替换继承
+  
+  ```
+  /// <summary>
+///  author: wj
+///  create date: 20220518
+/// </summary>
+using System;
+using System.Collections.Generic;
+
+
+
+namespace note_book
+{
+
+
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public class DiscountCourse
+    {
+         private Dictionary<string,ICourse>  _courses;
+
+         public DiscountCourse()
+         {
+              _courses = new Dictionary<string, ICourse>();
+         }
+         public void CreateNewCourse(string courseName ,ICourse  course){
+              this._courses.Add(courseName, course);
+         }
+
+        public double DiscountPrice(string course, double z)
+        {
+            double ob;
+            ICourse c;
+            if (this._courses.TryGetValue(course, out c))
+            {
+                return ob = c.Price * z;
+            }
+
+            throw new Exception("Not Found course");
+        }
+
+
+    }
+
+  
+  
+  
+  ```
+  
+
 
 那么增加一个打折的子类即可；
 
