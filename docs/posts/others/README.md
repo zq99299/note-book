@@ -9,3 +9,4 @@
 - [启用 STOMP](./006.md)
 - [Annotated Controllers](./007.md)
 - [线程池 - 调优](./008.md)
+- [本地调用异步化](./009.md)
