@@ -27,7 +27,7 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "e821f86cb299b93230d75ecf0eaa70b4"
+    "revision": "d8bc9e87267956bbc7b9c9440a47ae72"
   },
   {
     "url": "assets/css/0.styles.f6819672.css",
@@ -6902,1892 +6902,1892 @@ self.__precacheManifest = [
     "revision": "733612c35c2efa3fa63c9301d427a6b6"
   },
   {
-    "url": "assets/js/app.ac53f081.js",
-    "revision": "836ac445498a5d690a80a3fa16c8f843"
+    "url": "assets/js/app.70bbddd4.js",
+    "revision": "ac9981b64caa6ae5d10822af314ede57"
   },
   {
     "url": "back-end-storage/00/index.html",
-    "revision": "51557bf817e1a202eefb12c772d2f8f4"
+    "revision": "c902d4183acef2ed0fa55f095d330d75"
   },
   {
     "url": "back-end-storage/01/01.html",
-    "revision": "f55030656fa9991a99d4b5430effd2ae"
+    "revision": "55f8f8be1a0884c01890facd555afe6f"
   },
   {
     "url": "back-end-storage/01/02.html",
-    "revision": "4c7220565373e7b4784ebf66f31d6c7e"
+    "revision": "5e4be5fe796501aaefea7ae238861a37"
   },
   {
     "url": "back-end-storage/01/03.html",
-    "revision": "c3f4d7040878f9e3eb5456ef876da6c1"
+    "revision": "91adbb6525f38f574241a6300b92332d"
   },
   {
     "url": "back-end-storage/01/04.html",
-    "revision": "6a631f6c320532130fc016b6422db2db"
+    "revision": "a08dc0391e8a4f9d5693b49e9c49b0c1"
   },
   {
     "url": "back-end-storage/01/05.html",
-    "revision": "59bcf533776cc7686e8a2c0cd43eff8b"
+    "revision": "42e4388462877678c124e3b73b799e51"
   },
   {
     "url": "back-end-storage/01/06.html",
-    "revision": "0581c1d652d392dfbd21ec9b995fb842"
+    "revision": "7d917a651f02af480fe06ba3177d8afb"
   },
   {
     "url": "back-end-storage/01/07.html",
-    "revision": "949b06e6f8282f36818faa9c0dff9d11"
+    "revision": "a0226d94aeeef00dc0b06a3677f77fb4"
   },
   {
     "url": "back-end-storage/01/index.html",
-    "revision": "82aef591d47c7e769384cbbb345a081d"
+    "revision": "d9be81f2e4b0a9380fb0f5434e07aaaa"
   },
   {
     "url": "back-end-storage/02/01.html",
-    "revision": "005835e242b8c57db683f1338dbfdd5a"
+    "revision": "d06e5171da8eb4ef4a1c4e40ed5992b9"
   },
   {
     "url": "back-end-storage/02/02.html",
-    "revision": "c4f995bd2015480e9c04ed083485d06e"
+    "revision": "32932a3c69eb0aef7a15fb7a45ef5ade"
   },
   {
     "url": "back-end-storage/02/03.html",
-    "revision": "a38249daad4b4e21ee22788da4e489cb"
+    "revision": "9d6f34b045c3b4bd53b6cf984bd15db3"
   },
   {
     "url": "back-end-storage/02/04.html",
-    "revision": "d28c735a2e26a9bf2552e232b5b41362"
+    "revision": "1fe51a9390ae1c689fe402beda5948cf"
   },
   {
     "url": "back-end-storage/02/05.html",
-    "revision": "47dbdace25fa239d22d944790ff0bfb0"
+    "revision": "eb802d69e070fd4a2fc4e31380d07db3"
   },
   {
     "url": "back-end-storage/02/06.html",
-    "revision": "09b6960a02660e07c1d1e4356bcb0203"
+    "revision": "1c6b42e63794fa60f3621c96ffbe303a"
   },
   {
     "url": "back-end-storage/02/07.html",
-    "revision": "c1925f83600905cee464b473d6535ece"
+    "revision": "93d4728660b2bfafaee19b59f2ae75ba"
   },
   {
     "url": "back-end-storage/02/index.html",
-    "revision": "81961b09d4006d3912f98cd46e0b9094"
+    "revision": "3f84c2212fc267d4b44f0db1d91df298"
   },
   {
     "url": "back-end-storage/03/01.html",
-    "revision": "c4297ebc4d0a6852596dfca9b7d9f038"
+    "revision": "f1ecd217e4ea45c3c9247276091e4849"
   },
   {
     "url": "back-end-storage/03/02.html",
-    "revision": "27f71bb724377c9f36cab1ed1a4980b9"
+    "revision": "d19a10c6177e8c90920037d726e5ee59"
   },
   {
     "url": "back-end-storage/03/03.html",
-    "revision": "63e5f34bb97b850fab40cde3e5bfb9a4"
+    "revision": "17f9ed836ba286c7770c5684a153fd10"
   },
   {
     "url": "back-end-storage/03/04.html",
-    "revision": "3ba4359f8beb0521680e3067a4d67fe9"
+    "revision": "275df585dbe595f723495d14fb9f4c7a"
   },
   {
     "url": "back-end-storage/03/05.html",
-    "revision": "b4db4ffedab4e9eed5e8b9d079a08352"
+    "revision": "cc0174d049bea639a2947683e73a3a0e"
   },
   {
     "url": "back-end-storage/03/06.html",
-    "revision": "207ebf07d53aa69ab69595012febfb2e"
+    "revision": "734b25fda60f3cd1032271e3bf11f0e1"
   },
   {
     "url": "back-end-storage/03/07.html",
-    "revision": "87b0fc9e7dd1c1aa31bbea3926cb909c"
+    "revision": "cbe13a15d5b7e033e4e154ab988d43ac"
   },
   {
     "url": "back-end-storage/03/08.html",
-    "revision": "a138a012c8180b49d55d6cc9453e07cd"
+    "revision": "5d6519f3b599125a2699bfc4e13606ef"
   },
   {
     "url": "back-end-storage/03/09.html",
-    "revision": "e35caad2ea5a6ed9ce047723438f3a4f"
+    "revision": "e24a11aa77f4ef444527b68a38384e50"
   },
   {
     "url": "back-end-storage/03/10.html",
-    "revision": "b0b4a4f552a6dc798cf420a25d4a64ba"
+    "revision": "e666842e8fea795ad3ccbed64e3b9808"
   },
   {
     "url": "back-end-storage/03/index.html",
-    "revision": "01fe2aa498c6d45d4d779d26873f8957"
+    "revision": "97fce5e488254e193740307ad7c040f0"
   },
   {
     "url": "back-end-storage/index.html",
-    "revision": "21fc300c4a2eff27b8613c4b6704ead6"
+    "revision": "1afaa08d5c8fa4ec036145dd2a737dc2"
   },
   {
     "url": "cache-pdp/001-introduce.html",
-    "revision": "ae5ab68091193d9db233a3bcbeef0a7f"
+    "revision": "dd82f750213147348711a40579b57ef3"
   },
   {
     "url": "cache-pdp/002.html",
-    "revision": "3f1a5cc6196c0bd504d6bbbf4f0eca81"
+    "revision": "a2a16eca34cb42da00dfce0df949f9e6"
   },
   {
     "url": "cache-pdp/003.html",
-    "revision": "9707cbd0e12db17f404db9d623d02f79"
+    "revision": "731f2a9b696037f5a25a69cddee005f9"
   },
   {
     "url": "cache-pdp/004.html",
-    "revision": "8a4751f555a5eb9166902ceac050a852"
+    "revision": "672eb1fa422c2847dfde8b9da77fba1f"
   },
   {
     "url": "cache-pdp/005.html",
-    "revision": "0fbc5f229898946faf2209169f5562fb"
+    "revision": "366b5b531853ee3df18a298c7982c810"
   },
   {
     "url": "cache-pdp/006.html",
-    "revision": "1e0e58b0a8dd2352ead791a4b010867f"
+    "revision": "50b68e45989808dc06e21fa994dd92f3"
   },
   {
     "url": "cache-pdp/035.html",
-    "revision": "68fac439d480a4d60bc380b06308f5ea"
+    "revision": "8676e8697c85183623a1be279bf226a1"
   },
   {
     "url": "cache-pdp/036.html",
-    "revision": "dd267bc35b631e0145c2ccda9d2ef003"
+    "revision": "71ee579df0a3c3b56e2fd34567cf7f44"
   },
   {
     "url": "cache-pdp/037.html",
-    "revision": "1fb31bee7eeaffe80a7c752280523f1f"
+    "revision": "e2ab5329582fa5046f49e380421e6470"
   },
   {
     "url": "cache-pdp/038.html",
-    "revision": "fc377baefbf5622b88c0fda6522e599b"
+    "revision": "445dc5409facf6596bbed56469c082c4"
   },
   {
     "url": "cache-pdp/039.html",
-    "revision": "b9109388845d63733ac63ebaa5138cb7"
+    "revision": "b1cfdcf64eca8d4263fc4a9322e6ea5d"
   },
   {
     "url": "cache-pdp/040.html",
-    "revision": "9c95493735587f9b0ebcb303a761c72e"
+    "revision": "ee8700060abfb0dbaaddfc4e4db798f2"
   },
   {
     "url": "cache-pdp/044.html",
-    "revision": "9cba2b9d01754c62d6f9beea7b37e1cb"
+    "revision": "a8829ee8c41242f5d11cc5cf05e8b10c"
   },
   {
     "url": "cache-pdp/045.html",
-    "revision": "616c054d4d1b75949de0ec5728e06bf6"
+    "revision": "6049735349292d34b142ff74d71300d2"
   },
   {
     "url": "cache-pdp/046.html",
-    "revision": "4ecc1bf48d80bfc2871003bf8bf6d02d"
+    "revision": "8224491dc5db1053b40b67fd13ecca62"
   },
   {
     "url": "cache-pdp/047.html",
-    "revision": "b93d3caa6111ec042c994fb7f1b48983"
+    "revision": "c4252734a14a1a76fadb63f196258892"
   },
   {
     "url": "cache-pdp/048.html",
-    "revision": "dc3d1cf5312a276c01027ed502918909"
+    "revision": "af66d257f6f0b2953b651eed5172be1b"
   },
   {
     "url": "cache-pdp/049.html",
-    "revision": "fa08b2a2aa5b853aacdbff079ebfcf8d"
+    "revision": "35a153b03f0250ec791e1d72ce92438b"
   },
   {
     "url": "cache-pdp/050.html",
-    "revision": "c48c11fa63f3c937c2a86a6a93936e0e"
+    "revision": "a46d115d9278dc7c252dd892058b2f7f"
   },
   {
     "url": "cache-pdp/051.html",
-    "revision": "ec8d266de52364b8391e2ed5a5e5b35b"
+    "revision": "7a680a24a0ba51d0fe809bb106f925fe"
   },
   {
     "url": "cache-pdp/052.html",
-    "revision": "7cea41098059b865fc077e6e8502a46f"
+    "revision": "7ec850a9569acc4ebea7148b14bf91e8"
   },
   {
     "url": "cache-pdp/053.html",
-    "revision": "d8cc499f1c4cf440b1672c4fe028807d"
+    "revision": "e8aba59938caffe66bd44cb869a7e348"
   },
   {
     "url": "cache-pdp/054.html",
-    "revision": "955b216bebd1a8e9aea1783c5e556fbc"
+    "revision": "bd0f2b83d45a7c679d90d7f4fa0f3ecd"
   },
   {
     "url": "cache-pdp/055.html",
-    "revision": "7ad938bbe79803702d4d4daf081a6650"
+    "revision": "6c906bc202d61dd0189966d1848f3f19"
   },
   {
     "url": "cache-pdp/056.html",
-    "revision": "e6e5e2a2428814b6451cb890e20bf0fb"
+    "revision": "43dd0567acbc0fe313da90b8add7a49e"
   },
   {
     "url": "cache-pdp/057.html",
-    "revision": "fd645eecd827f4bb0229864dc2ca686e"
+    "revision": "1e233a9384489ba4dfec0ae4ddd183a1"
   },
   {
     "url": "cache-pdp/058.html",
-    "revision": "74d395fc8e7ccad65b3ce70217d76267"
+    "revision": "cc1c2f4846ed474ae8a498a4517b8873"
   },
   {
     "url": "cache-pdp/059.html",
-    "revision": "dda3d2d0ef7daea6a8e62a998bf0674b"
+    "revision": "2deccad85ea7fb5c90e382dc31610bf5"
   },
   {
     "url": "cache-pdp/060.html",
-    "revision": "b5130cf2749bc02a624db144fa27550e"
+    "revision": "73fe2c0e5854cb926c4af5a913a68816"
   },
   {
     "url": "cache-pdp/061.html",
-    "revision": "cb9bf34ad9eee2358a4acf68e144cfcd"
+    "revision": "0eafc2f6b5b0b7ffc834c50203c02680"
   },
   {
     "url": "cache-pdp/068.html",
-    "revision": "f14547c84cb3cfaeb94fd6f798f33582"
+    "revision": "9d2ac4c28d688099ab3a4566197b6aab"
   },
   {
     "url": "cache-pdp/069.html",
-    "revision": "dc60930d88d452c1bd9d14bf7974490c"
+    "revision": "e38f762f713d57862635d30200403a60"
   },
   {
     "url": "cache-pdp/070.html",
-    "revision": "4f9e34b294b4aeee0d05fb47295d14eb"
+    "revision": "67bc07e0d3fc0f1a4179a35f09579c30"
   },
   {
     "url": "cache-pdp/071.html",
-    "revision": "80bb8681607c933d39ed982d6b47ff6f"
+    "revision": "da0cee6ad4d14455b4ce2a4951be042f"
   },
   {
     "url": "cache-pdp/072.html",
-    "revision": "c067ea7873ad7de0e2de1a9b869ffb6c"
+    "revision": "377b14efd9ca8c581ce443087142e945"
   },
   {
     "url": "cache-pdp/073.html",
-    "revision": "363569557d55180386eb0261eaf300d0"
+    "revision": "3820c1323e9735a14efe8c8a990923fc"
   },
   {
     "url": "cache-pdp/074.html",
-    "revision": "e3c97df5aa09b8066f840e19fdbd91fa"
+    "revision": "9eaa64b911f56fbfdf04b06252d6aa74"
   },
   {
     "url": "cache-pdp/075.html",
-    "revision": "f146b7b1b7ea2e82a9f505c5bd357fbe"
+    "revision": "a8b577176b10819e4ff5b6406f21b6f3"
   },
   {
     "url": "cache-pdp/076.html",
-    "revision": "71c4e1a7b11f611e39e22c6ab5e74472"
+    "revision": "e0433bdc784e9fbe9fd9e729c6dce80b"
   },
   {
     "url": "cache-pdp/077.html",
-    "revision": "6efc5adda415c27e0791604245ca25db"
+    "revision": "794f48368b3672e0c1fcd0453495055d"
   },
   {
     "url": "cache-pdp/078.html",
-    "revision": "788c8fb65d18a55d49d1698f03eed998"
+    "revision": "b8c02b9cbe8f0989f9a0d4f519c64356"
   },
   {
     "url": "cache-pdp/079.html",
-    "revision": "ddae22623532e297b3faafc8daab4663"
+    "revision": "4cdefbd7fddc61682bbffc91f88ecb7f"
   },
   {
     "url": "cache-pdp/080.html",
-    "revision": "1779851f7a0e02e4b38da40c875e46d1"
+    "revision": "3a68849b1d6137b871c4cc48de364efd"
   },
   {
     "url": "cache-pdp/081.html",
-    "revision": "af09fe6f75ff56f41b5f7c0e5775160e"
+    "revision": "95d17fbfd029ebb046435a995bf442b1"
   },
   {
     "url": "cache-pdp/082.html",
-    "revision": "7277ecac9e2964aa3626d2e8ab6bf9a2"
+    "revision": "944111d7e7afc027538aa450d4b3dda0"
   },
   {
     "url": "cache-pdp/083.html",
-    "revision": "1cdf73af1b4a030c38c2a031016ba287"
+    "revision": "7e5d321dd227cc9d05d0c620c8231249"
   },
   {
     "url": "cache-pdp/110.html",
-    "revision": "c9e18ad6f485e39ee4e36fc5bfbf3f36"
+    "revision": "eb22abcef79c837a07deb0a14ace970d"
   },
   {
     "url": "cache-pdp/111.html",
-    "revision": "d9d3530ec324b1c22d0df0491afd0f27"
+    "revision": "983478a952a0daf0ee2bcda104bc1021"
   },
   {
     "url": "cache-pdp/112.html",
-    "revision": "38e319a71e00ce1c24fd1f737b7ec035"
+    "revision": "1844791492cfd50dc94e2f995f5f3981"
   },
   {
     "url": "cache-pdp/113.html",
-    "revision": "b7b37855339d890da018e187e0339dc9"
+    "revision": "232e7a6446900a7910f664bb5ed8510f"
   },
   {
     "url": "cache-pdp/114.html",
-    "revision": "e3c5416ba96425509f5532b8d2530586"
+    "revision": "7b624da600856467ee7eb0dbd8c743a9"
   },
   {
     "url": "cache-pdp/115.html",
-    "revision": "548bd0a84cf4906b6857a35fdf351d85"
+    "revision": "52cc55d01938ad8791409ffbe589a129"
   },
   {
     "url": "cache-pdp/116.html",
-    "revision": "e029ffce542da020228c15d023be5a29"
+    "revision": "3c4c9bfd97082a4eed99dc5329419c5e"
   },
   {
     "url": "cache-pdp/117.html",
-    "revision": "282fb4a50d6f555dbdbd65cf11dcc863"
+    "revision": "558d80e50e20a5668e1b4669235d8f2f"
   },
   {
     "url": "cache-pdp/118.html",
-    "revision": "bdc6d085a7ef6be9c487254ae3ded936"
+    "revision": "acafd61859f82a81cbfea20bd47d543d"
   },
   {
     "url": "cache-pdp/119.html",
-    "revision": "d6656c7ec1cdd6110d370310bd708c80"
+    "revision": "bf61b066f36ce0a761c6aaa6949e24f3"
   },
   {
     "url": "cache-pdp/120.html",
-    "revision": "7fff21ff9981cd35f96a48d7c9925bae"
+    "revision": "e69980e8efe0b1bcd707bfa4dd0b5ed2"
   },
   {
     "url": "cache-pdp/121.html",
-    "revision": "ce285599a06241fc85a318ded0b6552a"
+    "revision": "cf7736f94b0971656b1f3fd829e6b19f"
   },
   {
     "url": "cache-pdp/122.html",
-    "revision": "93410ced9937c2552665ed949fd01290"
+    "revision": "706bae937fa945f388d432d9ad25c06e"
   },
   {
     "url": "cache-pdp/123.html",
-    "revision": "598593a795b6ea642083d3e36fdc7812"
+    "revision": "b1a4922c669668ff53e26c30a32fa559"
   },
   {
     "url": "cache-pdp/124.html",
-    "revision": "6e9e0315e095665fe1b0f5dcab7d5768"
+    "revision": "90fb87a9e27a7bbd53a9ee9d3c9a401a"
   },
   {
     "url": "cache-pdp/125.html",
-    "revision": "1d0c5b3d1c4e4c966b31eadd2cdfd9ca"
+    "revision": "d4a61b50a2731fcf139d258fbc91bc2e"
   },
   {
     "url": "cache-pdp/126.html",
-    "revision": "f773f4abc65c516d1dad0c8f24cad039"
+    "revision": "ce1dd1f54e56f63015c1cbe95a8e2a8b"
   },
   {
     "url": "cache-pdp/195.html",
-    "revision": "2c8b527f89e28a55b935e09ec678ccc2"
+    "revision": "8d0ea23154adbf0bb463ca74d78ac412"
   },
   {
     "url": "cache-pdp/dr/127.html",
-    "revision": "3bcbcf063e20fc3b16ad6aa4e0d12f00"
+    "revision": "fee31948bffaf5581061d41ca02a4105"
   },
   {
     "url": "cache-pdp/dr/128.html",
-    "revision": "7b4663e99b2414faa9ccf8379e792170"
+    "revision": "869e7986f37e5997ad77f08630a22008"
   },
   {
     "url": "cache-pdp/dr/129.html",
-    "revision": "2951401bd65eb8501e768df948dab197"
+    "revision": "4790b72e80e8c97226f74361bf39223d"
   },
   {
     "url": "cache-pdp/dr/130.html",
-    "revision": "83aceb14f53d55e172f6f9ceca1bee42"
+    "revision": "7e60332011ccb87c8cbbfdedb1a3af66"
   },
   {
     "url": "cache-pdp/dr/131.html",
-    "revision": "0e7652db5f3f5fb829695ee64a73ea97"
+    "revision": "e01d3887aa435260edee58ea12826ae3"
   },
   {
     "url": "cache-pdp/dr/132.html",
-    "revision": "0c631a08e2dd4e6f8e1a4e100d48f183"
+    "revision": "78e6110435ec8a9ea3b4a35218c8d4ce"
   },
   {
     "url": "cache-pdp/dr/133.html",
-    "revision": "705b6dfd8b7a8afa5122c1fe0799ce7f"
+    "revision": "14183609265a030f8c93bc7ec9a1ec1d"
   },
   {
     "url": "cache-pdp/dr/134.html",
-    "revision": "07f9e68c1d44550dbf3af775cf60c77d"
+    "revision": "9e54845876178c15849f0650d5232900"
   },
   {
     "url": "cache-pdp/dr/135.html",
-    "revision": "48ac06b016d85fe830cf8b012fda726c"
+    "revision": "75157bec283120e92fd7985fded6b1f8"
   },
   {
     "url": "cache-pdp/dr/136.html",
-    "revision": "85556cf1814cccb6fcd3b8c3562e5d8c"
+    "revision": "695309b86aa39dc3b6fd2a5f8032b727"
   },
   {
     "url": "cache-pdp/dr/137.html",
-    "revision": "53296f0ed2379773247276e2a235ac81"
+    "revision": "cd69b9f94f2dd3365d9394c7f9b0e5be"
   },
   {
     "url": "cache-pdp/dr/138.html",
-    "revision": "9c98569610843e1daad4dc612783d390"
+    "revision": "dcd6772167e7f1acb950b1214833ff08"
   },
   {
     "url": "cache-pdp/dr/139.html",
-    "revision": "f6ab6d542be9f9d6bb8625a04a253478"
+    "revision": "dcc0c76238eb62c062ffe3cf1d7bdb21"
   },
   {
     "url": "cache-pdp/dr/140.html",
-    "revision": "f53917ca79fa8fdfb6478c4f2f33a120"
+    "revision": "cb90ae4a8204484443b6cb459ec2aa74"
   },
   {
     "url": "cache-pdp/dr/141.html",
-    "revision": "c9f51a2d3224edc157009685340ccd52"
+    "revision": "d320d87f33ef489009340cefef5d79f9"
   },
   {
     "url": "cache-pdp/dr/142.html",
-    "revision": "7a2336ff04b211ffeeab7d11f9d22b7f"
+    "revision": "88cf40845212c88d2243402d05cd1857"
   },
   {
     "url": "cache-pdp/dr/143.html",
-    "revision": "18b4920082ba4ef799e92c7a21590432"
+    "revision": "e19cb25e17edc19a5c7bb4bda1caa940"
   },
   {
     "url": "cache-pdp/dr/144.html",
-    "revision": "09c40024951d36373a5ede0d990f0c19"
+    "revision": "bdeda1524b399d4c16aabfabcb196fe4"
   },
   {
     "url": "cache-pdp/dr/145.html",
-    "revision": "eead9b27631320b97a3e9f76dcfd5b57"
+    "revision": "ff9b6cfcfdfc8c8d46b1a8693f817139"
   },
   {
     "url": "cache-pdp/dr/146.html",
-    "revision": "45252031b6fc57c183b1888aa60982eb"
+    "revision": "d75df7d1ead24652299807662a398638"
   },
   {
     "url": "cache-pdp/dr/147.html",
-    "revision": "f09f99fef11ecc528b6050406ecb72f2"
+    "revision": "9efbbe26db834030df37717c36906d2e"
   },
   {
     "url": "cache-pdp/dr/148.html",
-    "revision": "e0fddcc5d3ec56163a09f57a12bce837"
+    "revision": "00b2b64d3d6d47683d8b4434caf1f563"
   },
   {
     "url": "cache-pdp/dr/149.html",
-    "revision": "8043aa49ce3a4be2652619471af6b439"
+    "revision": "b54cceb793e2cb03c03c3a0dd4ca42af"
   },
   {
     "url": "cache-pdp/dr/150.html",
-    "revision": "3449aa2721b8da8f9a83c0783d456799"
+    "revision": "cb28da15e305cd8cad0fdc5480f3de5d"
   },
   {
     "url": "cache-pdp/dr/151.html",
-    "revision": "0aca62cff78d89e96a9c8bf009666bc6"
+    "revision": "470e225cfcd594954e6c17a93e9d2711"
   },
   {
     "url": "cache-pdp/dr/152.html",
-    "revision": "1b924e7fd34341e36f6d136f1c57f6c3"
+    "revision": "12977fc595dbac2c5cd73dba5802f4a2"
   },
   {
     "url": "cache-pdp/dr/153.html",
-    "revision": "41ae05167fda893a5b806736e56f7427"
+    "revision": "61433a89515f6af5d15d14bd0b2caf96"
   },
   {
     "url": "cache-pdp/dr/154.html",
-    "revision": "95db19af2c0273062e66ba8d08bedf12"
+    "revision": "188eff8714918cd5e338ec2a95a2fecf"
   },
   {
     "url": "cache-pdp/dr/155.html",
-    "revision": "c69b031321ed443a89b3f2c07d821b22"
+    "revision": "bc2fed60de83ce10e735ed80ff7ad159"
   },
   {
     "url": "cache-pdp/dr/156.html",
-    "revision": "1d0cc3a0b5f2f7b782dc43f9831d5b22"
+    "revision": "fe09b8556b084aac7a7e26ab8f16f490"
   },
   {
     "url": "cache-pdp/dr/157.html",
-    "revision": "3338fdc0092b27038209180412bc63cf"
+    "revision": "a0fabde80e9998000990101cd6434308"
   },
   {
     "url": "cache-pdp/dr/158.html",
-    "revision": "21da4bdaf21fe675426adbb24303c6be"
+    "revision": "28133fb553532bc39cffc6f9ef0e0b44"
   },
   {
     "url": "cache-pdp/dr/159.html",
-    "revision": "5c129f142b02aa458f95a9102a67b53f"
+    "revision": "05f653eb740c54c78fc7dfdc69768c04"
   },
   {
     "url": "cache-pdp/dr/160.html",
-    "revision": "43e0c3571ee5f928f579c6c5fd653bf1"
+    "revision": "4802fd5166cf43d6ffb4fc030f897523"
   },
   {
     "url": "cache-pdp/dr/161.html",
-    "revision": "a86dfd961bd0986238e42a3da35b5e4e"
+    "revision": "86f7040ab64ebd6ac77b680f5f5f2a3d"
   },
   {
     "url": "cache-pdp/dr/162.html",
-    "revision": "dd9109da0e93f5eee7ba54007700d886"
+    "revision": "6ac84ab2fe3923a72e2f35e7561766a4"
   },
   {
     "url": "cache-pdp/dr/163.html",
-    "revision": "794c6a6abaa276069cc9beba7ee27cc2"
+    "revision": "4805bf2050514420558c0b6c65bca7a9"
   },
   {
     "url": "cache-pdp/dr/164.html",
-    "revision": "6ac12fb9b3a953f1ea09e476ba2712a2"
+    "revision": "09a0936981e162b345d06b724eefd560"
   },
   {
     "url": "cache-pdp/dr/165.html",
-    "revision": "8638ca3254ad0b756a98c2c1e3853c24"
+    "revision": "c6e9bc5bf608020102e7754f4d42905b"
   },
   {
     "url": "cache-pdp/dr/166.html",
-    "revision": "b41c658d696ffe61cc6f8707944fdac5"
+    "revision": "b68aa5f53f68b899addca91835d630c8"
   },
   {
     "url": "cache-pdp/dr/167.html",
-    "revision": "f9e10d23cae9f382a62b36d1a11db54c"
+    "revision": "c3a1bcc74d4c0de3d3f724ee696e249c"
   },
   {
     "url": "cache-pdp/dr/168.html",
-    "revision": "2e1710e614bbcb4fdddf4616c6d0a73c"
+    "revision": "ab778cf6ba0a2bdaff38759ad07bac19"
   },
   {
     "url": "cache-pdp/dr/169.html",
-    "revision": "b62ef8916b84c3fd700f8fd1b3da557e"
+    "revision": "bcf082c580153111521189fc644258ca"
   },
   {
     "url": "cache-pdp/dr/170.html",
-    "revision": "4ff79da3be86eb5194434dd91689d327"
+    "revision": "3bc4f4f769929adf2ca901fa51e7c4fd"
   },
   {
     "url": "cache-pdp/dr/171.html",
-    "revision": "1cafe77831e9b61c348173d8695f1f26"
+    "revision": "414c20014fd4a358c6f282c13af21993"
   },
   {
     "url": "cache-pdp/dr/172.html",
-    "revision": "4d5f0b65155b3c06d6812508d4164c38"
+    "revision": "996a36a58e65996050a60be8178bc5f4"
   },
   {
     "url": "cache-pdp/dr/173.html",
-    "revision": "5c80f18132748a589b36b968b2f596d9"
+    "revision": "907200111255f375d1b8b258ddde0357"
   },
   {
     "url": "cache-pdp/dr/174.html",
-    "revision": "20a99cf6ef05c7ad7ac003be641fa17d"
+    "revision": "818ad26ffdc8f136a6b0f14daeb19f22"
   },
   {
     "url": "cache-pdp/dr/175.html",
-    "revision": "e4b41fb92e8a077bd741e2834580e67d"
+    "revision": "0ac44c64c29323c143f0f9e23d60e3bc"
   },
   {
     "url": "cache-pdp/dr/176.html",
-    "revision": "4795a9999d12b1cc6b47f6e190bd4604"
+    "revision": "453a0303b06d303c2849f4f00513cf03"
   },
   {
     "url": "cache-pdp/dr/177.html",
-    "revision": "c0c16c3ea464437583ad7aa65a10583d"
+    "revision": "9b83efcf45a8dc1eea50f47ae8634b45"
   },
   {
     "url": "cache-pdp/dr/178.html",
-    "revision": "14c92566794572e9d6744c8c9a28bc6b"
+    "revision": "8a3265621184b875dd5851cd7ec7ce5c"
   },
   {
     "url": "cache-pdp/dr/179.html",
-    "revision": "b7ff4e6abc45bbbb6fb51c20a1cdd1b0"
+    "revision": "74dd032a316d74ef69dc3206eb2d7030"
   },
   {
     "url": "cache-pdp/dr/180.html",
-    "revision": "3e99a8690b332c39ba879b5d3c473735"
+    "revision": "761839569f3a2d8bfdc4424c5aca1687"
   },
   {
     "url": "cache-pdp/dr/181.html",
-    "revision": "59ab02f18994d393ebd9007835d64392"
+    "revision": "936393be5f7c81bf398e67202f917481"
   },
   {
     "url": "cache-pdp/dr/182.html",
-    "revision": "db62f98a26ef4e98fb35c4b594910231"
+    "revision": "0a68888e5ecfa2e9732fa5bbe51d4793"
   },
   {
     "url": "cache-pdp/dr/183.html",
-    "revision": "8364477418c1cc5cbb970f2cf70c3668"
+    "revision": "c3d29d9a7995ba6dce2a93ad83d33f3c"
   },
   {
     "url": "cache-pdp/dr/184.html",
-    "revision": "bb96082b1d954bb28d4cc390d8b40884"
+    "revision": "67417075d4c0eeb9e03921946bdabb7f"
   },
   {
     "url": "cache-pdp/dr/185.html",
-    "revision": "9d7607814585695761940c06af67fd18"
+    "revision": "ee4ff50fed14cbb304a507adf676d2bf"
   },
   {
     "url": "cache-pdp/hystrix/084.html",
-    "revision": "8af928e2ad6e750dce8aa1ed280cdeaa"
+    "revision": "b9624be01943ff1ef22b95f36a6001df"
   },
   {
     "url": "cache-pdp/hystrix/085.html",
-    "revision": "b193198f9439c83f1f6ee18995596f26"
+    "revision": "cc3e3d090f7f65ff49f340d7c4dc5bd4"
   },
   {
     "url": "cache-pdp/hystrix/086.html",
-    "revision": "aa8a425d803bc4d290e19120a7300af9"
+    "revision": "ef816dde8976d8d6788fc513b56c24f4"
   },
   {
     "url": "cache-pdp/hystrix/087.html",
-    "revision": "23e402982e1cfcaa30da1a610e812c5d"
+    "revision": "949abc145455d2a95bf9c2626132a5f0"
   },
   {
     "url": "cache-pdp/hystrix/088.html",
-    "revision": "a0d9a3bad5a1a725ebd31c900c1d617b"
+    "revision": "cfa1395fc7ef62251ef2bf753232bcfa"
   },
   {
     "url": "cache-pdp/hystrix/089.html",
-    "revision": "677fe5487c7e6f94411f431cb438b9ce"
+    "revision": "57d93df80c8bbeab673a69b0a0c7ad1f"
   },
   {
     "url": "cache-pdp/hystrix/090.html",
-    "revision": "23950bd5e4d48eab98277dfeced97caf"
+    "revision": "d4ef084f0ce5f6f3d9cb3b9ee3634f58"
   },
   {
     "url": "cache-pdp/hystrix/091.html",
-    "revision": "2ca0ab5601c3e0cb59ca804dae591527"
+    "revision": "0a5fa784ac36fc10be04d8bffd7ba312"
   },
   {
     "url": "cache-pdp/hystrix/092.html",
-    "revision": "53b46517bc56d4ce53728a1608e03fc4"
+    "revision": "3ec34e4d3b700b70acd4a18bd5a252d5"
   },
   {
     "url": "cache-pdp/hystrix/093.html",
-    "revision": "148e97262eca555a89cd2c38211415a9"
+    "revision": "da847a50eedcf51c20e07f2af559c2c9"
   },
   {
     "url": "cache-pdp/hystrix/094.html",
-    "revision": "00eb897b8df8bee1d0429570ee2dc356"
+    "revision": "82d43399bc1d484b9ea61a08c92c938f"
   },
   {
     "url": "cache-pdp/hystrix/095.html",
-    "revision": "55dbd41f04ac2851360caae87f349bc0"
+    "revision": "d34dd596f37123eccba19cf627aec048"
   },
   {
     "url": "cache-pdp/hystrix/096.html",
-    "revision": "9ade9168f88f5a51654048591cf97853"
+    "revision": "7b7ff4c3d5069d77b9e87ff4c9b3bc89"
   },
   {
     "url": "cache-pdp/hystrix/097.html",
-    "revision": "c969ed751e5feeecba7daa108d6c7c22"
+    "revision": "12e9454e546709f5d3a46a3212edf566"
   },
   {
     "url": "cache-pdp/hystrix/098.html",
-    "revision": "266f8a278a5cc29dce4e5811245b0a36"
+    "revision": "dcba5345c106a71ec7966c8c5e0d34f0"
   },
   {
     "url": "cache-pdp/hystrix/099.html",
-    "revision": "8349730c3db68a99c0e814e29ce964cf"
+    "revision": "245faa99a03f92816ec8a471570f36cd"
   },
   {
     "url": "cache-pdp/hystrix/100.html",
-    "revision": "0fd9e62651652244429ab7999772326d"
+    "revision": "3c4b598956fe4a2c0ca77ded0e5b7336"
   },
   {
     "url": "cache-pdp/hystrix/101.html",
-    "revision": "2ebeb925da12098118d512dc2d2902d4"
+    "revision": "bc37d2ba3af3137754807d52f8d2f563"
   },
   {
     "url": "cache-pdp/hystrix/102.html",
-    "revision": "03df9906d2a1731621bc77c106811803"
+    "revision": "7cee9e7dc27b564eaa5bad0f539a4cb1"
   },
   {
     "url": "cache-pdp/hystrix/103.html",
-    "revision": "e7f153a189649e047bb569b4fef94f2c"
+    "revision": "1fb23338e1386c78dd06de99b542dfac"
   },
   {
     "url": "cache-pdp/hystrix/104.html",
-    "revision": "f6dcbf3c47cbd8a8bee0e25bb815daa7"
+    "revision": "a3788d96b7dff06c43bc78200c652832"
   },
   {
     "url": "cache-pdp/hystrix/105.html",
-    "revision": "8973f04025878f1117287b56a9bdfb66"
+    "revision": "f08fba4d4b19922b595b6c2cee5e33e5"
   },
   {
     "url": "cache-pdp/hystrix/106.html",
-    "revision": "23415d160161bb5dc1fcf71054a89fdb"
+    "revision": "cee732990375a6ee2d5b9095587ecbd7"
   },
   {
     "url": "cache-pdp/hystrix/107.html",
-    "revision": "18b651a6480cb93b3e231604f2596415"
+    "revision": "01527a9e7a921c7cb6952fc28ea8bdc6"
   },
   {
     "url": "cache-pdp/hystrix/108.html",
-    "revision": "037421499ac9f15c66ee4ec9e2a20479"
+    "revision": "74d8a1279cff6b4472fcce792c5d4626"
   },
   {
     "url": "cache-pdp/hystrix/109.html",
-    "revision": "34ef9c35b4ba18770601a2097ccd5c0b"
+    "revision": "f133c439d81913f9dd8575f9cd19223c"
   },
   {
     "url": "cache-pdp/index.html",
-    "revision": "dfdf9df019782f4406f0fd4a9c7b1876"
+    "revision": "9dea12eaebed18aa1c46b741f8fb221c"
   },
   {
     "url": "cache-pdp/onservice/186.html",
-    "revision": "e69223e6c4c0f84546e2977d07ee760b"
+    "revision": "19dadff24e4cebc8f88aecb4470396aa"
   },
   {
     "url": "cache-pdp/onservice/187.html",
-    "revision": "2f0a4fe31184e90d048885f2e838a1fa"
+    "revision": "6df6383030d59433452d59e2304d52a7"
   },
   {
     "url": "cache-pdp/onservice/188.html",
-    "revision": "2f5eecb0da788e6b2765727b312a38d0"
+    "revision": "e9e0618f86c9fafd0693746fe8e9c1f7"
   },
   {
     "url": "cache-pdp/onservice/189.html",
-    "revision": "24e9da614543b8c5b6109a9894471250"
+    "revision": "6db51aec0cbd9db449af015212ae323a"
   },
   {
     "url": "cache-pdp/onservice/190.html",
-    "revision": "b4090b73fb1b42fd22351e571b0a1cbf"
+    "revision": "0be081b4b0d95480f3d74937ee04ba4a"
   },
   {
     "url": "cache-pdp/onservice/191.html",
-    "revision": "e01d42bbb089e6d51d46df6d7ff825db"
+    "revision": "b771035a7924ff98c0a4f355442b6bda"
   },
   {
     "url": "cache-pdp/onservice/192.html",
-    "revision": "c04a7d8fbae3bf0cf68292444b8a231b"
+    "revision": "f3c25d385ae7c97539269f0d0dadc471"
   },
   {
     "url": "cache-pdp/onservice/193.html",
-    "revision": "01d519d727ad1e3980cfae96cfdff6ab"
+    "revision": "91e1cc90c8e511b0da35edc76fe18a34"
   },
   {
     "url": "cache-pdp/onservice/194.html",
-    "revision": "5c4429785f5d73a0bfae890f927ca00e"
+    "revision": "3b4dfd103e8ec713078c5e96a98d6f55"
   },
   {
     "url": "cache-pdp/redis/007.html",
-    "revision": "cc1d11112b922b8caaf6dbb72ca1b8e5"
+    "revision": "421d557c02d416a0ee3a36ee77e5ecb3"
   },
   {
     "url": "cache-pdp/redis/008.html",
-    "revision": "89472f5347e7d96435f34b5c1dd56b49"
+    "revision": "c8965dc79645fdc5e494021803657996"
   },
   {
     "url": "cache-pdp/redis/009.html",
-    "revision": "138e025042a87502aada5e225736d0e6"
+    "revision": "545c1e476c5bb6662187e12f3cbc0945"
   },
   {
     "url": "cache-pdp/redis/010.html",
-    "revision": "c4fa5a8207a8e72ef0168188f5503fea"
+    "revision": "56a36e652d7894d64e5f9fa46eba9611"
   },
   {
     "url": "cache-pdp/redis/011.html",
-    "revision": "47fa3b9aa744d9961f0fab82d8814788"
+    "revision": "b7743683b9b6dc72b521ceabd54ce748"
   },
   {
     "url": "cache-pdp/redis/012.html",
-    "revision": "1ac42003a42bf4095b3c609638ef6d06"
+    "revision": "ca5a135573184b212385febab2f888c1"
   },
   {
     "url": "cache-pdp/redis/013.html",
-    "revision": "a5a26c9d72d246059b5767a76ff270c3"
+    "revision": "b15b953563a8adb9dd57f1f79d352e7f"
   },
   {
     "url": "cache-pdp/redis/014.html",
-    "revision": "6bd5144d8adb5b38f42793ec0fb277d7"
+    "revision": "62a90c8beb0a2b9a83b160e4d6d43ecf"
   },
   {
     "url": "cache-pdp/redis/015.html",
-    "revision": "f8f99dba838734ad6ddc0b4dc1fdd1cc"
+    "revision": "160fd8347c4916097bec8d0d4bcc8cef"
   },
   {
     "url": "cache-pdp/redis/016.html",
-    "revision": "1e6b7d5bb91cc30264bd22caf7a1e1d2"
+    "revision": "f7405cbba114cba1410882168a12dee9"
   },
   {
     "url": "cache-pdp/redis/017.html",
-    "revision": "5540361a355c40d34e7388f57ecfaffa"
+    "revision": "c785e610c876960efb10c269a256f20f"
   },
   {
     "url": "cache-pdp/redis/018.html",
-    "revision": "06ec2e5f81154d66eb0176f13b5fd05d"
+    "revision": "d187ea6c91a4e5731a3d4f0dceb83638"
   },
   {
     "url": "cache-pdp/redis/019.html",
-    "revision": "ab84cc08be1ecded50629a59b7785dc1"
+    "revision": "fbaeb31095c7ea9487ed1e0ca30cc474"
   },
   {
     "url": "cache-pdp/redis/020.html",
-    "revision": "88313082f8da34f76977b873a292838e"
+    "revision": "7fdf14ab6308ebccfb5fa393b7cc489a"
   },
   {
     "url": "cache-pdp/redis/021.html",
-    "revision": "61f7e04cad1b031466a9ca634dff6763"
+    "revision": "4afb4f202a4703c52ba723dfb6c0c1bb"
   },
   {
     "url": "cache-pdp/redis/022.html",
-    "revision": "9fda056ffd4e1e02ee886f1fa37723ac"
+    "revision": "a3692aa6845aa73a4a7ffab4ac48483b"
   },
   {
     "url": "cache-pdp/redis/023.html",
-    "revision": "3e3492ee483e4befe52478cfbd56a6e2"
+    "revision": "49eaaca81e0faa8861714bf8ef8d5f3d"
   },
   {
     "url": "cache-pdp/redis/024.html",
-    "revision": "be58a1d85c8600370bc94a21a0577e6f"
+    "revision": "fc87de4d9bfbce1df541ede34e053b37"
   },
   {
     "url": "cache-pdp/redis/025.html",
-    "revision": "506f08c218cf1bfe46df9de9d8749171"
+    "revision": "f6e79dfa96620f82659d1d69b0a867bd"
   },
   {
     "url": "cache-pdp/redis/026.html",
-    "revision": "f9e2e688002e1cbd3ffcb6780186af00"
+    "revision": "f8555f3256f043ff80d5cca3272ac039"
   },
   {
     "url": "cache-pdp/redis/027.html",
-    "revision": "140cf96b09eead4f429cdb138a786095"
+    "revision": "cd680320de7f0361731e97227efda620"
   },
   {
     "url": "cache-pdp/redis/028.html",
-    "revision": "7ac46c7068c68f8bf2968d560cdc47c0"
+    "revision": "7051d27cf668d4304fbc51b96ebd216e"
   },
   {
     "url": "cache-pdp/redis/029.html",
-    "revision": "2f902666b280415388ffdc675bd5838d"
+    "revision": "da6062fec6e88876367b18c9de5295ff"
   },
   {
     "url": "cache-pdp/redis/030.html",
-    "revision": "c822318cbaa54abfc4d20833adfcda56"
+    "revision": "75e170b2dc7bacc421e746449e6059b2"
   },
   {
     "url": "cache-pdp/redis/031.html",
-    "revision": "80cac1a0e9b8ecee651e561718e6b87b"
+    "revision": "5d2abf1b81371cb9042534d61d10599e"
   },
   {
     "url": "cache-pdp/redis/032.html",
-    "revision": "d18b96528f175308ce3576468f7f5a6b"
+    "revision": "cd41c98c5fa2138f60030e9117fa3499"
   },
   {
     "url": "cache-pdp/redis/033.html",
-    "revision": "e50627f67c42e04e1c5c54ea192b9b75"
+    "revision": "221eee6260addfe8fcfa4527969f4238"
   },
   {
     "url": "cache-pdp/redis/034.html",
-    "revision": "03d2a282428b6ef83461ce304a2a7919"
+    "revision": "eb7843e8ce0f92282d1b86865b73d7ed"
   },
   {
     "url": "cache-pdp/storm/062.html",
-    "revision": "5c38684ee3fe460426ffeccd6b528f59"
+    "revision": "02f7282f59d8a75fddfe90ee115b7294"
   },
   {
     "url": "cache-pdp/storm/063.html",
-    "revision": "306b71ecd7b7f63d9ee3de34b2bce227"
+    "revision": "411b2ac9b02b561a0a3c92366cd9ee73"
   },
   {
     "url": "cache-pdp/storm/064.html",
-    "revision": "b9beac65844c41a5ec734a4459ca9f88"
+    "revision": "5ac1764f0bcb97ea98e01a6b630d9bb8"
   },
   {
     "url": "cache-pdp/storm/065.html",
-    "revision": "28900c2e1f9ae18e8038d79531140a49"
+    "revision": "928ccc8a6a07f55120d9f390ba44d15c"
   },
   {
     "url": "cache-pdp/storm/066.html",
-    "revision": "0dab4f1daf773694b9b9f08c7613dfee"
+    "revision": "a238f9dac3c6ba5a4b0f7f25c1b76c01"
   },
   {
     "url": "cache-pdp/storm/067.html",
-    "revision": "7a6d5027ade0ab8df48e62201c109b4a"
+    "revision": "86874266dd6fd30050ac5026b4b23b4b"
   },
   {
     "url": "css-zxx/absolute/absolute.html",
-    "revision": "808def7863a6c90ead4832ff2e7ad774"
+    "revision": "1d261369893e066c9cd7d8cbdeb21b54"
   },
   {
     "url": "css-zxx/border/border.html",
-    "revision": "776fd27236b627060eb42883c5173839"
+    "revision": "3eaba4b80ef7df3cb63b56f46bdbc5f4"
   },
   {
     "url": "css-zxx/float/float.html",
-    "revision": "f89fbaa832daa7eaf6a7369567a9cff9"
+    "revision": "75cc2b7c0c59cd8340e4ba17e6a719e8"
   },
   {
     "url": "css-zxx/index.html",
-    "revision": "6f2091187ffa846a0ef99f4068a742e0"
+    "revision": "31626cdb6246149148244a581c20b2ab"
   },
   {
     "url": "css-zxx/line-height/line-height.html",
-    "revision": "07802cd833857727416ee6c1ff8dd083"
+    "revision": "d733f3ff9c9d34c2d3a0f99d7cfcf850"
   },
   {
     "url": "css-zxx/margin/margin.html",
-    "revision": "c70710444dff178adc68aab5361a4474"
+    "revision": "9fc72390cabbc690cf4441af699777ba"
   },
   {
     "url": "css-zxx/overflow/overflow.html",
-    "revision": "87a1caf693142adc2e3e03fbf837c408"
+    "revision": "27057f9d0bbbe19595e8265faa3f9ccb"
   },
   {
     "url": "css-zxx/padding/padding.html",
-    "revision": "9ba846dc6fbdbbbbcd17de983ec4d847"
+    "revision": "6ee1f4deaba4f5eda86d2b6f89e4f120"
   },
   {
     "url": "css-zxx/relative/relative.html",
-    "revision": "fd7afe4c289e174dfd074bff3b6fe670"
+    "revision": "c3463763702633574325e8b981acf4ba"
   },
   {
     "url": "css-zxx/vertical-align/vertical-align.html",
-    "revision": "197126906eb901c387d64e0f89de0ebb"
+    "revision": "a63dc36bf7c9752038bd178fb007b6ce"
   },
   {
     "url": "css-zxx/z-index/z-index.html",
-    "revision": "0750abf2c645ead87f727833c9b49060"
+    "revision": "86db1c6b338afaea10fbf5c83ba3e6d3"
   },
   {
     "url": "design_pattern/02_how_to_learn/how_to_learn.html",
-    "revision": "5a4830c766879d1961a5d5ec061e6f25"
+    "revision": "3ea30b440bed7f73c9dd4d989688d12a"
   },
   {
     "url": "design_pattern/03_simple_factory/simple_factory.html",
-    "revision": "33e02615c2f26b5e11b5142d470b7c8b"
+    "revision": "b258b48a6978939aa13719e2c76f0f83"
   },
   {
     "url": "design_pattern/04_facade/facade.html",
-    "revision": "5b5ac685bf991a89ac2711019cccc464"
+    "revision": "ce500945f45c910a515b9c8da580aaa4"
   },
   {
     "url": "design_pattern/05_adapter/adapter.html",
-    "revision": "0fc0f391765f70f0a74b6facf6ab72d7"
+    "revision": "d9ce1619101afbdc28ea8d1a893433b6"
   },
   {
     "url": "design_pattern/06_singleton/singleton.html",
-    "revision": "15ef10d2dd45d3a0bbedc6549a115151"
+    "revision": "3480924ebd148a95406c022bba9132ec"
   },
   {
     "url": "design_pattern/07_factory_method/factory_method.html",
-    "revision": "30a8073ac8d866ad66e9d8bc62695d47"
+    "revision": "fdca96d5de6251e823e8ff7cdb327d6b"
   },
   {
     "url": "design_pattern/08_abstract_factory/abstract_factory.html",
-    "revision": "0449538a2c06f9279107b3f1a51c7266"
+    "revision": "b5f029a43f2c893f66d10e82ef592193"
   },
   {
     "url": "design_pattern/09_builder/builder.html",
-    "revision": "5aaee0611eddcdcaf0eb71d85d4f5672"
+    "revision": "be8afcc1988a95e4ac5cbba3f7a9bb66"
   },
   {
     "url": "design_pattern/10_prototype/prototype.html",
-    "revision": "b5bb4f269f8374929a920e4d675df84e"
+    "revision": "d17a75a6abb8b7405e6102736fbc341b"
   },
   {
     "url": "design_pattern/11_mediator/mediator.html",
-    "revision": "54f5c46b7607ec1c11f0945571af9c7a"
+    "revision": "dcb9db938ce216b68c2e800275f3c09f"
   },
   {
     "url": "design_pattern/12_proxy/proxy.html",
-    "revision": "d0a1e9ec448080f41222e076b908a626"
+    "revision": "b3f86be7f25f417b9584e2740bd6b8df"
   },
   {
     "url": "design_pattern/13_observer/observer.html",
-    "revision": "7f8d41eb85e478392ea5f6ce7148b499"
+    "revision": "1284486a90a73b030f06606342d37746"
   },
   {
     "url": "design_pattern/index.html",
-    "revision": "3c7953b48cec1e726fe99a8e6fdf8b49"
+    "revision": "576772517637fe4b132622b89e1ba059"
   },
   {
     "url": "elasticsearch-core/02-whatis/index.html",
-    "revision": "e07a30223ee37e1f9539abe72f1a609b"
+    "revision": "6022768ae59bc2866eac088e82ca6558"
   },
   {
     "url": "elasticsearch-core/03-introduce/index.html",
-    "revision": "546479511044849acfc706624b040e26"
+    "revision": "ffa654641478d517e3682dbf1ba8c775"
   },
   {
     "url": "elasticsearch-core/04-core-concept.html",
-    "revision": "067a9ae26024bc9e03af4d5190aa3d30"
+    "revision": "2fe8c78dd82e7afc1901c1e3565a0648"
   },
   {
     "url": "elasticsearch-core/05-windows-install.html",
-    "revision": "815792912e40afcbe2cf7da9066235bc"
+    "revision": "9a6bf168d306e3a8a8b082a8d7d4d589"
   },
   {
     "url": "elasticsearch-core/09-basic-distributed-architecture.html",
-    "revision": "36ba17ca23b423dd462ec0df5faf0b8d"
+    "revision": "1ed5f6ec289350f00bffd4c6249f8095"
   },
   {
     "url": "elasticsearch-core/10-one-node-shard-and-replica.html",
-    "revision": "e3f56b9a6345cc08c051b4519a4f91a2"
+    "revision": "1c6511e342ffccfb7df717e965a56cc4"
   },
   {
     "url": "elasticsearch-core/11-two-node-shard-and-replica.html",
-    "revision": "1fd21cf09a1622a05fa373ca26ecfe80"
+    "revision": "bd938a9d2b6aa027b182c6f756cc52ce"
   },
   {
     "url": "elasticsearch-core/12-lateral-capacity.html",
-    "revision": "ce3bcaffe6ff548482c5bdb191796c28"
+    "revision": "33c73011f5059144b2fa0ced8b50bb6d"
   },
   {
     "url": "elasticsearch-core/13-fault-tolerant.html",
-    "revision": "0ebb6bb53d7224ff982e95085ca7bfb1"
+    "revision": "efc16470dfc6b01fb6c7b8bc6cc50bb4"
   },
   {
     "url": "elasticsearch-core/67-kernel-principle-decryption.html",
-    "revision": "4ff62ee714e5d023c59bda424e93cde2"
+    "revision": "9c6c4d222de241102739aa26d7756325"
   },
   {
     "url": "elasticsearch-core/72-employee-example.html",
-    "revision": "d9a1fff8deccd2db16e4ffaeb2d24066"
+    "revision": "899d399ca6d3acc0bfd6118d5dff54ab"
   },
   {
     "url": "elasticsearch-core/distributed-document/14-document-basic-metadata.html",
-    "revision": "7ec49f1485c05f6687beffe9253c9f85"
+    "revision": "106c313c8881feb1f7c38eef3e8b41dd"
   },
   {
     "url": "elasticsearch-core/distributed-document/15-documentid.html",
-    "revision": "71b2fc33af24bde736e4631b32b824b1"
+    "revision": "44878f8b84264a2edf8581dbd1476f4e"
   },
   {
     "url": "elasticsearch-core/distributed-document/16-_source.html",
-    "revision": "7e2634822f6a7b9926e30edc5db462fd"
+    "revision": "7174e80d1b48ce0b70dfacbec4342124"
   },
   {
     "url": "elasticsearch-core/distributed-document/17-crud.html",
-    "revision": "ab60a21d07321db3ca2390943b01b2ff"
+    "revision": "9959859dba387c86d9386bccca769b92"
   },
   {
     "url": "elasticsearch-core/distributed-document/18-concurrent-update.html",
-    "revision": "735825fa8d92db37298c7500208eddff"
+    "revision": "3482fd946770510e4a3edd5683d1e709"
   },
   {
     "url": "elasticsearch-core/distributed-document/23-partial-update.html",
-    "revision": "6fdf1f5b0291b78720728d81952a7cc9"
+    "revision": "f5e19396b567eb83e06ae711801c3bf8"
   },
   {
     "url": "elasticsearch-core/distributed-document/26-mget.html",
-    "revision": "fc3470015167bfdb180868f34202a30f"
+    "revision": "ed3c9dbe05173523422865c3fcf75b6b"
   },
   {
     "url": "elasticsearch-core/distributed-document/27-bulk.html",
-    "revision": "abcb951fdc974d160ad0fdc77718488f"
+    "revision": "5cc96ceb2b1fe9b85c7d90196e4e11da"
   },
   {
     "url": "elasticsearch-core/distributed-document/28-stage-summary.html",
-    "revision": "ddcecd466ce321b892dc7e8d063e83d7"
+    "revision": "4cce05ab8a8a64a43b0ca4f920f2de7f"
   },
   {
     "url": "elasticsearch-core/distributed-document/29-route.html",
-    "revision": "a6f45f864f7fcd5b651f6ade8205d965"
+    "revision": "b2296d7e954a2026525004d56734f335"
   },
   {
     "url": "elasticsearch-core/distributed-document/30-crud-theory.html",
-    "revision": "b043bfb4cc5fb6507de05819899ebc9c"
+    "revision": "66eb5770f1631446ffb6656a484c84c7"
   },
   {
     "url": "elasticsearch-core/distributed-document/31-consistency-quorum.html",
-    "revision": "c9dd327975b8a7bcaf78ab85d459d485"
+    "revision": "7222420c3fa49b432a68eaa509d73e1d"
   },
   {
     "url": "elasticsearch-core/distributed-document/32-query-theory.html",
-    "revision": "4bddd89360898f0fc71ef21fa53812bb"
+    "revision": "c7c0e7ea0de4791e0826f8be3326b254"
   },
   {
     "url": "elasticsearch-core/distributed-document/33-bulk-json.html",
-    "revision": "48310f237a86f4927335cb5b1362ea60"
+    "revision": "5ac0c999f2c562532b94cff08a90cbb0"
   },
   {
     "url": "elasticsearch-core/index.html",
-    "revision": "956937dfc97a7b114d170f441ae93752"
+    "revision": "cebbb7ff1dc8228fbe6f65af8dab291a"
   },
   {
     "url": "elasticsearch-core/index/61-quick-start-crud.html",
-    "revision": "50d50d9cfc5364a4009b328d242f91ee"
+    "revision": "b0170dd6255e0847e9709bfea3dee3c4"
   },
   {
     "url": "elasticsearch-core/index/62-tokenizer.html",
-    "revision": "bcba08c93772a4a05bb9c0cc4312cc05"
+    "revision": "2f22925cd9197b335984b2e2915e4478"
   },
   {
     "url": "elasticsearch-core/index/63-type-data-structure.html",
-    "revision": "bdae95d89181816cfa381d4e7f482d9b"
+    "revision": "5bdfd7bb946ab17b439b6d8bf21f2a5e"
   },
   {
     "url": "elasticsearch-core/index/64-mapping-root-object.html",
-    "revision": "2abed4f20ddc3f52f8a6f939a1fc971d"
+    "revision": "56e64442d545f9de09cdece0b027e716"
   },
   {
     "url": "elasticsearch-core/index/65-dynamic-mapping.html",
-    "revision": "3d2d4e483af752e4d83eba4eb36759a7"
+    "revision": "f0566c7d87699d82e37b5bc4b46efc95"
   },
   {
     "url": "elasticsearch-core/index/66-zero-downtime-replace-index.html",
-    "revision": "ff95b9655d62c107abe975d8a7110d32"
+    "revision": "194e2ca2b86ded39f4780dab59c023d2"
   },
   {
     "url": "elasticsearch-core/quick-start-texample/06-crud.html",
-    "revision": "00cab3100793710c66e78a506cb72f05"
+    "revision": "2b2436ed7c6d88e86cd54e6e6daaa550"
   },
   {
     "url": "elasticsearch-core/quick-start-texample/07-search.html",
-    "revision": "7f5aa37799ec510b8acc1c540a1e3d71"
+    "revision": "471a1564ab2a1ec0c06d632e508a18c1"
   },
   {
     "url": "elasticsearch-core/quick-start-texample/08-aggregation-analysis.html",
-    "revision": "91c5c5d10a56514df39369798f48f032"
+    "revision": "ad5b0882f617b299b83c7c443ce58f34"
   },
   {
     "url": "elasticsearch-core/search-engine/34-search-result-timeout.html",
-    "revision": "9b90e4a493fe21fcf6101c4bb080ee71"
+    "revision": "f5af08e8381e14ceada3a0f38eccb30a"
   },
   {
     "url": "elasticsearch-core/search-engine/35-multi-index.html",
-    "revision": "32dda73aeac02fa58209c5b8f5cee68a"
+    "revision": "ab483ea897ac5dba5b399972da3f8be4"
   },
   {
     "url": "elasticsearch-core/search-engine/36-paging-deep-paging.html",
-    "revision": "8c6caf788e0ccd707efab760990b34e1"
+    "revision": "98b10d6fb84f620d10c143d2e4382810"
   },
   {
     "url": "elasticsearch-core/search-engine/37-query-string-search-and-mall-metadata.html",
-    "revision": "94cb00b501a5bf6d6158bac6c4d4a5ef"
+    "revision": "71919ac9bca2f545e76b92d56573e994"
   },
   {
     "url": "elasticsearch-core/search-engine/38-mapping.html",
-    "revision": "22dc680418ee7238703f885db71071c2"
+    "revision": "a21fa0432e3ac69abe48fe8d4d3b19c7"
   },
   {
     "url": "elasticsearch-core/search-engine/39-full-text-precise.html",
-    "revision": "0e775b03ecc9ab33afe051cb6291c323"
+    "revision": "e7d8b15c91b68b09cbcfdb281ce52a3b"
   },
   {
     "url": "elasticsearch-core/search-engine/40-inverted-index.html",
-    "revision": "13fd0e1f77c978f0396e7f8e29c0f0a7"
+    "revision": "f2a990bdcd49e19301679ae296f957a4"
   },
   {
     "url": "elasticsearch-core/search-engine/41-tokenizer.html",
-    "revision": "032f8228010a60e8bdd8aff0e1b0c08f"
+    "revision": "8bf361b6457f5ab52970913cb2b1fa4c"
   },
   {
     "url": "elasticsearch-core/search-engine/42-query-string-participle-mapping.html",
-    "revision": "77762082ec6c1aa64daa557de6adad7f"
+    "revision": "92e34e19427d34cb3bf96f4c586d418e"
   },
   {
     "url": "elasticsearch-core/search-engine/43-mapping-thorough.html",
-    "revision": "1b20b0fd8218fc1e4023a2450be99eb0"
+    "revision": "82e7c24fe9fb0434721d024ea9fbb6c4"
   },
   {
     "url": "elasticsearch-core/search-engine/44-mapping-detailed.html",
-    "revision": "7337b82cffd3fa8308f91fe98bd0bad4"
+    "revision": "95ba72a94920ea60c70c4034440197c9"
   },
   {
     "url": "elasticsearch-core/search-engine/47-search-api-base.html",
-    "revision": "c02d7ba00a8fafd09a3611917b30f158"
+    "revision": "1a1e4d1d358f590880849235bf02aedf"
   },
   {
     "url": "elasticsearch-core/search-engine/48-quick-start-query-dsl.html",
-    "revision": "33a96995d2b5a9c6e721e3d18c5b310b"
+    "revision": "f697535b89f565fc5fa4afb16127f4c1"
   },
   {
     "url": "elasticsearch-core/search-engine/49-filter-query.html",
-    "revision": "c1336585cf7aad57ede96022a27b216e"
+    "revision": "21c5cd2c1463ca0729aca9b492d30b48"
   },
   {
     "url": "elasticsearch-core/search-engine/50-query-example.html",
-    "revision": "51870b87131af321c9508464b5131bfe"
+    "revision": "fe99cc8a96d9dc151f69921d2a7cff79"
   },
   {
     "url": "elasticsearch-core/search-engine/54-string-tow-index-sort.html",
-    "revision": "9577114c1da4c71da396c755c05d2033"
+    "revision": "c6a788dd88222293da5ef86fd59809f1"
   },
   {
     "url": "elasticsearch-core/search-engine/55-tf-idf.html",
-    "revision": "f3e0cab07d4b2367e64833462a8d3081"
+    "revision": "68ad3f40d8cb0fc250ab5d2f238e5c12"
   },
   {
     "url": "elasticsearch-core/search-engine/56-doc-value.html",
-    "revision": "84c75514a868d802095c3f4953bada81"
+    "revision": "4a8d71b5ae8de594ddf1d79228268c16"
   },
   {
     "url": "elasticsearch-core/search-engine/57-query-phase.html",
-    "revision": "02ea85b78c1310c34955269b13fde071"
+    "revision": "1838faaa2435bb8b0d01d07495c5898a"
   },
   {
     "url": "elasticsearch-core/search-engine/58-fetch-phase.html",
-    "revision": "6acbf5b12fd670a72990cd5b18577e8a"
+    "revision": "e7d6857cca3e1321efd3e7b69257782b"
   },
   {
     "url": "elasticsearch-core/search-engine/59-bouncing-results.html",
-    "revision": "47ce1ef598e9f4b57ef4e5ad9ee00c57"
+    "revision": "3559037763b1293027cd073fe356e47e"
   },
   {
     "url": "elasticsearch-core/search-engine/60-scoll.html",
-    "revision": "36f9ae4a01e0876b020c08d5f9356139"
+    "revision": "ad37a7575ca73ea4d48e9a728e7cca7f"
   },
   {
     "url": "elasticsearch-senior/02-term-filter.html",
-    "revision": "052ae25cfd1f38babd03d04e7330bd00"
+    "revision": "7f62f26c8fea571fa23f4b3987194e8f"
   },
   {
     "url": "elasticsearch-senior/03-filter-bitset-caching.html",
-    "revision": "777295d1177e2eca9dd9f56c4675b6fc"
+    "revision": "c8fd32329dfb4c971ab0ce677f36d3a7"
   },
   {
     "url": "elasticsearch-senior/04-bool-filter.html",
-    "revision": "bc3d976425a170884c61190e7d00cbb2"
+    "revision": "d1bce72ed38964c8baf3402f09c6d23a"
   },
   {
     "url": "elasticsearch-senior/05-terms.html",
-    "revision": "36138e46b03d0f86f41e745c99ed91ae"
+    "revision": "d2f25acd61cceb2dbefb35454e477c67"
   },
   {
     "url": "elasticsearch-senior/06-range-filter.html",
-    "revision": "45b3dac194137e886fd94e3bfa68b66f"
+    "revision": "3c2036f32e0e176be9fb985d746152fe"
   },
   {
     "url": "elasticsearch-senior/92-.html",
-    "revision": "dd22e4616039717e68a3d55294b91223"
+    "revision": "504e69aec813653e3715f6c1fa9ec4f0"
   },
   {
     "url": "elasticsearch-senior/aggs/33-bucket-metric.html",
-    "revision": "eecc7cbc412e7a546617b2fc675fd5be"
+    "revision": "427529ef3b448e788436820647e91aac"
   },
   {
     "url": "elasticsearch-senior/aggs/34-sales-sort.html",
-    "revision": "fa0bf3ac17a6b2236a7f3631d17055ae"
+    "revision": "63bd73a6dd5c622a24546ce0fb20178e"
   },
   {
     "url": "elasticsearch-senior/aggs/35-bucket-metric.html",
-    "revision": "f7a07437224d51f288d39496f03a1187"
+    "revision": "9d4733f05c1ed6b8e7a494fb3b1e6f41"
   },
   {
     "url": "elasticsearch-senior/aggs/36-bucket.html",
-    "revision": "76255ef43537cd140b5a88ffe4926843"
+    "revision": "b03378aa033d09947f31f70ebfdc0f2c"
   },
   {
     "url": "elasticsearch-senior/aggs/37-metric.html",
-    "revision": "1b87933a876fb8778cdb3fcfb188f08c"
+    "revision": "d4501e81546af0236f1242ac9ac184c1"
   },
   {
     "url": "elasticsearch-senior/aggs/38-hitogram.html",
-    "revision": "a0cc6678357e48d03ca5add351f60299"
+    "revision": "6744c4bc9cc49a50f07f744ce62ebb9b"
   },
   {
     "url": "elasticsearch-senior/aggs/39-hitogram-date.html",
-    "revision": "b42424509c4c0a41af94b2948fd68249"
+    "revision": "6d8ff78e0023c8c8178bfaca964bb4d6"
   },
   {
     "url": "elasticsearch-senior/aggs/40.html",
-    "revision": "ad6c68e863bf896d6cb3b24844947c34"
+    "revision": "74627644c0376b96d4c229c163c9ca60"
   },
   {
     "url": "elasticsearch-senior/aggs/41-query-aggs.html",
-    "revision": "5983e1ff0e3caef6620f0ec3353286ef"
+    "revision": "4b12eba0d4578670e0627a5d446e11cb"
   },
   {
     "url": "elasticsearch-senior/aggs/42-global-bucket.html",
-    "revision": "78147159156f9702e513462b638c1f75"
+    "revision": "beb07ce29351fdc10643557e134ac16a"
   },
   {
     "url": "elasticsearch-senior/aggs/43-filter-aggs.html",
-    "revision": "40520fac32641704eeee4adcc655e799"
+    "revision": "22a92b8a96c9da09741ac5503117cf7e"
   },
   {
     "url": "elasticsearch-senior/aggs/44-bucket-filter.html",
-    "revision": "3b0f8aed4e50fa38babf28a68c4cf0c9"
+    "revision": "bf16059f90dcfd2cb94d3bffb668072e"
   },
   {
     "url": "elasticsearch-senior/aggs/45-sort.html",
-    "revision": "bbd20c82966446fe2a93de9b60065ff6"
+    "revision": "988291f45e8768f00bc2f0c0f6964cbc"
   },
   {
     "url": "elasticsearch-senior/aggs/46-sort-bosom.html",
-    "revision": "d37bf1c9904372b3da5ccbdccb5de9d0"
+    "revision": "c27b52e21d1a43fb483ca66f49dd8ce4"
   },
   {
     "url": "elasticsearch-senior/aggs/47-aggs-algorithm.html",
-    "revision": "121486086ca492b43cdc6e4e7256cab0"
+    "revision": "427c76725746974d84bf4b688eb1be06"
   },
   {
     "url": "elasticsearch-senior/aggs/48-cardinality.html",
-    "revision": "c82afb17b31796cd1217e4ed78a0f231"
+    "revision": "5c5512ed86b537ea8bdf085ac20b68a4"
   },
   {
     "url": "elasticsearch-senior/aggs/49-hll.html",
-    "revision": "a9efb9d20c282e7635111110d4b8037d"
+    "revision": "d30326e339bd4aa1f16a7ab9803f4032"
   },
   {
     "url": "elasticsearch-senior/aggs/50-percentiles.html",
-    "revision": "e001c7416570361cc739327cc1602d84"
+    "revision": "1e10c93fe3c2ea21bc1fb12f65f4680c"
   },
   {
     "url": "elasticsearch-senior/aggs/51-percentiles-sla.html",
-    "revision": "a1735f76ba575e248897a0ad5176fa14"
+    "revision": "3cb23f7ce95c17b156b1fae953c314bd"
   },
   {
     "url": "elasticsearch-senior/aggs/52-doc-value.html",
-    "revision": "c0d57ed378dea110c4a5fea8bacabbb9"
+    "revision": "cae390fb28beda9601aadd45b5643f5e"
   },
   {
     "url": "elasticsearch-senior/aggs/53-doc-value.html",
-    "revision": "47167a8a0b82218c7720aa4eb4b10f74"
+    "revision": "37e6a410610c0b24b8481fdce62feabc"
   },
   {
     "url": "elasticsearch-senior/aggs/54.html",
-    "revision": "b6e3a8d1df07ac72b1519596962344a5"
+    "revision": "63df58c1c2962eefb4b126aa53500e06"
   },
   {
     "url": "elasticsearch-senior/aggs/55-fielddata.html",
-    "revision": "37b9bb473afd7458b9205f2503d927ec"
+    "revision": "65f17e911ba8b2290fb570eb1bf9ca57"
   },
   {
     "url": "elasticsearch-senior/aggs/56-fielddata-filter.html",
-    "revision": "4e9dbeb123921cfef8e7562abb5b0535"
+    "revision": "fce9507e7cc98947e31fdbcb4c978256"
   },
   {
     "url": "elasticsearch-senior/aggs/57-fielddata.html",
-    "revision": "7816588e03599ba76196bd7a94e631c7"
+    "revision": "1b9e006a5c6940a4a902b465559da737"
   },
   {
     "url": "elasticsearch-senior/aggs/58-bucket.html",
-    "revision": "856a6188a1808fa08e7c80690ff37342"
+    "revision": "7799cb48dec20060f9533907f62f49e6"
   },
   {
     "url": "elasticsearch-senior/depth-search/07-precision.html",
-    "revision": "8d88b2b3f554bef25014292409f4a61e"
+    "revision": "46e188aa9d817568c4c2b62b9051fd12"
   },
   {
     "url": "elasticsearch-senior/depth-search/08-multiword.html",
-    "revision": "b98d512a5702faeab17f6b83bd35b1f6"
+    "revision": "f7ef6e47aa25bb3567c0627cf93dee39"
   },
   {
     "url": "elasticsearch-senior/depth-search/09-boost.html",
-    "revision": "7f80422f2f2c56230bac0d52bf84abad"
+    "revision": "1afb0c1ce7787e490edeb34d04a259b0"
   },
   {
     "url": "elasticsearch-senior/depth-search/10-shard-relevance-score.html",
-    "revision": "3e0a5bfcaa4a556c72010b84ba4d6d20"
+    "revision": "71ad4764b5e78865fb250665a96c2b1f"
   },
   {
     "url": "elasticsearch-senior/depth-search/11-dis-max-best-fields.html",
-    "revision": "182e6ea3d27a2f0a5b03a78d6ff2bb28"
+    "revision": "f6e71bcf8573286cec9e9b2db2fe34a2"
   },
   {
     "url": "elasticsearch-senior/depth-search/12-dis-max-tie-breaker.html",
-    "revision": "ba2114b3fe2cc97d4cf15488badd2d8a"
+    "revision": "59bf8a4ebb7048c31975c7e88784378d"
   },
   {
     "url": "elasticsearch-senior/depth-search/13-multi-match.html",
-    "revision": "f8f08ad93945cb7a75484fb5ba942360"
+    "revision": "3c2c41f4d56c54ca0fd1b862afda312a"
   },
   {
     "url": "elasticsearch-senior/depth-search/14-multi-match-most-fiels.html",
-    "revision": "3611fe09c24c0086078800e9378430e1"
+    "revision": "d1ac38447fd7d1f997ee01b83bb47f50"
   },
   {
     "url": "elasticsearch-senior/depth-search/15-cross-fields-most-fiels.html",
-    "revision": "9eca0e0c6db83804b6a18e13d544cca2"
+    "revision": "501230e982a9acd14f5e3d4e334c128b"
   },
   {
     "url": "elasticsearch-senior/depth-search/16-cross-fields-copy-to.html",
-    "revision": "0f76ccca6a8e2ddfe5e4d71d0e0aaf8b"
+    "revision": "60fd3702154575ffc039ea63d04052cd"
   },
   {
     "url": "elasticsearch-senior/depth-search/17-cross-fields.html",
-    "revision": "8b2b5f35143ca73d799df553e9955ea3"
+    "revision": "134ac186a68b5260f123e9ba98de9f44"
   },
   {
     "url": "elasticsearch-senior/depth-search/18-phrase-matching.html",
-    "revision": "0dc8e937c4771da42ead718e68067db7"
+    "revision": "ae672f94bfbd429f5107af870fbc8e0e"
   },
   {
     "url": "elasticsearch-senior/depth-search/19-phrase-matching-slop.html",
-    "revision": "e79268f4c127b62ea7987a70de11f3e4"
+    "revision": "a22b60fd7314fef78d05a88be57c1230"
   },
   {
     "url": "elasticsearch-senior/depth-search/20-match-recall-precision.html",
-    "revision": "82e38fec4b1feb237d99aadc6c40df92"
+    "revision": "c3e06109fb30d081e707bbc9ba59a0a7"
   },
   {
     "url": "elasticsearch-senior/depth-search/21-rescore.html",
-    "revision": "35122c78ec46ad3e30e1d8cfaf57f2f5"
+    "revision": "4fb1ab6e925b57f37fe8293a634866b2"
   },
   {
     "url": "elasticsearch-senior/depth-search/22.html",
-    "revision": "f2007af51e78747753250265aaaf9996"
+    "revision": "9e527ea79a1f404d6db880a6f4150ea6"
   },
   {
     "url": "elasticsearch-senior/depth-search/23-search-time.html",
-    "revision": "28140bd7ade16a4c2b01e952a026be7d"
+    "revision": "7f8f74b6596836b8991331d75ff9121a"
   },
   {
     "url": "elasticsearch-senior/depth-search/24-ngram.html",
-    "revision": "5c265bac3578b147cc2ef59136f4d651"
+    "revision": "c96684ea1f52ad7640f5ca72a7262dfb"
   },
   {
     "url": "elasticsearch-senior/depth-search/25-vector-space-model.html",
-    "revision": "218e4c2e931b50b36fd1df1ea4afd8ec"
+    "revision": "48dfeed646385f085c2dba625080c12b"
   },
   {
     "url": "elasticsearch-senior/depth-search/26-lucene-score.html",
-    "revision": "5a91b7a40afd8b4cb8f4c0ff55c12ee7"
+    "revision": "3d41f0a0fcb7b6914d050e3b16f64980"
   },
   {
     "url": "elasticsearch-senior/depth-search/27.html",
-    "revision": "ad7293a961a6d0ac9035bd553acd1060"
+    "revision": "ded299ce2d271ad5b7e79bd1e8b38783"
   },
   {
     "url": "elasticsearch-senior/depth-search/28-function-score.html",
-    "revision": "8afe1a560de0114f03c399757e825264"
+    "revision": "034e8a781ae56198247860897c8cff6d"
   },
   {
     "url": "elasticsearch-senior/depth-search/29-fuzzy.html",
-    "revision": "9119de3d3912474219cde8acda61ca69"
+    "revision": "fda3507e5757f103f2b04840cca876f5"
   },
   {
     "url": "elasticsearch-senior/es-high/73-ter-vector.html",
-    "revision": "d2b3517b641ff123ad841ac43b453691"
+    "revision": "cca83a0e07676a287f497daecc25e551"
   },
   {
     "url": "elasticsearch-senior/es-high/74-highlight.html",
-    "revision": "12f04113dd0022d4e01ee98d11a3c093"
+    "revision": "04fc0afad6e7f95147a698f1c306ba45"
   },
   {
     "url": "elasticsearch-senior/es-high/75-search-template.html",
-    "revision": "b690834c1276124f503fa27c423f28cf"
+    "revision": "eaac6fe503f90e2f9d2ad2a4696f393f"
   },
   {
     "url": "elasticsearch-senior/es-high/76-completion-suggest.html",
-    "revision": "7ba085a5f20c6c56841f6ac8da386f6e"
+    "revision": "b93732a3aff42a0ac7d388507b5f5537"
   },
   {
     "url": "elasticsearch-senior/es-high/77-dyanmic-mapping-template.html",
-    "revision": "e687c966feeef6c51ebe3274c9d991aa"
+    "revision": "85017241315c4cd139083f649254119e"
   },
   {
     "url": "elasticsearch-senior/es-high/78-geo-point.html",
-    "revision": "2ae6d5aa17d098e170d4eddac21b33e6"
+    "revision": "2524db83b6bcd83a6c1b1be631e136f5"
   },
   {
     "url": "elasticsearch-senior/es-high/79-o2o.html",
-    "revision": "1adaad49f26e7091d1fda2dcb75736fe"
+    "revision": "10de282d22f29cc03dee8069263c32e8"
   },
   {
     "url": "elasticsearch-senior/es-high/80-geo-distance.html",
-    "revision": "4840babed392d4e1e12b8fb76f8866e9"
+    "revision": "f1ed56d404343fdaa633eebbb83e65f1"
   },
   {
     "url": "elasticsearch-senior/es-high/81-geo-point-aggs.html",
-    "revision": "7f300b650ea5f32cee7feeb70bdf1658"
+    "revision": "ad8a007f2ed2e6c253afe5b7c143a2c9"
   },
   {
     "url": "elasticsearch-senior/ik/30-ik-introduce.html",
-    "revision": "60de273887b99cc8f660dfb6bc54684b"
+    "revision": "6a076d40b7f0313d96186f20e4a75317"
   },
   {
     "url": "elasticsearch-senior/ik/31-config.html",
-    "revision": "cf5f12d5fb614d7c2f2d370d83661b2e"
+    "revision": "ad13c42e968797714a2d5de836dd8e14"
   },
   {
     "url": "elasticsearch-senior/ik/32-mysql-hot-update.html",
-    "revision": "3f83d3c483212bcf4d9825b92669af9b"
+    "revision": "41797912e63af2d02f2b4813f4a16c7f"
   },
   {
     "url": "elasticsearch-senior/index.html",
-    "revision": "7f4e109283229e42a69764fb2d1e869d"
+    "revision": "5f9255a1bfd2233add171ac6a252c842"
   },
   {
     "url": "elasticsearch-senior/java-api/82-client-cluster.html",
-    "revision": "f036c251104b17c2fc36d6f31f4e62f1"
+    "revision": "661c6437a334d8ad72d2527c9c2d4aa8"
   },
   {
     "url": "elasticsearch-senior/java-api/83-upsert.html",
-    "revision": "d6af9bce6018888567eeed019dc0753b"
+    "revision": "a347b2192bb02c1bc2d5b00484b263c7"
   },
   {
     "url": "elasticsearch-senior/java-api/84-mget.html",
-    "revision": "cb7c3db3a2b8e40f5bb274fb755075bb"
+    "revision": "5a5855f2166fe963229138ec6f92635c"
   },
   {
     "url": "elasticsearch-senior/java-api/85-bulk.html",
-    "revision": "772d5dc3aa396ee08eef19820a369e25"
+    "revision": "696ba512e87501b21ea739aec1c87fba"
   },
   {
     "url": "elasticsearch-senior/java-api/86-scroll.html",
-    "revision": "00c41723fb4e4fce22dcfd2eba044897"
+    "revision": "7846629972eba7ead64c027de1f514da"
   },
   {
     "url": "elasticsearch-senior/java-api/87-search-template.html",
-    "revision": "46cff82921ae3934067de5effaf12750"
+    "revision": "91325f364adf4322c3821ff8505ab00f"
   },
   {
     "url": "elasticsearch-senior/java-api/88-full-text.html",
-    "revision": "e0377e67d08de9c74cc96701396b60b2"
+    "revision": "88f27178cc710b30e47fabdb45fc3231"
   },
   {
     "url": "elasticsearch-senior/java-api/89-bool-query.html",
-    "revision": "eba18c5d712ec1e9ddbd9583ee1b2be8"
+    "revision": "a2afe4b99383e1b7d6d77b0586a23393"
   },
   {
     "url": "elasticsearch-senior/java-api/90-gen-point.html",
-    "revision": "b20f2c6acdd3de236e94ad09b5d06a7f"
+    "revision": "3e176ff129be2e25de1835678f4f2173"
   },
   {
     "url": "elasticsearch-senior/java-api/91-.html",
-    "revision": "5fef9ddee1a870c3a95ee5ac1d7f8a8d"
+    "revision": "81e258b5d175fd04b0416731931efa3f"
   },
   {
     "url": "elasticsearch-senior/modeling/59-compare.html",
-    "revision": "0175117dc947b5288a99eadbd036050c"
+    "revision": "e726385f4157b13be1c29aa5f1c4416e"
   },
   {
     "url": "elasticsearch-senior/modeling/60-join.html",
-    "revision": "74fa00328b12db5f20fd65e4cd42f036"
+    "revision": "1681338be5b70233db7c0c6d905de38c"
   },
   {
     "url": "elasticsearch-senior/modeling/61-redundancy.html",
-    "revision": "1d848401cf0ed93b55c8cef1fd5d3554"
+    "revision": "649c052380d78257672831a21dea271a"
   },
   {
     "url": "elasticsearch-senior/modeling/62-group.html",
-    "revision": "7f55b0605e7cdbabff65c9fbb894761e"
+    "revision": "5433eb227f877c2e51f068b1ca79d1a5"
   },
   {
     "url": "elasticsearch-senior/modeling/63-file.html",
-    "revision": "3528b816223d8fada0f3a9d24b3011fe"
+    "revision": "2a5bfd963a3c3bdaadc1debde276dbec"
   },
   {
     "url": "elasticsearch-senior/modeling/64-lock.html",
-    "revision": "d524f1b1c0891f5dfc876e5024c9182a"
+    "revision": "de1d7d3baca9c5c7e95475ed65072b01"
   },
   {
     "url": "elasticsearch-senior/modeling/65-plock.html",
-    "revision": "a40e2b533b637c1b9f376dc02ea422a1"
+    "revision": "0ce15e1e50ca200d49a194970d015f74"
   },
   {
     "url": "elasticsearch-senior/modeling/66-plock.html",
-    "revision": "2cb93d2e499a654e073bdac6c815cc0d"
+    "revision": "5cabaf0563063b7e2a50a10a8ee3d870"
   },
   {
     "url": "elasticsearch-senior/modeling/67-nested-object.html",
-    "revision": "3f63fa4fcf82d1a1e496644f3eb270c1"
+    "revision": "8323950b8336b3e4504a25cf536a9b43"
   },
   {
     "url": "elasticsearch-senior/modeling/68-aggs.html",
-    "revision": "57b0fd95497b1511f1c81028fd1a0c4f"
+    "revision": "713a3c7cf7d43bc120715d4f1bc98485"
   },
   {
     "url": "elasticsearch-senior/modeling/69-father-son.html",
-    "revision": "b674c4742a920cf3f332a16e243e5b50"
+    "revision": "0ebfeeaa5ace3b1061e85a7660c621af"
   },
   {
     "url": "elasticsearch-senior/modeling/70-father-son-search.html",
-    "revision": "1e7b963011af2e8332dedcf3a6668d94"
+    "revision": "15ffff90fd73b8181b264ed430bea493"
   },
   {
     "url": "elasticsearch-senior/modeling/71-aggs.html",
-    "revision": "4a8ee65ace94683440fcf1c28b991a32"
+    "revision": "fb1cb48110808eb889aebb3b783e048c"
   },
   {
     "url": "elasticsearch-senior/modeling/72-deep.html",
-    "revision": "84bfc932368031bf5555f94a658f16f4"
+    "revision": "4be5d4ae7943c32c1a96f9e0b20dea0d"
   },
   {
     "url": "git-scm/01/index.html",
-    "revision": "ab46900a353e7545a293edd6d45199f2"
+    "revision": "75950db48abfc049f62893ba2363f2db"
   },
   {
     "url": "git-scm/02/01.html",
-    "revision": "76638434f60ab523ec379430d28dee21"
+    "revision": "3779672f89c25577ef27429021a4e1f4"
   },
   {
     "url": "git-scm/02/02.html",
-    "revision": "426bc12257607ab88e0967a3a2eac328"
+    "revision": "2e76618a5138b0b47d5c17b64af7996d"
   },
   {
     "url": "git-scm/02/03.html",
-    "revision": "0a0e38ef24772a90e13e7b5a89d702df"
+    "revision": "4e59165b4afa2cf346c502ab01ba9526"
   },
   {
     "url": "git-scm/02/04.html",
-    "revision": "496efa748d9006a1c2be8a5de8c3d221"
+    "revision": "169ad4fdb9b62339f7849d48d5cc07cf"
   },
   {
     "url": "git-scm/02/05.html",
-    "revision": "b63b19a6867dcd1a99bf9d03a323b4c9"
+    "revision": "20d1fe0138fe46924656c6db90910f09"
   },
   {
     "url": "git-scm/02/06.html",
-    "revision": "72d19b9d2eaf75ad1bf402ad3bfdcec1"
+    "revision": "d27a5e06b5dbcc232badd32366610218"
   },
   {
     "url": "git-scm/02/07.html",
-    "revision": "01b5571144015afbff3f1c485505d259"
+    "revision": "a9ae2cca0ac52df177927cd5a1da59af"
   },
   {
     "url": "git-scm/02/index.html",
-    "revision": "84beef5f4b5a7a5c630cf0916c217248"
+    "revision": "8859c645d678b3f6d2031d67b0c96043"
   },
   {
     "url": "git-scm/03/01.html",
-    "revision": "f9209cbae39dc272e5d6b3d51da249ad"
+    "revision": "875d4592009d7291b2b4a367ab582f4f"
   },
   {
     "url": "git-scm/03/02.html",
-    "revision": "dbeb23cafaee7489562bd4ec0f75306c"
+    "revision": "2d8045ea8b263035d3447486ff2fee51"
   },
   {
     "url": "git-scm/03/03.html",
-    "revision": "c78b787d7aae158de4a297e185564061"
+    "revision": "bacfa5e30908e71acefcc63d2cfe68ab"
   },
   {
     "url": "git-scm/03/04.html",
-    "revision": "8b793a56d16b40ea104ea0dc84ba94b8"
+    "revision": "45f7e2634b2b42daa32b89a652e50530"
   },
   {
     "url": "git-scm/03/05.html",
-    "revision": "09c7247cb652b9c0455f83eb83fa469d"
+    "revision": "cd5cd1ee54009acb7d32203f88ab2c64"
   },
   {
     "url": "git-scm/03/06.html",
-    "revision": "e188e23c8b24270c738147b1df2d01de"
+    "revision": "164d7b5dc46919f72bdca58f3fbabf0d"
   },
   {
     "url": "git-scm/03/index.html",
-    "revision": "f4da6227b99124df22afd1f10fdf4dd2"
+    "revision": "4f47521ad3cec52fa9b0a1931946a45a"
   },
   {
     "url": "git-scm/04/01.html",
-    "revision": "e79c4ad481d43c1f208cad31e75cbd00"
+    "revision": "914aaef58b44d9c099624f0869529360"
   },
   {
     "url": "git-scm/04/02.html",
-    "revision": "e2db17f5484d9d24225ee15b5730baac"
+    "revision": "dfe710e1d2dc534e33015de843e41a30"
   },
   {
     "url": "git-scm/04/03.html",
-    "revision": "5a3da63cb078061d02a1b78dd6404044"
+    "revision": "72239b0eed11b37a7953b2258cf944a4"
   },
   {
     "url": "git-scm/04/04.html",
-    "revision": "3bfde393965e2c8e2d586c0761b043dd"
+    "revision": "c328beb8cd755b080b7567f75876b105"
   },
   {
     "url": "git-scm/04/05.html",
-    "revision": "688e60560ab8b0388d7b6aa77607ae9b"
+    "revision": "61a4023d4b7bbf6216dda04f50ba7981"
   },
   {
     "url": "git-scm/04/06.html",
-    "revision": "41df5451dd09feeaa5889db8ea7cf144"
+    "revision": "d3db24ef6c783d69f6a0352ea05d8d84"
   },
   {
     "url": "git-scm/04/07.html",
-    "revision": "c00788bcc935cdfcc4b0320fe973f041"
+    "revision": "0e00bce3add4323a5bf190f69296136c"
   },
   {
     "url": "git-scm/04/08.html",
-    "revision": "00e4c20675984aa23b9065d05b22454c"
+    "revision": "9542144d2a0018885af9c150a1f3ee67"
   },
   {
     "url": "git-scm/04/09.html",
-    "revision": "01252d3d80488782efc3bc5279a0bfc5"
+    "revision": "60c0ed9fc816a9bc18b86fd84e5a69c9"
   },
   {
     "url": "git-scm/04/index.html",
-    "revision": "f55f185f2acfd5dc021a8d805a988b27"
+    "revision": "7718889663717e1972e2137ee9dc9128"
   },
   {
     "url": "git-scm/05/01.html",
-    "revision": "5793c193de6b33bfee72f1a7c22144d5"
+    "revision": "b6a3690a8f946a9928ddab5c66558ae4"
   },
   {
     "url": "git-scm/05/02.html",
-    "revision": "0419339cedc9c6f01619a38aeaada91d"
+    "revision": "25e9506735144bf404f29ad411a8e9fd"
   },
   {
     "url": "git-scm/05/03.html",
-    "revision": "8094b540572a3049882fee6b99517f15"
+    "revision": "88c0ac1a98169e43f5615ee2558531b5"
   },
   {
     "url": "git-scm/05/04.html",
-    "revision": "034c576db626ccef046424839abadbab"
+    "revision": "017b899d54d4b56c4ef01cb3f6c4b596"
   },
   {
     "url": "git-scm/05/index.html",
-    "revision": "ce3228ff1074882dced1c8036714c9b7"
+    "revision": "62498816a8873e8bf4bb443a8d14f764"
   },
   {
     "url": "git-scm/06/01.html",
-    "revision": "fa312d239b3270f66b7e9bf5d35a70b1"
+    "revision": "a80d025631205c748ca7cd339846e2cf"
   },
   {
     "url": "git-scm/06/02.html",
-    "revision": "73648da5ac9c8340fa6129f8d4d01ce4"
+    "revision": "180b2a99a1916b9ed894c3d99186c521"
   },
   {
     "url": "git-scm/06/03.html",
-    "revision": "be17f67478cba104f157cd9c6aab8970"
+    "revision": "8df1a56af6e0e3935f4ecf3ef2a137ad"
   },
   {
     "url": "git-scm/06/04.html",
-    "revision": "53dd69f0c2db3e59198281aa4f3db4de"
+    "revision": "5d305b857ffed6ba686a3f603807e138"
   },
   {
     "url": "git-scm/06/05.html",
-    "revision": "242186c3b0c92a274b90bfc8883831b6"
+    "revision": "3a7984908d2dcb3bdabd5cd9a2206e7c"
   },
   {
     "url": "git-scm/06/06.html",
-    "revision": "f2bf968c995db8d0a4d7134198148ec8"
+    "revision": "79e4f1e0945e33c3083efbbefc942365"
   },
   {
     "url": "git-scm/06/index.html",
-    "revision": "68fd1b07420731a1ef0e6753c427648d"
+    "revision": "cc1c41d511c337d944b308e2beeed49b"
   },
   {
     "url": "git-scm/07/01.html",
-    "revision": "3b4d8efb4f48be3c64b47469b2e128dc"
+    "revision": "14a063b3b0af5ed336f29b319f8d6301"
   },
   {
     "url": "git-scm/07/02.html",
-    "revision": "c497113f3e0a1a3fa6712eb73f902c34"
+    "revision": "7f5763ee6385c9d6881c73822a9d3ee6"
   },
   {
     "url": "git-scm/07/03.html",
-    "revision": "e31221d0bd402f056c1c6697b2b152a0"
+    "revision": "46b9eb7218dc263cada4643ced3b79b7"
   },
   {
     "url": "git-scm/07/04.html",
-    "revision": "8037a70e2d820b1403c1d1800ef999aa"
+    "revision": "8a6b77265640b56c51f7c2f20713ebe5"
   },
   {
     "url": "git-scm/07/05.html",
-    "revision": "16bb9620733dfcf769916b9927eeb356"
+    "revision": "9d3326d1156fc840cfe24f6e0a342779"
   },
   {
     "url": "git-scm/07/06.html",
-    "revision": "690e1587875f9a7a8444781df870dd1a"
+    "revision": "6bc60517cdc721de60125949c7bc0b6e"
   },
   {
     "url": "git-scm/07/07.html",
-    "revision": "5593cd1a48718c5482abd20a52f7a203"
+    "revision": "fbc330bdb896d26bc3fa93946ddeea27"
   },
   {
     "url": "git-scm/07/08.html",
-    "revision": "72897fd46c2d786e8496947f7614ab25"
+    "revision": "ab0e641e7224badae52aabfa832c3e40"
   },
   {
     "url": "git-scm/07/09.html",
-    "revision": "4319b67c68ff6aa44a29944c23f8ce93"
+    "revision": "6a4ff7d488ee732870aa2c64c9d1c3ab"
   },
   {
     "url": "git-scm/07/10.html",
-    "revision": "1a089150d28a77706167525a7aa10cb1"
+    "revision": "0c61c7f4a1c9c457bcc74bb0e764637c"
   },
   {
     "url": "git-scm/07/11.html",
-    "revision": "defdeea7d73b8bab1982dde5f7fe7955"
+    "revision": "b0d7a86d4e61851212bc3e7bea767eb4"
   },
   {
     "url": "git-scm/07/12.html",
-    "revision": "8ac5a1cc794cc0fea936ca57cf288b6a"
+    "revision": "0125e916e2042ca0fce0d99817a5f847"
   },
   {
     "url": "git-scm/07/13.html",
-    "revision": "70b64868bdff27bc4a2fbe9706b1c50d"
+    "revision": "285c46b85a5e7aab90bfd471ed8e15e9"
   },
   {
     "url": "git-scm/07/14.html",
-    "revision": "cd4c08e6a948dcca1d1ec0925ca41b30"
+    "revision": "4674addd037a06a9f35f8ca117a35eaf"
   },
   {
     "url": "git-scm/07/15.html",
-    "revision": "b76941e8f774c2f41f0568e598465064"
+    "revision": "772de27b7dbbf32662862b4dd9edbbc7"
   },
   {
     "url": "git-scm/07/index.html",
-    "revision": "9cd8193a4bf575ce61c07fee90ca48ff"
+    "revision": "fc9ef9337447a45deff049f4b7892cd9"
   },
   {
     "url": "git-scm/08/01.html",
-    "revision": "913da569fbe16f3aa795e774bc25db32"
+    "revision": "9cc2388858cdfebb84ea69ca4acdcbeb"
   },
   {
     "url": "git-scm/08/02.html",
-    "revision": "60b8f5c4ea34f7e86811bf595f5d9bc9"
+    "revision": "34c63523346948e92f81943ee396187b"
   },
   {
     "url": "git-scm/08/03.html",
-    "revision": "8bac41a6d899305c4ef5f03fd286682c"
+    "revision": "8097aa5b274dcc8bc7d97780a67dfd9a"
   },
   {
     "url": "git-scm/08/04.html",
-    "revision": "319b1eb0feb7feb0afe9f268a72cd8b6"
+    "revision": "60c99928e63a6a4588a8e685654f0d5b"
   },
   {
     "url": "git-scm/08/05.html",
-    "revision": "e6335aecfc5208eae5a1e6dd21bd8d05"
+    "revision": "38a64de64c0d1072599ad3c130224e02"
   },
   {
     "url": "git-scm/08/index.html",
-    "revision": "74587ae75a49b30a850c8b852f0876e8"
+    "revision": "f540e12891a177814de32a114059ed29"
   },
   {
     "url": "git-scm/09/01.html",
-    "revision": "2b03af76aca717767c4a620c99e349b3"
+    "revision": "896f838fcaffa38a02e37af5b7343406"
   },
   {
     "url": "git-scm/09/02.html",
-    "revision": "036fef1aa83a29d7fd6eb123c723052f"
+    "revision": "8519fdf4bd28ae4fd64de0d39442a53f"
   },
   {
     "url": "git-scm/09/03.html",
-    "revision": "6f99e8bf0f40c816fb473f1208c63482"
+    "revision": "fda9254c013de6613257516353fb2aa4"
   },
   {
     "url": "git-scm/09/index.html",
-    "revision": "0db14a9042dfc93e992745a34655b52d"
+    "revision": "78e40369bbf6c6d3159843a845a2bcc9"
   },
   {
     "url": "git-scm/10/01.html",
-    "revision": "7e34051739253d1f0687c40b9a5e3cc7"
+    "revision": "b7973ac4de9390a9bf7bc0fcae608421"
   },
   {
     "url": "git-scm/10/02.html",
-    "revision": "914d1e606c245e7edb44d9726d3c9e26"
+    "revision": "7f6cada16383be2506c74975ad9b932b"
   },
   {
     "url": "git-scm/10/03.html",
-    "revision": "f902fb77ff16237f0cf95e18505ed760"
+    "revision": "8cfa3d20d231c07925bc29a97a9b2575"
   },
   {
     "url": "git-scm/10/04.html",
-    "revision": "d235290c4c5098467c9e9464938c8a05"
+    "revision": "f22594ddce776a29e4b0279c01bceb77"
   },
   {
     "url": "git-scm/10/05.html",
-    "revision": "55fc0c4bac8d85fddcc6193f0180670e"
+    "revision": "3948139a2bccf8c6cc1e509163595871"
   },
   {
     "url": "git-scm/10/06.html",
-    "revision": "094d4b4deba9270c7ac7b568b3b44e4d"
+    "revision": "5c341b54c93e3ff13b29e9f0187ba968"
   },
   {
     "url": "git-scm/10/07.html",
-    "revision": "da0777f97ff7ec5f46c7ba9f52699ac8"
+    "revision": "5c277c8c97ebef3d931659cda3c6c867"
   },
   {
     "url": "git-scm/10/08.html",
-    "revision": "0d2b70f1ead1cc859f694493a5e46494"
+    "revision": "568030c61d103c0a5af9f67ce36640f4"
   },
   {
     "url": "git-scm/10/09.html",
-    "revision": "eefe9038717931dbba04fdcc3ebcd48a"
+    "revision": "b9f24dccbb4f76187258f65192c23760"
   },
   {
     "url": "git-scm/10/index.html",
-    "revision": "37a1e86b74c0b5d68209bbdbc93bd7db"
+    "revision": "baaf36224b536aae71ad5b5626cd0c46"
   },
   {
     "url": "git-scm/index.html",
-    "revision": "407c696d1d24e5e8c27624b646a8db0e"
+    "revision": "8765833b399787269eb74373ce89d2dc"
   },
   {
     "url": "git/index.html",
-    "revision": "ee3de4b69268016626ed8f421b0bf49b"
+    "revision": "173a738eb7c2a32da1f282c607f4ba20"
   },
   {
     "url": "hero.png",
@@ -8795,171 +8795,171 @@ self.__precacheManifest = [
   },
   {
     "url": "imocc/design_pattern/01/index.html",
-    "revision": "154db83a686e4be53838868d89eb79d4"
+    "revision": "5f5392608769156df26e5716487f7284"
   },
   {
     "url": "imocc/design_pattern/02_uml/01.html",
-    "revision": "616087491ec9071acf31dc1045c5b6cd"
+    "revision": "86071f5196cdbcbeca48fca00899204c"
   },
   {
     "url": "imocc/design_pattern/02_uml/index.html",
-    "revision": "f732dd9002613459c077de97e91a5e29"
+    "revision": "befd28a73007e195305b5efd6b6f5cfe"
   },
   {
     "url": "imocc/design_pattern/03_design_principles/composition_aggeregation.html",
-    "revision": "6ec5be3c73cdcf342ff45c2b36e51d9d"
+    "revision": "77ea89848b2a65aa7d52f90361000d59"
   },
   {
     "url": "imocc/design_pattern/03_design_principles/demeter.html",
-    "revision": "4be7dda5b6ae3a69d87d127d67fca96e"
+    "revision": "ca6c02a0cba2e6e583ee0fdb6fc3ad9b"
   },
   {
     "url": "imocc/design_pattern/03_design_principles/dependency_inversion.html",
-    "revision": "c170b04911086b1455bc0d282487adae"
+    "revision": "e2d0ff3fd2f2121a5fdc0f91b0a879bd"
   },
   {
     "url": "imocc/design_pattern/03_design_principles/index.html",
-    "revision": "bb85e546bdba8563c7f2b31e741875ba"
+    "revision": "a7478f2f492fe14e25a44a5d184f229c"
   },
   {
     "url": "imocc/design_pattern/03_design_principles/interface_segregation.html",
-    "revision": "9ab635ee315e932a8c5e8906134d7593"
+    "revision": "432f5edd2fbad1fc67b3b9991957413c"
   },
   {
     "url": "imocc/design_pattern/03_design_principles/liskov_substitution.html",
-    "revision": "a3df35e52cc70cd3c56ae08bb387be2c"
+    "revision": "0bcfbe599855ab291ae61968e076e503"
   },
   {
     "url": "imocc/design_pattern/03_design_principles/open_close.html",
-    "revision": "d8b8443b2c5369fb645c5e05e86dabfa"
+    "revision": "8b811ed1c0e3b121a786956939bf0887"
   },
   {
     "url": "imocc/design_pattern/03_design_principles/single_responsibility.html",
-    "revision": "de9fb17e97cccc2b13f317abc8573ae5"
+    "revision": "59b1df3ca8ad51c3ae5fc7647922fbe4"
   },
   {
     "url": "imocc/design_pattern/04_simple_factory/simple_factory.html",
-    "revision": "5fa741a9a79ee73983d43fbc90cad1dd"
+    "revision": "a52daed538612b0524b29a7eac9a9bda"
   },
   {
     "url": "imocc/design_pattern/05_factory_method/factory_method.html",
-    "revision": "49c8c222bd602c1758c223760f335632"
+    "revision": "739b59768f4b4feb841a33936512ed4f"
   },
   {
     "url": "imocc/design_pattern/06_abstract_factory/abstract_factory.html",
-    "revision": "d2aade4a7ea148d211d1caee74ebf0d1"
+    "revision": "a2f879fc167be5bfacfb078a90532927"
   },
   {
     "url": "imocc/design_pattern/07_builder/builder.html",
-    "revision": "8ca77e0c8d388781b2007709fddf3148"
+    "revision": "69f821f9f5d9ba35e2a10fade72f9a07"
   },
   {
     "url": "imocc/design_pattern/08_singleton/singleton.html",
-    "revision": "acf62eb80bc093c967692066542f0568"
+    "revision": "619792bd9fcf018f3eb2862201468136"
   },
   {
     "url": "imocc/design_pattern/08_singleton/singleton2.html",
-    "revision": "a9ad35c05e8776a59f48b9a081348026"
+    "revision": "ca537aa91968dfb46510028c08775ee1"
   },
   {
     "url": "imocc/design_pattern/09_prototype/prototype.html",
-    "revision": "880cb881926d42adc5043d5efcbac26a"
+    "revision": "e46083fc9e76b9d11dfc1fb609fa9e09"
   },
   {
     "url": "imocc/design_pattern/10_facade/facade.html",
-    "revision": "b0c8057c5e98ec1f295af55a5c8e3bd2"
+    "revision": "35b7e9c0cec8bda1c90e5f079d8c3980"
   },
   {
     "url": "imocc/design_pattern/11_decorator/decorator.html",
-    "revision": "7d0dbd7eeddca4034a9482a153b0fc36"
+    "revision": "d1ce9ab12cbbe1fcb97c9ada02a422d2"
   },
   {
     "url": "imocc/design_pattern/12_adapter/adapter.html",
-    "revision": "66377a043d2497bc55da7cccc636311b"
+    "revision": "897dc6243b4ab3b5cce81330786239f3"
   },
   {
     "url": "imocc/design_pattern/13_flyweight/flyweight.html",
-    "revision": "a26d49292cbfe3d3a2e20c8af38bb992"
+    "revision": "6ec0b0c5d875e6e47c876f24f4b76dff"
   },
   {
     "url": "imocc/design_pattern/14_composite/composite.html",
-    "revision": "431803d96d1ccce17cedf66da991c667"
+    "revision": "e73aab4bb45fe51904cd483b972132dc"
   },
   {
     "url": "imocc/design_pattern/index.html",
-    "revision": "490d3061b9a1f175b4726a3d290861d5"
+    "revision": "7125e412197dec4b96ecf6b98296abe6"
   },
   {
     "url": "imocc/design_pattern/tpl.html",
-    "revision": "4909c9121ee138943fe0d9b675602e57"
+    "revision": "0c0b9702d5e4ec4db2750ccccb0a0816"
   },
   {
     "url": "index.html",
-    "revision": "32dedbd17cc72e54b8830694c22e6805"
+    "revision": "fcf6417414d8c426256a2ab55e995b03"
   },
   {
     "url": "introduce/index.html",
-    "revision": "c10ee106b77565c05a550d9e0b805804"
+    "revision": "039e947fc4c0f9365d11f1bc0ecc5627"
   },
   {
     "url": "introduce/vue-press.html",
-    "revision": "14b2bad45ab7b47e89bab93117973782"
+    "revision": "cd68d14beae8a9979d40aec8d6e53a42"
   },
   {
     "url": "middle-office/00/index.html",
-    "revision": "0750db018ae13a6495b08a47f024c380"
+    "revision": "56d4260cf880f9f774425170f0c104e0"
   },
   {
     "url": "middle-office/01/01.html",
-    "revision": "0ba2f03e9d4b831c8c13b0a8044f1bc9"
+    "revision": "d4fd8ae8114047cf44d4fd9ea8b84d7e"
   },
   {
     "url": "middle-office/01/02.html",
-    "revision": "c25a7da42b678b75febd9ac15be174fe"
+    "revision": "bb08faed343987baac8deae6caf520e8"
   },
   {
     "url": "middle-office/01/03.html",
-    "revision": "31ff27e209d1f9891078c95bf1e82514"
+    "revision": "f8655308e0fce2d610ff24d0e446b697"
   },
   {
     "url": "middle-office/01/index.html",
-    "revision": "7c7824b6898aba30dd70b4c2d473b574"
+    "revision": "99023822a3adccf2fdcaabca1daa3cac"
   },
   {
     "url": "middle-office/02/01.html",
-    "revision": "f2ef44a8c2e8b0a189ac62ea99d7b80a"
+    "revision": "fb33ad07abdfbb4811f5f49580e641d1"
   },
   {
     "url": "middle-office/02/02.html",
-    "revision": "728c5f7ea3fb02bce11ae871a0fb4d0c"
+    "revision": "b26bb80c236bdd359b0439456a38310e"
   },
   {
     "url": "middle-office/02/03.html",
-    "revision": "b1b5df2b6f6e678cfa9601f4944b4c75"
+    "revision": "59e65a9299bfc725d30806a4385c2370"
   },
   {
     "url": "middle-office/02/04.html",
-    "revision": "3992d770818ef021574b3ae310eeab19"
+    "revision": "7d0228eff2a517d662eed5a725ed5082"
   },
   {
     "url": "middle-office/02/05.html",
-    "revision": "e7ed5066973f1b157740373360f707eb"
+    "revision": "c030ccd61dd8788f8d652be8ff36a9a7"
   },
   {
     "url": "middle-office/02/06.html",
-    "revision": "89e354047edbc0cee41af698c2949332"
+    "revision": "ff9b8d787d20f14b8763fa904aa99234"
   },
   {
     "url": "middle-office/02/07.html",
-    "revision": "f41934e90ee0d0b92d7b54a2abc76ff5"
+    "revision": "ad48ab81c5ce4943b48e836040b7d12a"
   },
   {
     "url": "middle-office/02/index.html",
-    "revision": "63cc0b04d11da89adb35ddf73ef1a879"
+    "revision": "ae3d420bf2a37320a6562d6a1cb6ef37"
   },
   {
     "url": "middle-office/index.html",
-    "revision": "ab2c5c0b51369ef6e83a784c75b0e09a"
+    "revision": "e72e090dcfe09adfeb3c4281b4c09bc0"
   },
   {
     "url": "mlogo.svg",
@@ -8967,387 +8967,387 @@ self.__precacheManifest = [
   },
   {
     "url": "mycat/frontend_connection_interaction.html",
-    "revision": "51ed2cef9492802f9ee8f1daf4e19fd5"
+    "revision": "c11133656f2fc525914d560ff841dc81"
   },
   {
     "url": "mycat/index.html",
-    "revision": "ad6859b5669aafab32724b15670c11d1"
+    "revision": "449f8db16854fcfd28504c8922bcf4fd"
   },
   {
     "url": "mycat/mysql_select_request.html",
-    "revision": "a5b4b51cb5c97b879ced0af5cb8c8bd6"
+    "revision": "4abb249372ca056ae982c63c537b009f"
   },
   {
     "url": "mycat/mysql_select_response.html",
-    "revision": "b14c556155a9ab8faab975f1c6ded40f"
+    "revision": "d02d952d7e14ccf075bba6b7477b05b5"
   },
   {
     "url": "mycat2/index.html",
-    "revision": "5ff1b1842582ef63e2bff37c7cf985e8"
+    "revision": "5081d457b3bf6ebb06c942d3cd0b382f"
   },
   {
     "url": "mycat2/note/custom-result-set.html",
-    "revision": "08fc0462af060cfb2abceb83958faebc"
+    "revision": "abfdf10d72887864e9db510df97717a0"
   },
   {
     "url": "mycat2/note/index.html",
-    "revision": "81213e746815b0e143e5aa7db0da0200"
+    "revision": "adf17dee8f54bc0c46833401ee2d7f1b"
   },
   {
     "url": "mycat2/source-code/direct-passthrough.html",
-    "revision": "044951a03996398124fd68c2756f9785"
+    "revision": "84633e155750fc91c8bc3d59a31092f5"
   },
   {
     "url": "mycat2/source-code/index.html",
-    "revision": "63c96db41e02b8e066093a6f81c78213"
+    "revision": "c64c0e5ad0c8417fd698de9e13f1ba0f"
   },
   {
     "url": "mycat2/source-code/proxy-reactor.html",
-    "revision": "cf4aadd4bb65358bd37a8f8ba6396ea3"
+    "revision": "7ce355d2b79670cdf3f36f05fcd7ea55"
   },
   {
     "url": "oath2/00/index.html",
-    "revision": "e923b6bfe9c6edc1c17b8fce6ef6782e"
+    "revision": "83293a641872e073a1f372c446c18d5a"
   },
   {
     "url": "oath2/01/01.html",
-    "revision": "7292d84ec94865e1812542ce14f96a0d"
+    "revision": "cf896691309091e639180da60e8dcbf2"
   },
   {
     "url": "oath2/01/02.html",
-    "revision": "9e596d545f583fbab0cdf8558ac831ff"
+    "revision": "dbde4f07d56cf441454a99340730ce1d"
   },
   {
     "url": "oath2/01/03.html",
-    "revision": "a75e77b5278e803317c5254976c847d0"
+    "revision": "9f22184b4301b435ff3c70cf2d645fd2"
   },
   {
     "url": "oath2/01/04.html",
-    "revision": "ad9c3270c58aa04847352413e98ebbfc"
+    "revision": "39c462f8450331bbc10ac5bdd7df22d5"
   },
   {
     "url": "oath2/01/05.html",
-    "revision": "d703134941ed63fa6f77f50d4bbdeb59"
+    "revision": "a3b1a96e02955b6a539ea8ef8eace169"
   },
   {
     "url": "oath2/01/06.html",
-    "revision": "30939903dfc4992872528a5720b1d75c"
+    "revision": "48215e7098ed2576b63da8544dca95c1"
   },
   {
     "url": "oath2/01/index.html",
-    "revision": "83656cdd13f5659e1777418b3946c37a"
+    "revision": "9865c56f4635a7fb34981991b908bac4"
   },
   {
     "url": "oath2/02/01.html",
-    "revision": "624cb68d12f113e17156c2aa6fea2bdf"
+    "revision": "2cca9c6fdc464935b38f370e0325f998"
   },
   {
     "url": "oath2/02/02.html",
-    "revision": "7c2ff57f7726127a1a21ab00ced5c214"
+    "revision": "8ee4466c0f0af59522288353898924d8"
   },
   {
     "url": "oath2/02/03.html",
-    "revision": "47852455fda57921779540b4a2cb870a"
+    "revision": "80f1ecd60906a30ec2ef160239c75a5f"
   },
   {
     "url": "oath2/02/04.html",
-    "revision": "ef38a75e804c624454e3de928a49786f"
+    "revision": "8689e42fe553d23a90a5cd59b8c06dd4"
   },
   {
     "url": "oath2/02/05.html",
-    "revision": "97afc12ea1927f94213f3486e751fe57"
+    "revision": "94445cafdd370bf5a06c99bd49875595"
   },
   {
     "url": "oath2/02/06.html",
-    "revision": "0a105050ce091c5250ae9a5ce09fa1d5"
+    "revision": "67fc7734e47a592034e5d0f5a2621a39"
   },
   {
     "url": "oath2/02/07.html",
-    "revision": "56caaf4b77b5718e8e854e1588f3106d"
+    "revision": "a6873fcf847e6fa0e47fcdc847eaf272"
   },
   {
     "url": "oath2/02/08.html",
-    "revision": "e32b96bc3149386c1775b35b7adad904"
+    "revision": "1fc96ef19f1a852b3d283bd3c24cb6f1"
   },
   {
     "url": "oath2/02/index.html",
-    "revision": "560413827bdd0d1de4d50bd19ae11d3a"
+    "revision": "4efa4869f1a6b77e759d433d3308d890"
   },
   {
     "url": "oath2/index.html",
-    "revision": "098626a5af25834fc43f492d27fed3ea"
+    "revision": "d49458fde8d86f31d35ae48adc53c4c6"
   },
   {
     "url": "posts-failure.html",
-    "revision": "bf228ceefa95fd53ffe2d5879c5e9d9e"
+    "revision": "0fde21e13b0d295d445bd078781f19d5"
   },
   {
     "url": "posts/docker/index.html",
-    "revision": "776ef75917353a0e10b790dae4bd5037"
+    "revision": "448be8949c799d359ccf6bc105ba9809"
   },
   {
     "url": "posts/gradle/index.html",
-    "revision": "db899fddb0c7975fe88ca6edcd408682"
+    "revision": "aad995a27ca410e9793a2bc08fe27974"
   },
   {
     "url": "posts/gradle/push-to-maven.html",
-    "revision": "e81cd898eb475cd1589b6bfcda572609"
+    "revision": "edc0d364015ff9a2b95bc657a1585272"
   },
   {
     "url": "posts/index.html",
-    "revision": "d5fb33dcaa4037a22f3ce6a7c24c054d"
+    "revision": "30f7f740e6cce3647287b04f12a0a11a"
   },
   {
     "url": "posts/java/index.html",
-    "revision": "7cf2a5ef34978ae4ecc8615b0e67780c"
+    "revision": "3656d194831e10c849183e06bd7fdc63"
   },
   {
     "url": "posts/java/javafx/index.html",
-    "revision": "b8c21fe02c6cb64ea34eb58c61d5bbd1"
+    "revision": "6a6f15b5a44dca8b09ec2fd90acb6e10"
   },
   {
     "url": "posts/k8s/configure-redis-using-configmap.html",
-    "revision": "6b32bb4a07cb34b88b8f6488581fcf1f"
+    "revision": "b56a92b2bc23471701fad3b1206b9979"
   },
   {
     "url": "posts/k8s/index.html",
-    "revision": "e8301b9e5d48c7158aa60e1cf39e1e1c"
+    "revision": "b3c47bb8588151cd8e15e8a5c0184b1c"
   },
   {
     "url": "posts/k8s/kubernetes-basics.html",
-    "revision": "2b18d363b864634f43272e827b4fd06d"
+    "revision": "071643f2122462a1a53f920f8cbceb67"
   },
   {
     "url": "posts/linux/dist-manage.html",
-    "revision": "bc86764126ce306025c7f05a70720b48"
+    "revision": "d28273eb5c27b5860ee9a44e9e5095e3"
   },
   {
     "url": "posts/linux/git.html",
-    "revision": "5976a4017cd9b32f82ba428f408d87d3"
+    "revision": "e3ac8dfa2b87800c0ceea629e5bd3884"
   },
   {
     "url": "posts/linux/index.html",
-    "revision": "a2a51d750c5bf66d8fc61f0f72eef28e"
+    "revision": "bc9d4910e403acbaade324ab425685b1"
   },
   {
     "url": "posts/linux/yum.html",
-    "revision": "6e863fd9172c32873cb62adc83b24747"
+    "revision": "fa44668ef2caf978ebfca6d840890edd"
   },
   {
     "url": "posts/node/index.html",
-    "revision": "7a95b4aa797822c61e24343a1b2cffe5"
+    "revision": "964966998f79dd447e092a52c1b9fb10"
   },
   {
     "url": "posts/node/npm.html",
-    "revision": "ddc1f799ef11ac51ae3924c2bd41032f"
+    "revision": "6629817ebb9e624ef1b60e08e2efb7c7"
   },
   {
     "url": "posts/others/001.html",
-    "revision": "40240885888f066217bfc73dffbe6bb2"
+    "revision": "36387b64247c30604f4354cb74c36151"
   },
   {
     "url": "posts/others/002.html",
-    "revision": "3cfa65a53db838eeb02f95734c9006ae"
+    "revision": "01c361ceae4c0fb8d45c5a1260d7dae4"
   },
   {
     "url": "posts/others/003.html",
-    "revision": "ac1ac916dec48660049cb483661e0ede"
+    "revision": "3c367ac33f055468ce46d8ccb185d60a"
   },
   {
     "url": "posts/others/004.html",
-    "revision": "6d03dae4e79b366571b7327a41d58c15"
+    "revision": "92064194758987ea46ca5607a07bd198"
   },
   {
     "url": "posts/others/005.html",
-    "revision": "3d023ac0cd113f41369a47e1beed3b69"
+    "revision": "e7faeff1a617f3d470cc7ea0598c8955"
   },
   {
     "url": "posts/others/006.html",
-    "revision": "5ff878d32347b0ff64266be5d646f235"
+    "revision": "c1103c80a7b88a921d74ac173ccc7f77"
   },
   {
     "url": "posts/others/007.html",
-    "revision": "67cd5a6f1ca1c86ecffdd768496039a3"
+    "revision": "a81b13aeac829f8be80bf904bf71be0b"
   },
   {
     "url": "posts/others/008.html",
-    "revision": "7fca9fdf40c5e2f363e973abca5c7f7b"
+    "revision": "de0336927876b40430a49ca1438268e6"
   },
   {
     "url": "posts/others/009.html",
-    "revision": "6242a4bb4a248beeac3617eda4f857c4"
+    "revision": "46a488bdd7b4cfc8aee837c4b8d682c2"
   },
   {
     "url": "posts/others/010.html",
-    "revision": "a423650f561bbbdf586282a289267e1f"
+    "revision": "fac1423e4aed228b3612d5dd30e15ba1"
   },
   {
     "url": "posts/others/011.html",
-    "revision": "574d7a67bd8e65db92e42f4e9bdb5f8f"
+    "revision": "391e5389758ad31754ecef210392a13e"
   },
   {
     "url": "posts/others/012.html",
-    "revision": "b3ef6eedcde3a2675896de03a49b5a77"
+    "revision": "e95af9a707b9338d682eb88365688d02"
   },
   {
     "url": "posts/others/013.html",
-    "revision": "b8e96b40215e8262daad9ca0a694c5e3"
+    "revision": "80154d27942f11daedc7f6641a90367d"
   },
   {
     "url": "posts/others/index.html",
-    "revision": "0f4e694c21bf7759df72e2ec8c2d0592"
+    "revision": "30087770edebc386500f5ea15bedfc16"
   },
   {
     "url": "posts/virtualbox/index.html",
-    "revision": "f74f2643248c506a63622e71c2eca3f7"
+    "revision": "18f61e4e3a0e1dc2640ac5d4a0517c48"
   },
   {
     "url": "posts/vue/index.html",
-    "revision": "48950ba3f5282f4538e51ab5a59315fc"
+    "revision": "cd71ba0c6579d20b89aacdc57dc3dd38"
   },
   {
     "url": "posts/vuepress/index.html",
-    "revision": "4c333a266b73171815d4298fbb4b86fe"
+    "revision": "d47ccb374cda8ff47ac3c45829238d95"
   },
   {
     "url": "posts/vuepress/nginx/index.html",
-    "revision": "70a7651ca5ee7dd2a1936b0e13845378"
+    "revision": "8fe4fb0a5853dc72416ccf8ef196a9ea"
   },
   {
     "url": "posts/vuepress/plugin/plugin-dev.html",
-    "revision": "2208aefca5c310f60be2ebf2ffa48694"
+    "revision": "2f52c590d2c9a50653dc621cf3e21486"
   },
   {
     "url": "posts/win10/index.html",
-    "revision": "4335048e44e6747c21b7deaf80af43d4"
+    "revision": "3b34f564db9e5ee0c5e2e6b8d5943beb"
   },
   {
     "url": "regular/01/01.html",
-    "revision": "a864cfe9ebfb6486bd2b97d9ec00a942"
+    "revision": "87930efbfe7a78b2768ba5dd84b3cb6c"
   },
   {
     "url": "regular/01/02.html",
-    "revision": "664126ff49c0bfcc10fa4266850893b0"
+    "revision": "5b0c32d0b2751ae18f9e522f4049c6e6"
   },
   {
     "url": "regular/01/index.html",
-    "revision": "0112f45f5c518c073e3fffed91c96854"
+    "revision": "b648601eb091d3024417929fa4e27668"
   },
   {
     "url": "regular/02/01.html",
-    "revision": "0f702d7010df7a151d5fec2f1f7366e0"
+    "revision": "007d693840ac7126da682b769a2cf40d"
   },
   {
     "url": "regular/02/02.html",
-    "revision": "9674bd7dc5a944c7f3d6eb973d82ec6d"
+    "revision": "70dab767b2ff218ebf75886153f2879b"
   },
   {
     "url": "regular/02/03.html",
-    "revision": "70652de3b4846a3de3de55fc765a4cc7"
+    "revision": "32d577401d083e6c44313ffc00df41be"
   },
   {
     "url": "regular/02/04.html",
-    "revision": "7c769429534debaeea476692d67c34c8"
+    "revision": "5d5b51537af128d82551494e422f1a8c"
   },
   {
     "url": "regular/02/index.html",
-    "revision": "4f5ec92845de574ad870433ff52a2852"
+    "revision": "a3529e0036e8d36984112bcfad7eb2f0"
   },
   {
     "url": "regular/03/01.html",
-    "revision": "cafd71cb5aabbd0c76cdc9d31d3d946c"
+    "revision": "3046bdd4f7b91acce8f332d47a532c0a"
   },
   {
     "url": "regular/03/02.html",
-    "revision": "aae353d62aade854cbe1b46a8dc90a75"
+    "revision": "e6d60b4b4115e32b534316184f62f6b7"
   },
   {
     "url": "regular/03/03.html",
-    "revision": "280f90c5c2f111aab7e8dcabc919a631"
+    "revision": "1a7dd36a0a200c51bbd908a689e1e6d2"
   },
   {
     "url": "regular/03/04.html",
-    "revision": "e74e6231cd3b3be351b28bea30623f5e"
+    "revision": "bfcb2884d15d8ffdae0af9373635b14b"
   },
   {
     "url": "regular/03/05.html",
-    "revision": "6db01bc2e6ccb95b56ef20253173dae2"
+    "revision": "ae26497d5cbfdd73da4e4868e5118d23"
   },
   {
     "url": "regular/03/06.html",
-    "revision": "0894df7cd193bdc5c28713ade445c817"
+    "revision": "918e169227fdf489a165109a5e8737f9"
   },
   {
     "url": "regular/03/07.html",
-    "revision": "dbcb0a75d066db06764332fe8bad5ece"
+    "revision": "2b13fab8dbae3761ff40bf3b273ecaea"
   },
   {
     "url": "regular/03/08.html",
-    "revision": "44ab3261ae7bd2cd8aec6eecedb28f9f"
+    "revision": "1a4e6d45b44f117e8b1e8fa78afb32c1"
   },
   {
     "url": "regular/03/index.html",
-    "revision": "db2eaeaf370c6651b68fe794a1419da8"
+    "revision": "6a1755d3c3539b44f7680a944a7a4ae5"
   },
   {
     "url": "regular/04/index.html",
-    "revision": "f3ff6959a59fd7fc45a51504d00257f3"
+    "revision": "0640b31dd99dbfaffe640373654bbba1"
   },
   {
     "url": "regular/05/index.html",
-    "revision": "423678e12419e8fd397bc6451acdce0f"
+    "revision": "ca2987d5a2c2de93ffefb5da39aae3f6"
   },
   {
     "url": "regular/index.html",
-    "revision": "f26723a3a746aec44b4f0a2e99483031"
+    "revision": "8603c720d759c764975390a2c7a4a921"
   },
   {
     "url": "spring-cloud-tutorial/config/001.html",
-    "revision": "2c440f7b8fa9245e3ef6da65cba34057"
+    "revision": "8077d71acf2621c33d6d4126f1a9ce08"
   },
   {
     "url": "spring-cloud-tutorial/config/002.html",
-    "revision": "318b9563f60fac58dd8cb6203da3de11"
+    "revision": "73b6ac04145ac14de7960e10fd63082b"
   },
   {
     "url": "spring-cloud-tutorial/config/003.html",
-    "revision": "1f1838220eb5b4bae0f2f73ef73c9dcf"
+    "revision": "2a1401690b20204b636a7645489ca627"
   },
   {
     "url": "spring-cloud-tutorial/config/004.html",
-    "revision": "92eeed1b3c29677e2ae2a51c8ece85f2"
+    "revision": "eb459097f3e7260ff16b85b7a25e4997"
   },
   {
     "url": "spring-cloud-tutorial/config/005.html",
-    "revision": "14d071d60171931664fc019d3c953d99"
+    "revision": "2fe906943fd259f693648bc505a86a34"
   },
   {
     "url": "spring-cloud-tutorial/config/006.html",
-    "revision": "26bbe3da1f817bce7ebedad29b992173"
+    "revision": "3e2976cb103e94f458bd30627e54720a"
   },
   {
     "url": "spring-cloud-tutorial/config/007.html",
-    "revision": "bbe5ad1cd374379b94086a630eac798c"
+    "revision": "6e5b0ad7365f79efccde20bbf4c623ba"
   },
   {
     "url": "spring-cloud-tutorial/config/008.html",
-    "revision": "6bede2a1e0ed63891c8c9f0a8db0bd64"
+    "revision": "a1ab68eeacaf3da52bd9723a730c3b7a"
   },
   {
     "url": "spring-cloud-tutorial/config/009.html",
-    "revision": "e71013095cd3cce8114fc2deb9262a84"
+    "revision": "d392759992224b8a1016120c63f2963f"
   },
   {
     "url": "spring-cloud-tutorial/config/index.html",
-    "revision": "747de4f23e2e1add99d8bd424fbc00ee"
+    "revision": "b39d3cd666b1d7bb0475329ccbd24392"
   },
   {
     "url": "spring-cloud-tutorial/hystrix/index.html",
-    "revision": "6aad3e8a3c8b44c8b610540375ecf9dc"
+    "revision": "30bc2e27107fcd0e6273fb023c0e350a"
   },
   {
     "url": "spring-cloud-tutorial/index.html",
-    "revision": "6ba4883d26909be01a86981620e3c6ee"
+    "revision": "3c052a97a9790bae345a880a152f2bc7"
   },
   {
     "url": "test-book.jpg",
@@ -9355,15 +9355,15 @@ self.__precacheManifest = [
   },
   {
     "url": "xiemengyuan/index.html",
-    "revision": "a890dc230b699926eecec2b72389b910"
+    "revision": "68b15dc035e2b3fc5191d7aa6e35a56d"
   },
   {
     "url": "xiemengyuan/pronunciation/index.html",
-    "revision": "e1b8596c30ebfb67f5cb6ddabdbc2ce0"
+    "revision": "e021acafebda2c955ce9c26128750202"
   },
   {
     "url": "xiemengyuan/pronunciation/kk.html",
-    "revision": "a7fd10de5dfc8260da8b0a01a1184a8b"
+    "revision": "3162a885fd4966425ba670367c635b37"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
