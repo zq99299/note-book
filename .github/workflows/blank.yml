@@ -17,14 +17,14 @@ jobs:
     # 步骤代表了作为工作的一部分将要执行的任务序列
     steps:
       # 签出你在 $GITHUB_WORKSPACE 下的仓库，这样你的工作就可以访问它。
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       # 缓存 yarn 的依赖？
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
         run: echo "::set-output name=dir::$(yarn cache dir)"
 
-      - uses: actions/cache@v2
+      - uses: actions/cache@v3
         id: yarn-cache # use this to check for `cache-hit` aac(`steps.yarn-cache.outputs.cache-hit != 'true'`)
         with:
           path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
