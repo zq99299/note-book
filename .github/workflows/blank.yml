@@ -31,6 +31,7 @@ jobs:
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-yarn-
+      # 设置 nodejs 版本为 14.x，太高会运行出错
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
