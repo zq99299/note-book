@@ -31,3 +31,16 @@
 - 打包发布：
 
   yarn docs:build
+
+---
+
+<p align="center">
+  <a href="https://jb.gg/OpenSourceSupport" target="_blank">
+     <img src="./docs/.vuepress/public/jb_beam.svg" alt="logo">
+  </a>
+  <br/>
+  <br/>
+  <a href="https://jb.gg/OpenSourceSupport" target="_blank"> 
+    感谢 JetBrains 对本项目的许可证支持
+  </a>
+</p>
