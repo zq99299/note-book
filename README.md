@@ -41,6 +41,6 @@
   <br/>
   <br/>
   <a href="https://jb.gg/OpenSourceSupport" target="_blank"> 
-    感谢 JetBrains 对本项目的许可证支持
+    感谢 JetBrains 对本项目提供的开源许可证支持
   </a>
 </p>
