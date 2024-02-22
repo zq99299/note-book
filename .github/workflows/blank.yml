@@ -1,43 +1,30 @@
-name: CI
+name: 生成 Vuepress 网站并部署
 
-# 控制如何触发事件，这里针对 master 分支
 on:
   push:
     branches: [ master ]
   pull_request:
     branches: [ master ]
-
-# 一个工作流运行是由一个或多个作业组成的，这些作业可以连续或并行运行。
 jobs:
-  # 该工作流包含一个名为 "build " 的单一工作。
   build:
-    # 工作要运行的运行器类型。
     runs-on: ubuntu-latest
-
-    # 步骤代表了作为工作的一部分将要执行的任务序列
     steps:
-      # 签出你在 $GITHUB_WORKSPACE 下的仓库，这样你的工作就可以访问它。
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
-      # 缓存 yarn 的依赖？
-      - name: Get yarn cache directory path
-        id: yarn-cache-dir-path
-        run: echo "::set-output name=dir::$(yarn cache dir)"
+      # 缓存的使用，还看不明白暂时去掉：https://github.com/marketplace/actions/cache
 
-      - uses: actions/cache@v3
-        id: yarn-cache # use this to check for `cache-hit` aac(`steps.yarn-cache.outputs.cache-hit != 'true'`)
-        with:
-          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn-
+      # https://github.com/marketplace/actions/setup-node-js-environment
       # 设置 nodejs 版本为 14.x，太高会运行出错
       - name: Setup Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
           node-version: '14'
+
       - name: yarn run docs:build
         run: yarn install && yarn run docs:build
+
+      # https://github.com/marketplace/actions/github-pages-action
+      # 部署
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
