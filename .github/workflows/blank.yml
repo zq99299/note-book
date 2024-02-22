@@ -12,6 +12,18 @@ jobs:
       - uses: actions/checkout@v4
 
       # 缓存的使用，还看不明白暂时去掉：https://github.com/marketplace/actions/cache
+      - name: Cache Yarn dependencies
+        uses: actions/cache@v4
+        with:
+          path: ~/.yarn
+          key: ${{ runner.os }}-yarn-${{ hashFiles('yarn.lock') }}
+      - name: Restore Yarn dependencies from cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.yarn
+          key: ${{ runner.os }}-yarn-${{ hashFiles('yarn.lock') }}
+          # 备选 key
+          restore-keys: ${{ runner.os }}-yarn-
 
       # https://github.com/marketplace/actions/setup-node-js-environment
       # 设置 nodejs 版本为 14.x，太高会运行出错
