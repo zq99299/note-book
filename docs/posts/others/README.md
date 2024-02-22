@@ -16,3 +16,4 @@
 - [spring cloud gateway 实战技巧](./013.md)
 - [Nacos](./014.md)
 - [第三方 API 对接推荐的方式（SDK 方式）](./015.md)
+- [百分比加权选择](./016.md)
