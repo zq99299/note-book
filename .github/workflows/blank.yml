@@ -11,16 +11,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # 缓存的使用，还看不明白暂时去掉：https://github.com/marketplace/actions/cache
-      # 恢复缓存
-      - name: Restore Yarn dependencies from cache
-        uses: actions/cache@v4
-        with:
-          path: ~/.yarn
-          key: ${{ runner.os }}-yarn-${{ hashFiles('yarn.lock') }}
-          # 备选 key
-          restore-keys: ${{ runner.os }}-yarn-
-
       # https://github.com/marketplace/actions/setup-node-js-environment
       # 设置 nodejs 版本为 14.x，太高会运行出错
       - name: Setup Node.js
@@ -28,14 +18,30 @@ jobs:
         with:
           node-version: '14'
 
+      # 缓存的使用：https://github.com/marketplace/actions/cache
+      # 获取 yarn 的缓存目录
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "dir=$(yarn cache dir)" >> $GITHUB_OUTPUT
+
+      # 恢复缓存
+      - name: Restore Yarn dependencies from cache
+        uses: actions/cache@v4
+        with:
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('yarn.lock') }}
+          restore-keys: ${{ runner.os }}-yarn-
+
       - name: yarn run docs:build
         run: yarn install && yarn run docs:build
 
-      # 保存缓存
+      # 创建缓存
       - name: Cache Yarn dependencies
         uses: actions/cache@v4
         with:
-          path: ~/.yarn
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          # 给 yarn.lock 文件进行哈希，以保证缓存的有效性
+          # 只要 yarn.lock 不变更，缓存文件就会存在，变更后，下一次执行就不会恢复到缓存了，因为 hash 值不同了
           key: ${{ runner.os }}-yarn-${{ hashFiles('yarn.lock') }}
 
       # https://github.com/marketplace/actions/github-pages-action
