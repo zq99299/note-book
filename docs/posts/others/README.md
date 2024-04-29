@@ -20,3 +20,4 @@
 - [Gradle 依赖相关排查](./017.md)
 - [jackson JSON 框架](./018.md)
 - [hutool 的 excel 文件解析增强工具](./019.md)
+- [spring-boot-starter-data-redis](./020.md)
