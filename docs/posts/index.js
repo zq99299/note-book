@@ -87,6 +87,7 @@ module.exports = () => {
         'others/018.md',
         'others/019.md',
         'others/020.md',
+        'others/021.md',
       ]
     }
   ]
