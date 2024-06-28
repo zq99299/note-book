@@ -90,6 +90,7 @@ module.exports = () => {
         'others/021.md',
         'others/022.md',
         'others/023.md',
+        'others/024.md',
       ]
     },
     {
